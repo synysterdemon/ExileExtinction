@@ -1,0 +1,2670 @@
+﻿# Changelog Legend
+
++ Added
+
+- Removed
+
+@ Fixed
+
+^ Improved
+
+# 0.4.1
+
+## ADDED IN 0.4.1
+
++ Added HiddenSelections to Balaclava models
+
++ Added ZSh-1-2
+
++ RPG-7 ironsight animations
+
++ Added VSS
+
++ Added VSS marksman classes
+
++ Added 2DP Zenit RIS variant
+
++ Added PSO-1M2-1
+
++ Added NVM-14 nightvision monocular
+
++ Added more Zeus placeable uniforms/headgear/etc
+
++ New SVD sounds
+
++ New matching SVD reload sounds
+
++ Added NVGs to Russian Squad Leaders & Officers
+
++ Added Makarov PM
+
++ Added HiddenSelections for T-80
+
++ Added EMR-Desert patchless uniform
+
++ Added R-77
+
++ Added ZU-23-2
+
++ Added GAZ-66 with ZU-23-2
+
++ Added HiddenSelections to backpacks, 6B13 & Vydra
+
++ Added adjustable ironsights for all rifles.
+
++ Added 6B7-1M
+
++ Added various berets
+
++ Added camo variants for BMD-1/2, BTR-70 & SS21
+
++ Added VSS with frontgrip
+
++ Added AS VAL with frontgrip
+
++ Added HiddenSelections for 2S25
+
++ Added KPS-53AV collimator sight & 9S475 missile reticle for Mi-24
+
++ Added SPG-9M with PGOK-9 sight
+
++ Added 1PN22M2 sight for BMP-1
+
++ Added full plum AK-74M textures
+
++ New AK-74M textures (thanks BLACKMETAL)
+
++ Added new TKN-3 reticle with calibrated (more or less) range finder
+
++ RHS_fnc_addKeyEvent
+
++ RHS_fnc_removeKeyEvent
+
++ Added Flora VMF uniforms
+
++ Added VMF infantry groups
+
++ Added Eden group images for AFRF
+
++ Added Eden categories for AFRF
+
++ Added 122mm spent shell model & textures
+
++ Added AKS-74U and AKS-74UN
+
++ Added Tan DF-15 uniform variant
+
++ Added Perst-1IK
+
++ Added EMR Field Cap replacement models
+
++ Added 6B47 helmet
+
++ Added NS-3 goggles
+
++ Added 9M120 magazine
+
++ Added EDEN attributes to majority of vehicles
+
++ Added HiddedSelections for BMD-4
+
++ Added PP-2000
+
++ Added new magazines to PKM/PKP
+
++ Added hand animation handling script for PK (changes hand animation while prone)
+
++ Added CDF aviation number set to decals
+
++ Added ability to specify if disposable launchers are thrown away automatically after changing weapon in RHS menu options (by default turned on)
+
++ Safe mode script
+
++ Added EMR uniform replacement model
+
++ Added seat ejection script to PAK-FA, Su-25 and Ka-52
+
++ Added master safe mode to Su-25 & PAK-FA
+
++ Added first versions of 6Sh116
+
++ Added HiddenSelections to PKM, PKP, AKM, AS VAL/VSS & AKS-74U 
+
++ Added commander FFV (or ability to use binocular only in case of tanks with commander shield) to T-72/T-90 series
+
++ Ka-52 functionality overhaul - new UI, animations, HUD, Shkval FCS
+
++ Added Vikhr burst mode
+
++ Added Tochka-U special waypoints - deploy & fire
+
++ Added green and visored ZSh-7A helmets
+
++ Added Khaki fieldcap for M88 uniform (thx Gurdy!)
+
++ Added cargo system to BMP
+
++ Added cargo system to BMD
+
++ Added rear doors anims to BMP-1 (heavily wip) & BMP-2
+
++ Added experimental Obyekt 681-2 IFV (WIP)
+
++ Added various CDF decals for GREF
+
++ Added 9K133 Kornet
+
++ Added 9M133 missile model
+
++ Added Kornet Tube and Base as backpacks
+
++ Added infantry paradrop waypoint
+
++ Added Rakurs-PM
+
++ Added PBS-4 Suppressor
+
++ New wheel models and textures for UAZ
+
++ New wheel models and textures for URAL
+
++ Replaced PGO scope on SPG9 (static and UAZ) with high res model in primary LODs
+
++ Added turret servo sounds for BMPs, BMDs & BTRs
+
++ Added proper handling of ATGM on BMP1-P
+
++ Added spall simulation for BMPs
+
++ Added KPVT (& PKT for BTR80A) shell ejection
+
++ Added generic decal reading function (no need to create separate init.sqf file anymore unless you want define some special effects)
+
++ Added new scripted SACLOS guidance for ATGMs
+
++ CDF, ChDKZ, and camo tent textures
+
++ Added 9M111 handling for BMD-1P
+
++ Added Konkurs reload anim for BMP-2
+
++ Added Maljutka reload anim for BMP-1 & BMD-1
+
++ Added engine destruction effects
+
++ Spent tubes effect after ATGM reload
+
++ RGN model
+
++ RGO model
+
++ Added Afghan national army emblem to decals
+
++ Added visual ERA destruction on T-80U series
+
++ Added hidden selections to T-80U series
+
++ VSR 6Sh92
+
++ VSR Field cap
+
++ EMR 6B13 variants
+
++ VVS to Zeus missions
+
++ GREF to Zeus missions
+
++ Added hidden selections to BMP-3 series
+
++ Added modified virtual garage function with global vehicle spawning
+
++ GREF repawn Point
+
++ Added sand textures for many vehicles by beaar
+
+## IMPROVED IN 0.4.1
+
+^ Armor compatibility, hitPart function now runs on ALL vehicles (vanilla compatibility)
+
+^ Updated SSh-68 textures to lower glossy look
+
+^ Improved SACLOS guidance
+
+^ Improved tank flag spawning in 3den
+
+^ Reenabled spent caps hiding on BMD2M
+
+^ Tweaked BMD1/2 destruction textures
+
+^ Tweaked 2S25 & BMD-4 FFV animations
+
+^ Many Stringtable updates
+
+^ Added reslods to Russian weapon/ammo crates
+
+^ Added some missing equipment to VAB
+
+^ Added some randomization to BTR cargo anims
+
+^ Changed AK-74M hand anim to stock one
+
+^ Flora and EMR textures
+
+^ Tweaked BMPs destruction textures
+
+^ Tweaked BMPs hitpoints
+
+^ Replaced 7.62x54R on PKM belt with new textures for visual update
+
+^ Reduced Ka-52 laser cooldown time
+
+^ Added manual reload for ATGMs
+
+^ Added spiral movement to 9M133 missile model + changed rocket motor effect
+
+^ Empty tanks with autoloader now starts with empty main cannon too
+
+^ Improved T-80 optic & removed old FCS weapon
+
+^ Improved ballistic calculations on uneven terrain
+
+^ Added iron sight secondary mode handling for scopes
+
+^ T-90A and T-90 Shtora firegeo
+
+^ Updated virtualAmmoBox.sqf
+
+^ Updated rhs_c_weapons cfgPatches
+
+^ Tweaked autoloader behaviour in semi mode when switching between weapons
+
+^ AS-VAL custom geo lod + bisurf
+
+^ Tweaked RPG-7 ironsight markings
+
+^ Tweaked Igla rocket behaviour
+
+^ Upped subsonic ammo damage
+
+^ Weapon strings
+
+^ Su-25 CAS variant with 160 S-8 rockets
+
+^ Lowered muzzle velocity of SVD-S
+
+^ Improved geo & FG of BMPs
+
+^ Changed modelToWorld to modelToWorldVisual
+
+^ Changed FCS font to purista
+
+^ Changed PAK-FA HUD color to green
+
+^ Tweaked AK prone animation
+
+^ 3UOF19-1 airburst script performance & reliability
+
+^ BMP-3 Vesna-K & BMD-4M loaded with 3UOF19-1 airburst shells
+
+^ 2S25 Sprut-SD loaded with 3BM46 shells
+
+^ Vest HitPoints
+
+^ Forced visibility of Kamaz Typhoon in VG
+
+^ Added 9S475 reticle for Mi24, working KPS-53AV collimator
+
+^ Tweaked CBA compatibility 
+
+^ Tweaked GSh-30 & added GSh-30-2K with low RPM mode
+
+^ Add AKS-74U to Russian armed crews.
+
+^ Reduced offroad Coef on some vehicles
+
+^ BMP & BTR squad leaders disembark when in combat
+
+^ Autoloader params are saved when changing seats
+
+^ Tweaked 1G46 & 1G42 reticle 
+
+^ Tweaked disposable launchers loading
+
+^ Closure volume levels, weapon mechanics are now audible again when firing
+
+^ Increased volume of most weapon mechanics
+
+^ Added green cartridges for AKs
+
+^ Tweaked VG compatibility with our decal system
+
+^ Added numplate selections to cars & trucks (WIP)
+
+^ Increased T-80 series reverse speed
+
+^ Added camo selections to air wrecks
+
+^ Improved RPG-7 sight script stability
+
+^ Potential fix for wrong init elev
+
+^ Reverted tracer settings for Yak-B
+
+^ Removed parachutes from jet pilots
+
+^ Changed Su-25 MFD - probably going to be replaced with some sort of script since it's impossible to program CCIP into Arma MFD's
+
+^ Gunner of Ka-52 is now copilot
+
+^ Fixed, optimized reslods, cleaned up & added camo selections to T-72 & T-90
+
+^ Experimental: tweaked cfgPatches for rhs_c_weapons/config.cpp
+
+^ Added proper K10T collimator for T-72 & T-80
+
+^ Cleaned up T-80 textures & materials
+
+^ New Shtora lights
+
+^ Brand new CM interface for improved performance and reliability
+
+^ Optimized reslods for T-80
+
+^ Simple HEAT simulation for vehicles without composite armour
+
+^ Tweaked NSV textures
+
+^ Added new entries c_troops cfgPatches
+
+^ Added proper picture for Ural w/ ZU-23
+
+^ Tweaked view limits of Ural w/ ZU-23 cargo
+
+^ Experimental tracks for T-72 series with some alpha love
+
+^ Tweaked T-72 tracks shadow
+
+^ 5.45x39 & 7.62x39 ballistics
+
+^ 7.62x54 ballistics
+
+^ 9x39mm ballistics
+
+^ Improved Makarov PM's eye memory point
+
+^ Increased 7.62 mags mass & decreased it for 5.45
+
+^ Tweaked PKM normals
+
+^ Tweaked BPK-1-42 reticle
+
+^ Improved thermal screen visuals
+
+^ Tweaked lead script
+
+^ Added fire on move script
+
+^ Tweaked GAZ-66 driver anim 
+
+^ Experimental dispersion increase for Russian tank cannons
+
+^ Increased dispersion of Yak-B
+
+^ Tweaked Mi-24 control block script
+
+^ Removed inverted shadow from PK-AS & 1P63
+
+^ Tweaked OG & PG9/15 ballistic
+
+^ Zeroed 1PN22M1 sight
+
+^ Changed PK 7.62 strings
+
+^ Radio voice protocol improvements
+
+^ Added DLC mark to identities 
+
+^ Zeroed PGO9 sight
+
+^ Readded barrel recoil for ZU-23-2
+
+^ Changed recoil for folded AK-74M
+
+^ Dual ammo for Yak-B
+
+^ RGNO impact script
+
+^ Added new pictures for GAZ-66 w/ ZU-23 & Tochka-U
+
+^ Tweaked T-72 FCS
+
+^ Tweaked 1G42 & ESSA FCS
+
+^ Tweaked 3UBR6/8 timeToLive
+
+^ 2016 update package - changed BMD-4 loadout from 3UBR6 to 3UBR8
+
+^ Lined up Igla with eye memory points
+
+^ HEAT warhead simulation performance & reliability
+
+^ Player should now see PAK-FAs wingtips from cockpit
+
+^ RGN and RGO stringtables added 
+
+^ UI initialization fix
+
+^ TKN-3 UV mapping tweak
+
+^ Enabled proxy retexturing for T-72, 2S25 & A2 port vehicles
+
+^ Added workaround for broken Mi-24 ATGMs
+
+^ Experimental turret locking tweak
+
+^ T-80UK FG for Shtora
+
+^ Decreased suppressor velocity increase to 1%
+
+^ Improved Tochka-U missiles fuse reliability by using per frame handler
+
+^ User action visibility tweaks
+
+^ Add VMF crew for the VMF vehicles.
+
+^ Lots of missing stringtables added
+
+^ Added tail_decals section to Su-25
+
+^ Added VG/Eden textureSources for ZSU
+
+^ Changed Ural plate number font
+
+^ Improved 122mm casing behaviour
+
+^ Tweaked D30 packing script
+
+^ Added hand anims for D30 handles
+
+^ Replaced getRandomArElement function with selectRandom introduced in 1.56
+
+^ Tigr-STS & M has now TFAR LR radio
+
+^ Makarov PM holster PointerSlot
+
+^ Makarov rvmat
+
+^ Changed 57-N-323S penetration
+
+^ Modified Ural & GAZ-66 physx lods
+
+^ GSh-23L burst set to 4
+
+^ Tweaked Ural phyxs lod
+
+^ Script optimizations
+
+^ Improved crates textures (black shadows removed from the bottom) & physx lods
+
+^ Improved weapon scripts
+
+^ Improved script handling after loading game
+
+^ Weapon safe mode system framework
+
+^ Tweaked two handed AK anim (used now as a placeholder on SVD - at least sound & anims are synced)
+
+^ Tweaked SVD reload anims
+
+^ tweaked AS-VAL & VSS fire selector anims
+
+^ Improved magazine movement during reload anim for PM, PMM & PYa
+
+^ Increased BMP track armor
+
+^ Tweaked Tigr STS turret handling
+
+^ Added reloaded event handler which removes spent magazines from Tigr (works with 1.57+, doesn't cause problems on stable)
+
+^ Added placeable magazines
+
+^ Added ground magazine models for PYa, PM & PMM magazines
+
+^ Adjusted vest positions to fit uniforms better
+
+^ Tweaked PKP/PKM & SVD hand anim (wrists position)
+
+^ Aligned PAK-FA MFD
+
+^ New anims for PAK-FA & SU-25 pilot
+
+^ Improved performance of PAK-FA scripts (initialzation/handling)
+
+^ Increased pip windows resolution in PAK-FA pilot view (map & mirrors are now sharper)
+
+^ RHS_fnc_firedSaclos now uses cursorObject command
+
+^ Improved SSH specular map
+
+^ Increased lethality of R77/R74 AA missiles by simplyfing their geometries & adding autocenter=0 param
+
+^ Updated destruction textures for ZSU-23-4 & BTR-60
+
+^ Added honor emblem on IR lamp for T-72 Obr. 84-89
+
+^ Improved nuke script fx & stability
+
+^ Added some monitor elements to Ka-52
+
+^ Some preparation for Ka-52 eject system
+
+^ Tweaked Ka-52 & Mi-24 speed
+
+^ Tweaked Vikhr missile stability
+
+^ Added door anims to Ural/UAZ Eden attributes
+
+^ Replaced animate with animateSource (1.58 required)
+
+^ Some scripts optimizations
+
+^ Tweaked ballistic calculations
+
+^ Added 9M112M2 & 9M124 ATGMs cfgs
+
+^ Added Russian federation ground forces honor emblem
+
+^ Improved snorkel script performance
+
+^ Overall script performance tweaks
+
+^ Added honor emblem to T-80U on IR lamp
+
+^ Reduced secondary explosion for Tigrs
+
+^ Improved autotrack adjustments & replaced lineIntersect with checkVisibility command
+
+^ Various small adjustments to Ka-52 scripts
+
+^ Converted Vikhr guidance script to per frame solution
+
+^ Safemode & PSO-1 script now properly deinitalize after embarking vehicles
+
+^ Tweaks to Tigr-STS weapon changing script
+
+^ Added AKS-74U to armored crewmen
+
+^ Added ability to hide commander NSVT on T-80U tanks
+
+^ Another round of safemode improvements
+
+^ Added hiddenSelections to balaclavas
+
+^ Renamed Su-25SM to Su-25 to better represent current model available in game
+
+^ Removed pilot twitching/leaning in ejection seats
+
+^ Stringstable entries for Gorka and Izlom
+
+^ Added main & tail rotor centers to Mi-8 - enabling rotor breaking upon collision
+
+^ Decal related variables used in Eden are no longer synchronized
+
+^ RPG-26 & RShG-2 can now be packed to bag pack 
+
+^ Reduced proxy amount on T-72 Obr. 85
+
+^ Changed behavior or Ka-52 blades physic
+
+^ Added AK-104 & 105 as placeable object
+
+^ Khaki gear updates
+
+^ Increased Vikhr HE effect
+
+^ Optimized BMPs resolution lods
+
+^ Renamed BMP-2 (e) to BMP-2 (obr. 1980g.) & regular BMP-2 to BMP-2 (obr. 1986g.)
+
+^ Tweaked Su-25 MFD
+
+^ Tweaked cargo anims for Ural & GAZ-66 - no more rifles clipping through the roof
+
+^ Tweaked Malyutka res lods
+
+^ Added cap disappearing effect to BMP-2 ATGM
+
+^ Callibrated RPG-26 & RShG-2 ironsights
+
+^ Randomized static cargo anims & incorporated some il padrino poses to BMPs
+
+^ Added RPG backpack with only VL rounds
+
+^ Added spiral movement to tank ATGM 
+
+^ Tweaked Metis reload anims
+
+^ Revamped AT-14 cover ejection script
+
+^ Tweaked 6B13 weight
+
+^ Tweaked 1P63 reticle illumination
+
+^ Added spent cap effect to Metis & Kornet
+
+^ Auto track can now lock on all vehicles by default so it's possible to lock & fire tank ATGM at slow flying helicopters
+
+^ Beanie stringtables added
+
+^ Ballistic data correct for soft headwear in VA
+
+^ Tweaked initSpeeds of GSh autocannons
+
+^ Calibrated PP61AM (merge from GREF)
+
+^ Mi-24P Gsh-30-2K camera shake
+
+^ SU-25 Gsh-30-2 camera shake
+
+^ Ka-52 2A42 camera shake
+
+^ Added gun limits for BTRs
+
+^ Added antenna anim for BTR-60
+
+^ Calibrated & added AA markings for 1PZ32 sight on BTR-80
+
+^ Fold script improvement
+
+^ Optimized T-80U series resolution lods
+
+^ Changed gunner & commander get in memory points position for T-80 series
+
+^ Improved T-80U series firegeometry - new ERA hitpoints & geometry improvments
+
+^ T-80U & T-80A commander can now use binoculars when turned out
+
+^ Tweaked BMP-3 FG & hitpoints
+
+^ Added one nonpip window for BMP-3 driver
+
+## FIXED IN 0.4.1
+
+@ Fixed BMP-2 turret emblems visibility (still needs tweaking)
+
+@ Fixed broken PGS-64 shadow
+
+@ Fixed gap in T-72B3, T-90 & T-90A FG
+
+@ Fixed SACLOS guidance not working on Cherno & other a2 maps
+
+@ 9M113 shadow selection
+
+@ Kornet vehicle now uses Kornet launcher and mags
+
+@ Replaced AiA TP cfg names with generic, A2 origin ones
+
+@ Fixed AGS-30 dissapering in 2nd res lod
+
+@ Fixed PSO script that was broken once again
+
+@ Fixed Gorka's wound textures
+
+@ Fixed GAZ-66 R142 alpha sorting in res lods
+
+@ Fixed BRM-1K wrong inheritance in model.cfg
+
+@ PAK-FA pilot anim is now properly looped + proper death anim added
+
+@ Holdster anim of UPK-23 pod caused errors with Ka-52
+
+@ Added missing mass to PM, PYa & PP2000
+
+@ Removed laser lock from FAB-250 bombs
+
+@ Some FCS were missing max lase range + tweaked minimum lase range for few others
+
+@ BMD-2 had some missing decals due to alpha sorting
+
+@ Fixed ZSU-23-4 disappearing hatch after destruction
+
+@ Fixed BMP getin order
+
+@ Added missing maxZeroing param to PK & SVD
+
+@ T-80 ammo slot missing
+
+@ Fixed cfgPatches for rhs_c_airweapons/config.cpp
+
+@ Fixed rhs_weap_902a->Mode_Burst, by rhsafrf\addons\rhs_sounds\config.bin/CfgWeapons/rhs_weap_902b/Double/
+
+@ Spare wheel alpha sorting in cargo lod
+
+@ Fixed Mi-24 & Ka-52 blade destruction upon impact - missing proper blade center memory points
+
+@ BMP-3 used wrong ballistic calculator
+
+@ Fixed not all decals visible on T-80B series
+
+@ Mi8MT & MTV-3 crew fans not changing to blurred version
+
+@ Fixed serious flaw in BMP-3 gunner/commander pip handler causing fps drop
+
+@ Changed uvsource in rvmats from "tex1" to "tex"
+
+@ AKM normals green chnl fix
+
+@ Fixed "[weapon rhs_weap_akms]: item[rhs_acc_dtk] does not match to this weapon!" errors for AKM, SVD & AS-Val
+
+@ Added some missing items in virtual ammbox
+
+@ BMD-4 max gun elevation
+
+@ Fixed URAL missing geometry
+
+@ Missing author in pbo prefix
+
+@ Fixed wrong German BTR strings.
+
+@ M117 guidance fixed
+
+@ SU-25 instruments flickering during night
+
+@ Removed bysta proxy from 3 & 4 res lod
+
+@ Commander turret lock T-90 while driver is turned out
+
+@ Zeroing tex offset fix
+
+@ Fixed 7.62x54r 100rnd mag strings
+
+@ Proper inheritance for igla twice
+
+@ Missing Podnos weapon string
+
+@ Fixed crazy sections count for BMP-2
+
+@ Bad move connection in RHS_Metis_Gunner
+
+@ VOG(s) texture paths
+
+@ Changed T-90A weapon to 2A46M-5
+
+@ Fixed zero divisor thing
+
+@ Missing shoes in Gorka 2nd res lod
+
+@ primaryObserver workaround experiment
+
+@ Fixed D-30 empty last res lod
+
+@ Fixed wrong inheritance of AKM w/ GP25 in model.cfg
+
+@ Fixed Beryeza light
+
+@ Lowered HE & HEAT ricochet angles
+
+@ Fixed faces for some russian troops
+
+@ Mi8-AMTSh tail rotor didn't changed into blur mode
+
+@ Fixed tracer mags
+
+@ 3UOF17 & 3UOF19 can now reach max range
+
+@ EMR tweaks again
+
+@ Fixed turned in T-72/T-90 animations
+
+@ Typo in 9M124 ammo name
+
+@ Su-25 ejection seat is now hidding properly
+
+@ Fixed Tigr destruction effects
+
+@ T-72B3 loadout hotfix
+
+@ Tigr-M gunner turned in view
+
+@ RSP-30 flare recoil fix
+
+@ Small missing polygon on T-72/T-90 models
+
+@ Lowered 2A70 ammo velocity to correct values
+
+@ Fixed RPG-7 script not working for Zeus controlled units
+
+@ Fixed hitpoints compilation
+
+@ Fixed T-72 aa group
+
+@ CBA compatibility
+
+@ Fixed BTR-60 optic zoom
+
+@ Fixed BTR-80 pip memory points
+
+@ BMP-3 SpeechVariants
+
+@ Sprut-SD brake lights always lit
+
+@ Fixed Tigr doors & windows uv mapping
+
+@ Cargo compartment for GAZ-66 cargo
+
+@ Fixed some .rpt errors
+
+@ Fixed some uv errors on T-80
+
+@ Zenit missing textures in res lod
+
+@ AK-103 Forest Tail was missing
+
+@ CTI insurgents scoped to 1 to allow retro compatibility.
+
+@ Fixed T-80UK & T-80UM antenna anims
+
+@ RPG-7 rounds scope
+
+@ Autoloader tweaks
+
+@ Fixed: AK-74M had wildly different dispersion values for single fire and automatic fire
+
+@ Aligned right bow mg reticle for BMP-3 & BMDs
+
+@ Replaced BTR-80A ammo with UBR8
+
+@ Fixed T-72 rear wheel shadow
+
+@ Autotrack fix
+
+@ Fixed some FCS errors
+
+@ Fixed NSV feedtray cover selection
+
+@ Ural rear FFV turrets get in/out memory points were inverted
+
+@ Fix AFRF Zeus items' files coherence with US. 
+
+@ Break lights always lit on SS21
+
+@ Fixed Mi-8AMTSh reticle selection
+
+@ Fixed Tochka-U camo selection
+
+@ Ural w/ ZU-23 ammo visiblity 
+
+@ Added baseweapon to Val grip
+
+@ Removed ballistic computer & canLock from 2A28 grom
+
+@ Mi24 rotor shadow fix
+
+@ Fixed AFRF weapon recoil
+
+@ fixed AKMS shadow
+
+@ Muffled sound fix
+
+@ T-80UK memory points fixed
+
+@ Suppressors no longer modify hit values
+
+@ Significantly reduced SVD section count (20 to 2 for SVDM, 10 - 4 for SVDS)
+
+@ 6B23 texture fixes
+
+@ Fixed T-90 wind sensor texture bug
+
+@ Fixed NSVT feedtray issues
+
+@ Fixed 1P63 transformations
+
+@ UAZ open lights were always lit
+
+@ XEH fix
+
+@ Fix to Mi-24 ATGM fix
+
+@ PSO-1 illumnination script affected other ui
+
+@ Fixed missing Kornet FG 
+
+@ Fixed T-72B3 loadout
+
+@ ZSh-7A glass disappearing in distant lods
+
+@ SVDS NPZ small mesh issue fixed
+
+@ Fixed missing PKT muzzle flash for T-90 and T-90A
+
+@ SVDS selector fix
+
+@ BMD-1R rocket hiding
+
+@ Attempt to fix some Russians speaking English.
+
+@ BMP-1K missing hidden selection for wheels in 1st res lod
+
+@ Duplicated mesh elements for BMP-2D in 1st res lod
+
+@ Fixed initSpeed thing that broke most of muzzle velocities (i.e. KPVT & PKT had same muzzle velocity because of that)
+
+@ Fixed destruction selections on BMP-3 
+
+## REMOVED IN 0.4.1
+
+- Deleted textures that shouldn't be in AFRF repo
+
+- Removed desert EMR fieldcap
+
+- Removed repeatString function
+
+# 0.4.0.1
+
+## ADDED IN 0.4.0.1
+
++ Insurgent backpacks
+
++ Hidden-selections for SSh-68 helmet
+
++ New DHSKM/NSV/Kord sounds
+
++ VDV Desert-EMR groups
+
++ SKOL MVD uniform
+
++ Izlom Uniform
+
++ MVD OSN roles
+
+## IMPROVED IN 0.4.0.1
+
+^ Tweaked AS Val hand animation
+
+^ Weapon_plate penetration rvmat added to the AS Val
+
+^ Tweaked Tigr STS PKM zoom level
+
+^ Added zeroing for NSVT
+
+^ Tweaked pzu5 position
+
+^ Tweaked elevation limits for BMP
+
+^ Added BMP1/2 insurgent camo to VG 
+
+^ Cleaned insurgent configs
+
+^ Cleaned indentity configs
+
+^ Improved VG garage support for Ka60
+
+^ FCS autotracking improvement
+
+^ Shtora script performance
+
+^ More random heargear for infantry
+
+^ Tigr STS cargo animations for RPG-26
+
+^ Shtora sensor margin of error added
+
+^ Stacked EventHandlers for all vehicles
+
+^ Clothing UI icons added, first pass
+
+^ Decal scripts
+
+^ Retreading script performance
+
+^ New GUI elements for 1G42 optic
+
+^ Improved autoloader: T-72B variants (excluding B3) need to reload manually after each shot with the Reload key (default R). Other tanks have a sequential loading switch which can be toggled with the Swim Down key (default Z)
+
+^ Destruction textures for static weapons added
+
+^ Barrel heat refraction only visible on high graphical settings
+
+^ Added NSVT effects to T80A & T80UE-1
+
+^ RGN/O impact function reliability
+
+^ Ammo indexing
+
+^ Tanks with player manned gunner starts with unloaded main gun
+
+## FIXED IN 0.4.0.1
+
+@ AGS30 assembly
+
+@ AK103 GP25 NPZ hand animation
+
+@ Tigr AO and doors
+
+@ Virtual Garage options & parts hiding for PAK FA
+
+@ Scarf visible in 1st person view
+
+@ Tigr-M & STS plate numbers
+
+@ Igla locking
+
+@ AS Val selector fix
+
+@ Max elevation fix for T72
+
+@ Strings updated
+
+@ Missing explosion sounds for grom cannon
+
+@ Missing buoyancy parameter to BTR-80A
+
+@ Tigr STS gunner switching
+
+@ 6B28 balaclava variant chinstrap hidden-selections
+
+@ Shtora deflect script error
+
+@ Shtora animation angle inverted sometimes
+
+@ Su-25 wings not visible in pilot view
+
+@ Tgir STS AGS30 animations
+
+@ Shtora T-80UK user control actions
+
+@ Shtora detection script returning false positive sometimes
+
+@ Wrong path to proxy on T-72B3
+
+@ No-armor vest descriptions
+
+@ BMD-1P/K decals not showing
+
+@ MSV Float armored crew loadout
+
+@ Sprut-SD & BMD-4 decals not showing
+
+@ Retreading MP locality issue
+
+@ Tigr wheel shadows
+
+@ AGS30 flipping
+
+@ DshkM minitripod max elevation
+
+@ NSVT smoke positions
+
+@ PZU-5 misalignment on T90 & T90A
+
+@ T90 hatch axis
+
+@ PTS-M lowering ramp under water
+
+@ PTS-M Zeus remote control compatibility
+
+## REMOVED IN 0.4.0.1
+
+# 0.4
+
+## ADDED IN 0.4
+
++ Added PAK-FA (Thanks to Lyotchik-Snayper for his cockpit)
+
++ PSO-1M21 Reticle
+
++ GSh-30-1
+
++ AS Val
+
++ 9x39mm SP5 & SP6
+
++ 5.45x39 & 7.62x39 subsonic ammunition
+
++ VG-40MD smoke shell
+
++ GDM40 & VG40MD gear picture
+
++ Icon for RVA
+
++ RGO hand grenade
+
++ Added 'vest' with pistol holster only (for drivers mainly)
+
++ New balaclava models
+
++ VDV Desert EMR Uniform & Fieldcap
+
++ Add VDV Desert troops
+
++ Add VDV Recon troops
+
++ Tigr-M
+
++ GAZ-233014 STS
+
++ Added NV to T-90
+
++ Added armed UAZs for insurgents
+
++ SSh-68 helmet
+
++ EMR 6Sh92 back by popular demand
+
++ GP25 round visible during reloading
+
++ Gorka-R Uniforms (green and yellow)
+
++ Added grenades for the PG-25
+
++ Added buoyancy parameter to geometry of amphibious vehicles (btrs/bmps,etc) (Note: amphibious vehicles still do not work correctly)
+
++ Added gunner & commander FFV to BMD4 & Sprut-SD
+
++ Added antiwater to BTRs
+
++ Added antiwater to PTS-M
+
++ added wip BMP insurgent skin
+
++ Added working driver HUD to BMP-3
+
++ Added ML and Flora variants of 6B23 Vydra-3M
+
++ Added test version of 6B23 w/ Vydra-3M
+
++ Added auto target tracking system to Sosna-U - hold for min 1 sec lase key to acquire target. need to be in thermal mode in last optic mode (АСЦ ГОТ should be visible in right upper corner) 
+
++ Added T-90A groups 
+
++ Added Headset Spetsnaz Vest
+
++ Added shadows to EKP-1
+
++ Added new collimator effects to PK-AS, 1P63 & EKP-1
+
++ Added turret blow off to T-80
+
++ AK-103 GP25 variants
+
++ More Russian Decals (Aviation)
+
++ AK-104 and AK-105
+
++ Russian Navy Squadron Decal
+
++ Add toolboxes to Russian tracked vehicles.
+
++ New Zeus missions.
+
++ D30 howitzer
+
++ Podnos mortar
+
++ Igla AA Pod
+
++ Metis 9K115
+
++ R-74M2, R-77 and R-77M missile models.
+
++ 2DP tactical flashlight
+
++ New AKM and PK sounds
+
++ Flare launcher modes (Ctrl+C to change to timed mode)
+
++ Added compatibility with Lesh's Tow Mod
+
++ Optic tinting
+
++ Field manual entries for ground radar and shtora
+
++ New Tigrs camo versions added
+
+## IMPROVED IN 0.4
+
+^ UAZ doors can now be shot out.
+
+^ Retreading script control variables
+
+^ Infantry hitpoint system up to 1.54 spec.
+
+^ Infantry limb damage
+
+^ Short AK variants have reduced muzzle velocity
+
+^ Decal definitions moved to configs
+
+^ Added magic antirollbar param to russian vehicles to limit flipping
+
+^ Helmet balaclavas replaced
+
+^ Added drive gun lock for 2S3
+
+^ Added salvo modes for BM-21 
+
+^ 3D17 shell trajectory
+
+^ Moved a little bit folded AK
+
+^ Uniform textures dirtied up
+
+^ Moved SVD aimpoint closer
+
+^ T-72B and T-72B3 now each have there own PhysX file
+
+^ Tweaked AA missiles max speed
+
+^ Tweaked T-80 snorkel script
+
+^ Changed armor structural for Mi-8 & Ka-60
+
+^ Imporved 6Sh92 digi texture
+
+^ Improved BMP-3 interior
+
+^ Disabled reloading in tanks with autoloaders
+
+^ Configured GP-25 rounds into reload animations.
+
+^ Improved EMR cap texture
+
+^ Improved Les textures
+
+^ Ka-52 Vikhr missiles can now engage air targets.
+
+^ Fixed Mi-24 cockpit holes 
+
+^ Holstered pistols are now visible on crew officer & commander vests
+
+^ RSP-30 are no longer visible in holdsters
+
+^ Replaced RSP-30 with makarov for commander units 
+
+^ Commander turrets in tanks & IFV are now properly occupied by commander units
+
+^ Minor tweaks to BMP-3 models (hatches, shadows, etc)
+
+^ Improved eye memory points for all AKs and SVDs
+
+^ Changed T-90A turret rotation speed since it's using 2E42-4 stabilizer
+
+^ PTS-M floats
+
+^ Improved Su-25 Crow Decal
+
+^ Lowered terrainCoef for UAZ
+
+^ Raised normalSpeedForwardCoef to prevent too slow offroad speeds
+
+^ Improved collimator effect for T-72B NSVT
+
+^ Replaced random Headgear script - should not have scarfs on pilots anymore
+
+^ Cleaned up and optimized weapons further.
+
+^ Changed (and sometimes added) vehicles ui pictures in A3 style
+
+^ Tweaked some scripts to use remoteExec instead bis_fnc_mp
+
+^ Unified lead calculating functions
+
+^ Added zamerny memory point to T-80U series tanks since guided missiles were targeting lower part of hull
+
+^ Increased slightly UAZ & Ural armor to prevent almost insta death from 12.7 rnds
+
+^ Added usePIP param to Tochka-U & BM-21 to prevent head twisting
+
+^ Tweaked lead values for some weapons
+
+^ Retreading script now on all supporting vehicles.
+
+^ Tigr has openable doors/FFV positions.
+
+^ Increased PSNR-5K FOV from 30 to 42
+
+
+^ Weapon string consistency
+
+## FIXED IN 0.4
+
+@ Fixed typo at BTR cfg
+
+@ Fixed T-90A antenna.
+
+@ Fixed BTR-70 weird seat proxy position
+
+@ Fix to sound muffling
+
+@ Fixed curator scope for patchless uniforms
+
+@ Fixed BMD-2M FCS
+
+@ Added some missing mags to virtual arsenal
+
+@ AK-103 NPZ GP-25 can now load GP rounds.
+
+@ Updated mags and fixes for VDV units.
+
+@ BMP-1/2 PhysX 
+
+@ T-72B3/T-90 MaxSpeed
+
+@ PTS-M PhysX 
+
+@ T-80/U PhysX
+
+@ Fixed BTR driver visibility
+
+@ Fixed some missing sounds in radio protocol (wip)
+
+@ RGN impact sounds
+
+@ T72B3, T90A, BMP3 late & M have now EMR crews
+
+@ Fixed some visual bugs in Plissa/Agava FCS
+
+@ Fixed missing barrel in gunner lod for T-72 with TPD-K1 sight
+
+@ Fixed T-72 indep flag removal script
+
+@ Fixed T-72 traverse sound (bad sample compression)
+
+@ Fixed minefield module
+
+@ Fixed Mi-24 sound configuration
+
+@ Fixed commander mem point for T-90 commander
+
+@ Fixed BTR-80 recoil
+
+@ Fixed dangerCrew.fsm throwing errors about unknown dangercause (caused by introduction of suppressive fire by BIS in 1.40)
+
+@ Fixed some "Error compiling '0.5 * (HitEngine1 + HitEngine2)' in 'HitEngine1'" rpt errors
+
+@ Fixed TR8 PIP variant scripts
+
+@ Missing headlight proxies for rhs_btr60.p3d
+
+@ Magnified scope ranging (PSO/1P29/PGO)
+
+@ AK-103 NPZ GP-25 can now load GP rounds.
+
+@ Silencers no longer reduce muzzle velocity
+
+## REMOVED IN 0.4
+
+- Disabled AINET until better solution is found 
+
+- Removed thermal monitor from early bmp3s visible in cargo view
+
+# 0.3.9.1
+
+## ADDED IN 0.3.9.1
+
++ GDM-40 Smoke grenade
+
+## FIXED IN 0.3.9.1
+
+@ CBA Compatability fixed
+
+# 0.3.9
+
+## ADDED IN 0.3.9
+
++ T-80UK
+
++ T-90A
+
++ PTS-M (=SappeR= and пионер)
+
++ ERA effects for T-72B K1 bricks
+
++ AINET smart fuse for T-80UK, T-80UE-1, T-90 and T-90A
+
++ New YakB sounds
+
++ 125mm SABOT petals model ejects after shot fired
+
++ 125mm ATGM pusher muzzle effect
+
++ New Mi-24 sounds
+
++ New GP-25 sounds
+
++ 125mm & 100mm cannon recoil (singleplayer only)
+
++ PSNR-5K Tall Mike radar functionality to BRM-1K
+
++ Option to disable/enable FCS target lead (RHS option screen)
+
++ RGN Impact Grenade
+
++ Adding insurgent uniforms to VA
+
++ Added missing PROPREFIX for rhs_c_cti_indep and rhs_c_identity
+
++ Fully functional Shtora active protection system to all applicable vehicles 
+
++ Russian Ammo crates (non-virtual)
+
++ 902A/B smoke launcher sounds
+
++ ERA explosion sound effect
+
++ Added BMP-3M & T-90 groups
+
++ Added turret popping effects for T-72 and T-90 tanks
+
++ RHS_fnc_vectorRandomize
+
++ 9E154 proximity fuse for 100mm HE-FRAG 3UOF19-1 (airburst)
+
++ Added Insurgent camo to Insurgent BM-21
+
++ Added BMD-1 to Insurgent faction.
+
++ Added BTR-60 to Insurgent faction.
+
++ T-72 Garage icons
+
+## IMPROVED IN 0.3.9
+
+^ Mountain Flora Texture
+
+^ Added aiAmmoUsageFlags to ammo
+
+^ EMR texture
+
+^ Reduced AZP-23 dispersion
+
+^ BMP-3M and BMD-4M loaded with 3UOF19-1 rounds
+
+^ HEAT simulation
+
+^ T-80U tanks smoke grenade enchancements
+
+^ Increased exhaust smokescreen lifetime and size
+
+^ Tochka-U wheel textures improved.
+
+^ Lowered engine and surface volume for UAZ/sounds.hpp and Ural/sounds.hpp
+
+^ Audible gun range increased to current A3 standards for russian weapons
+
+^ 3D17 smoke effects
+
+^ Arma 3 will now use RedHammerStudios as pbo author in rpt
+
+^ Countermeasure controls & reload time
+
+^ T-80UK dazzlers
+
+^ Adjusted mirror position for all Gaz-66 trucks
+
+^ Updated mod logo
+
+^ Updated Ural instrument gauges
+
+^ Tigr Cockpit gauge animation fixes
+
+^ Added descriptions to 2S3 shells
+
+^ Improved BMP-3 res lods
+
+^ Major tweaks to all FCS scripts
+
+^ Changed elements in proxies to better handle retexturability for BMP-2
+
+^ Reduced T-72 sound volume
+
+^ Reduced minimal lase range for few vehicles
+
+^ PhysX handling improvements across all vehicles
+
+^ Short descriptions for RPG ammo
+
+^ Improved T-90 topspeed and acceleration
+
+^ Smoke generator screen blocks AI visibility
+
+^ Reduced timeToLive for heat penetrators
+
+^ Standarized a little bit HEAT hit values so new & old system go along a little better
+
+^ Tweaked tank positioning in groups
+
+^ Experimental change of unit position in group for bmp1 squads - should be working much better with zeus
+
+^ Converted T-72B obr89 to new damage model
+
+^ Tweaked displayNameShort for AT rockets
+
+^ Improvements to CE armor system
+
+^ Vehicle smoke generator will now turn the engine on if required
+
+^ GAZ-66 Stringtables and configs cleaned up
+
+^ Finalized early T-90 (no FLIR sight and exhaust changed to the old one)
+
+^ Zues compatibility for weapon fire camera shake
+
+^ Updated TR8 model, textures and RVmat
+
+## FIXED IN 0.3.9
+
+@ Sprut-SD FCS laser timing
+
+@ Zeus works on dedicated servers
+
+@ Coaxial mg exit points fixed on T-72 family tanks
+
+@ Fixed damage selections for T-80U
+
+@ Fixed t-72 reverse speed
+
+@ Grenade names in UI
+
+@ Rocket pod sound looping
+
+@ Rebel T-72 flag now disappears on all clients
+
+@ Mi-8MTV3 cargo places reduced to 13 in line with proxies
+
+@ Transparent PKM cover on Mi-8MTV3
+
+@ Cargo capacity on BTR series reduced to 7
+
+@ Fixed some proxies not hidden after destruction
+
+@ Fixed some alpha sorting issues on T-72B3
+
+@ GP-25 no longer plays hide and seek game during NPZ mounting
+
+@ Major stringtable fixes (Schmeisser)
+
+@ Smoke generator network fix
+
+@ Fixed first person view for drivers in T-90 & T-72B3 obr12
+
+@ Fixed broken Fire Geometry on T-72B obr89
+
+@ Reversed joystick controls on Mi-8
+
+@ Tweaked Mi-8 hitpoints
+
+@ Vehicle crews can now access their countermeasures
+
+@ Fixed 1PN93-2 double illumination
+
+@ Fixed wrong selections in bmp3_early.p3d res lod
+
+@ Fixed typo for malyutka penetrator
+
+@ Wrong skirt texture in one of the lods of T-90 and T-72B3
+
+@ Fixed GAZ-66 R142 ladder visible in res lods
+
+@ Fixed mirrored UV islands for BMP3 left mirror
+
+@ RHS mines removed from minefield module, making it work again
+
+@ Gravity geo boxes selection removed to avoid ingame collision
+
+@ Fixed decals alpha sorting on t80ue & m45
+
+@ Helicopter Pilots should not have random facegear from now on
+
+@ Weapon default FOV changed to 0.25
+
+@ 6Sh92 fixes
+
+@ Fixed T-80UK texture compression error and smoke cap
+
+@ Commented out EMR 6Sh92s
+
+@ Minefields mines didnt explode
+
+@ Covered up some AO errors on T-90 turret
+
+@ BMP-3 servo sound
+
+@ BMP-3 editor icon size
+
+@ Fixed dark spot in PKM from compression making the rounds look struck.
+
+@ 2S25 & BMD-4 servo sounds
+
+@ Fixed wrong bis_fnc reference and missing scope errors for headgear randomization
+
+@ Fixed Texture Glitch on Tigr 
+
+@ Exhaust cover supports are no longer visible when exhaust covers are missing on Mi-24
+
+## REMOVED IN 0.3.9
+
+N/A
+
+# 0.3.8
+
+## ADDED IN 0.3.8
+
++ AKM / AKMS have new DTK-1L muzzle attachment
+
++ Class documentation http://class.rhsmods.org
+
++ Implements engine smoke screen for more vehicles
+
++ Simulation of tandem HEAT warheads
+
++ Initial injection of female heads
+
++ 3D17 smoke shell p3d
+
++ T-90
+
++ New textures for BMP-3
+
++ New autoloader sound for Russian tanks (vlad_8011)
+
++ TR-8 Periscope (several test versions)
+
++ Add RU RPG7 AT class
+
++ Heat diffraction effects for weapons
+
++ Sabot discard model
+
++ Added 5 guerilla uniforms to replace default uniforms, equipped all existing troops with these uniforms.
+
++ Added guerilla crewman for vehicles
+
++ PDU-4
+
++ Ability to disable vehicle decals with object variables RHS_Decal_Enabled, RHS_Decal_Symbol_Enabled & RHS_Decal_Number_Enabled (see wiki)
+
+## IMPROVED IN 0.3.8
+
+^ Update PKM & PKP weird bipod as side attachment
+
+^ Deleted arbitrary rear sight from PMM in pilotview LOD
+
+^ Some WIP work on FCS calculations (BMD-4/T-72B3,etc)
+
+^ Reduced DPM AK5 muzzle flash size
+
+^ Corrected Sprut geometry as smoke grenades were colliding with physx geo
+
+^ Replaced bis fired EH for Sprut & BMD-4
+
+^ Altered colours of the two Beanie hats to be less desaturated and white.
+
+^ Brighter 3D17 spark
+
+^ Minor rhs_effectFiredSmokeLauncher improvements
+
+^ Minor RAM compatibility changes
+
+^ BMP-3 is now using rhs driver visor
+
+^ Damage and penetration values updated for AFRF heavy AP rounds
+
+^ Mi-24 model improvements
+
+^ Improved CTI soldiers XEH compatibility
+
+^ Corrected BTR-80 NV light type
+
+^ Corrected T-72 wheel geometry
+
+^ Increased lead calc speed
+
+^ insideSoundCoef added and adjusted to all vehicles to provide better compatibility with ACRE
+
+^ Improved RPG-26 and RShG-2 peephole for easier sighting
+
+^ Reduced smoke of RPG-26 and RShG-2
+
+^ Various lod fixes for T-72B3 and T-90
+
+^ FCS improvements
+
+^ Added guerilla wounds
+
+^ Reduced shine of guerilla uniforms
+
+^ Added backpack filled with ammunition
+
+^ Added Insurgent flag
+
+^ Magazines hidden when no magazine equipped for AKs
+
+^ Explosion and crater effects of HE rounds improved
+
+^ Removed vanilla backpacks for Indie AT and AA gunner
+
+^ 3D17 smoke & sparks LODs
+
+^ 3D17 smoke optimization
+
+^ Improved FCS calculations & added gun offset script
+
+^ BMP-1/2 inplace turning improved
+
+^ BMP wheelCircumference more accurate
+
+^ Added reslods for BMP-3
+
+^ Increased T-72B3 & T-90 turret rotation speed
+
+^ Improved BMP-3 shadows
+
+^ Changed shape of new style field cap to be more rounded. Original was too long and looked daft.
+
+^ Changed TFA classes as requested by author.
+
+^ Added some missing items in virtualAmmoBox.sqf
+
+^ CTI: equipment is now handled by virtual arsenal
+
+^ CTI: changed MHQ to FMTV MHQ & Gaz66 R142
+
+^ CTI: changed AI groups - ai should be more aggressive & use armor
+
+^ CTI: added ability to remote control AI units in own group
+
+^ CTI: restored headless client support
+
+^ CTI: adding TF LR radios if TFAR is detected
+
+^ Added custom arsenal function to prevent load bug
+
+^ Greatly improved 902B/3D17 smoke salvo performance
+
+^ Better overall 3D17 smoke performance
+
+^ Slighlty increased Mi-24 hitpoints armor
+
+## FIXED IN 0.3.8
+
+@ Fixed T-80UM alpha decals sorting
+
+@ CTI: fixed initial gear (missing DTK on AK)
+
+@ CTI: Fixed black icons in purchase menu
+
+@ Added workaround for tanks stuck in place
+
+@ Numerous fixes to female heads module
+
+@ Commented out old gear configuration 
+
+@ Fixed damage textures for T-72B3, BMP-3
+
+@ Fixed Mi-8AMTSh w/ UPK rocket count
+
+@ Fixed side = 0 bugs with groups
+
+@ BMP-1 decals added to last lod
+
+@ Fixed buggy soldier leg memory points
+
+@ Removed empty visual lod from BTR-80A
+
+@ Fixed ammo cost for shells 
+
+@ Fixed RU accessories wrong inherited inertia values
+
+@ Fixed remaining decals on BTR-60 after being destroyed
+
+@ Fixed BMD-2 FCS not appearing
+
+@ Kh-29 can lock
+
+@ Fixed soldiers not having put in their weapons.
+
+@ Fixed wrong texture assignments and proxies in T-72B3 lods
+
+@ Fixed duplicate names in decal inits, possible fix for JIP problems
+
+@ Fixed turret elevation angled on the BTR-80/A
+
+@ Fixed BTR-80 recoil
+
+@ Fixed ATGM FCS calculations - close T730
+
+@ Fixed T80U recoil - close T732
+
+@ Fixed bug with folding/unfolding AK74M (plum mag)
+
+@ Fixed Gaz-66 R142 mast res lod bug
+
+@ Fixed Tigr dashboard always shining
+
+@ Fixed high VOG 6B23 armor
+
+## REMOVED IN 0.3.8
+
+- Removed legacy bipod stuff
+
+- Removed legacy smoke launcher from Sprut-SD commander
+
+- AKM / AKMS can no longer support DTK4 silencers
+
+- Commented out some Kart DLC sounds in rhs_weap_pistols.hpp
+
+# 0.3.7
+
+## ADDED IN 0.3.7
+
++ Added plissa to T80UE1
+
++ Added R-142 deployed configuration
+
++ Variant of the 6B13 rigged with 6Sh92
+
++ Added DTK-4 (Short)
+
++ Added DTK-4 (Long)
+
++ Added traverse sound for T-72 & T-80 (more to come later)
+
++ Added AK5 muzzle flash hider
+
++ Added DTK-4 (7.62)M
+
++ T-72B3 now uses experimental armour system (depleting ERA, Improved penetration)
+
++ Added Gurdys M88 uniform (plus strings)
+
++ Added hasBipod param to weapons with integrated bipod
+
++ AIS/RAM compatibility & support for tandem HEAT warheads
+
++ Added category class to vehicles (fixes ZEUS cost module recognition + 3rd party mods may use it for better vehicle class recognition)
+
++ Added new AK reload animation (now follows AFRF Doctrine - One hand manipulation)
+
++ Added some missing authors to rifles
+
++ Added easy deployment script - [tochka,1] spawn rhs_fnc_ss21_AI_prepare
+
++ Added deployment anim available at VG
+
++ Added flatbed variants for GAZ-66 & Ural 4320
+
++ Added Polish stringtables by Gienkov
+
++ Added 1P78
+
+## IMPROVED IN 0.3.7
+
+^ Changed metal_plate penetration material to new weapon_plate for russian weapons
+
+^ Matched the AK reload sounds with the modified animation
+
+^ Removed military decals from civilian trucks
+
+^ Added hatch management function for T-72/T-80 NSVT (should improve MP stability)
+
+^ Unified Russian weapon inventory icon facings.
+
+^ Updated RU hitpoint & armor values (no longer the RU faction inherits values from alien factions with an additional armor; now inherits values from AAF )
+
+^ Updated RU vests.
+
+^ Improved Tochka-U scripts
+
+^ Added reslods to russian muzzle brakes
+
+^ Tweaked T-72B3 FG
+
+^ Tweaked T-72B NSVT in FG
+
+^ Tweaked BMP3 loadout
+
+^ Fixed visible proxies after destruction for BMP-3
+
+^ Tweaked BMP3 loadout
+
+^ Added lodnoshadow=1 param to BMP-3 proxies
+
+^ Updated CTI Insurgents (adding AKM + GP25)
+
+^ Tweaked AKM ironsights
+
+^ Corrected RU Grenadiers vests value for coherence sake.
+
+^ Tweaked UPK23 smdi
+
+^ Tweaked HeadAimDown param for SU-25 - targeting of AG targets
+
+^ Added AK103 inventory pictures
+
+^ Lowered disposable RPG mass
+
+^ Scoped = 1 patchless soldiers till they receive proper names
+
+^ Improved T-80B & T-80A FG + Added ERA hidding after depletion
+
+^ Added ability to hide light covers in VG for UAZ, URAL & GAZ-66
+
+^ Added res lod to PMM
+
+^ Added experimental new method for FCS calc together with new data for 3bm42m & 3bm46
+
+^ AKM/AKMS default sights zeroed to 350M
+
+^ Sprut has now a better tankturnforce
+
+^ T-80s now accelerate better and faster
+
+^ All T-80s now use the 4-box system for weight distribution
+
+^ Added reslods to PKM & AKM
+
+^ Added SU-25 to zeus CAS module
+
+^ Added Russian mines to mine module
+
+^ Added shadows to PRV-13
+
+^ Tweaked cargo poses on BTR-80A
+
+^ Retimed anim sources on AK rifles to fit new character animations
+
+^ Replaced networked variable with animationPhase
+
+^ Corrected PKM ammo box dimensions and handle size
+
+^ Added pivot points to some AK74M rifles
+
+^ Tweaked Tochka-U nuke script
+
+^ Added missing gunner hatch shadow to T-80B & A
+
+^ Updated RU vehicles water fording - Close T597.
+
+^ Added some VG support for BTRs
+
+^ Tucha smoke launcher system reworked
+
+^ Smoke generators Added to some vehicles [Ctrl+C to change coutermeasure mode, C to deploy while engine running]
+
+^ Updated RU Stringtables Spanish translations
+
+^ Add parachute to SU-25 Pilots
+
+^ Changed folded AK hand anim
+
+^ Added more vehicles to insurgents
+
+^ Added deploy pivot memory point to east weapons
+
+^ Improved destruction materials for ka52 & mi24
+
+^ Added support for VG for most of vehicles
+
+^ updated ASDG jr compatibility code for marksman dlc
+
+^ Improved cockpit model in exterior res lod for mi24
+
+^ Added all RU Weapons to Zeus/Editor spawn list
+
+^ Added some missing elements in FG for T-72 (searchlights, nsvt, etc)
+
+^ Improved TFAR compatbility: LR Radios based on vehicle data
+
+^ BTR-80 and 60 crew proxies moved to prevent clipping through hull - closes issue T634
+
+^ Added automatic loading of disposable launchers for player (to prevent dumb looking loading of such launchers)
+
+## FIXED IN 0.3.7
+
+@ Fixed canFloat param on BMP-1/2
+
+@ Fixed SU-25 lights
+
+@ Fixed wrong inheritance of camo ak74m (scope = private error)
+
+@ Fixed FCS scripts
+
+@ Fixed T-80u missing sources errors in rpt
+
+@ Fixed control sticks inverted movement in mi8 & ka52
+
+@ Fixed mi24 gunner memory point
+
+@ Fixed FFV issue for mi24 & BTR-80s
+
+@ Fixed hidding second antenna for command versions of BMDs
+
+@ Fixed transparency issue with T-80B NSVT collimator
+
+@ Fixed Pchela 1-t rpt errors
+
+@ Fixed warped faces on PMM slide
+
+@ Fixed warping ploys on PMM slide in viewPilot LOD
+
+@ Fixed cargosystem lod issue
+
+@ Fixed BMD-1/2 init not working
+
+@ Fixed fording depth for tanks with snorkel
+
+@ Fixed some BMP-3 .rpt errors
+
+@ Corrected supply points for Ural & BTRs
+
+@ PK reload sounds are now in sync again.
+
+@ Fixed 6Sh-92 headset cliping
+
+@ Fixed T-80UE-1 loadout
+
+@ Fixed grey SU-25 Kh29 loadout
+
+@ Fixed BMP-3 turnedout anim
+
+@ Fixed BMP-2/BTR-80A sight script
+
+@ Fixed T-80A weight
+
+@ NVG visible for uaz open passangers
+
+@ Fixed snorkel script not working with commander/gunner inside due to Changed anim names
+
+## REMOVED IN 0.3.7
+
+- Removed BIS FCS ranges from 2S3
+
+# 0.3.6
+
+## ADDED IN 0.3.6
+
++ GSSh-A-18 Headphones for transport pilots
+
++ Camo Tigr 
+
++ Added UPK23-250 pods
+
++ Tigr FFV version
+
++ Tochka-U 
+
++ RSP-30 flares
+
++ PBS-1 and TGP-V Sound suppressors
+
++ AK-103 (various variants)
+
++ AKM
+
++ AKMS
+
++ PKM (Thanks to RobertHammer and Sarvs/SAM61) http://gamebanana.com/models/3207 for non-commercial license info!
+
++ Makarov PMM handgun
+
++ DTK-1, DTK-3 muzzle break. Standard AK-74/AK-103 DTK now detachable. Muzzle breaks have recoil compensation enabled.
+
++ T-80UE-1, T-80UM, T-80U (M45)
+
++ 6B13 Vest (various variants)
+
++ 6B26 Helmet (various variants)
+
++ 6B27M EMR-Summer ESS/Balaclava variants
+
++ Suppressed sounds for the SVD Dragunov with TGP-V
+
++ NPZ mount (to allow picattiny scopes)
+
++ BMP-3 remodelled
+
++ Added Mountain Les 6B27M variants
+
++ Added MSV EMR, VDV Flora and VDV Mountain Les infantry to editor
+
++ Added more Mi8, Mi8MT, Mi24 and Ka52 variants
+
++ Added 6Sh92 as a standalone vest (without 6B23)
+
++ Radio chatter in vehicles
+
++ Added beanies
+
++ Added PZU5 sight for T-80A & T-80UE1
+
+## IMPROVED IN 0.3.6
+
+^ Joint Rail supported
+
+^ Vanilla accessories supported
+
+^ Stringtable translated to Spanish
+
+^ Stringtable updated for Russian and German.
+
+^ Added cargo system to BTR-60, 70 & 80 (you can now ride ABOVE them) (early WIP)
+
+^ Tweaked SVD hand anim
+
+^ Added 350m zeroing to PSO-1
+
+^ Added 9M47 model to PRP-3. Flare mortar now functional.
+
+^ T80B & T80BV NSVT is usable by commander when turned out
+
+^ Added new FAE effect (S8 DF/RShG2/TGB7)
+
+^ Added thermal camera view to Ka52 cockpit
+
+^ Tweaked headgear config - Added hidden selections for retextures
+
+^ Zeroing of 1P29 now set from 400 to 1000m
+
+^ 1P29 now has tritium illumination for night operations.
+
+^ Added night illumination for PSO-1 and PGO-7V3 sights (N key)
+
+^ Added camera shake to ZSU
+
+^ Added misc heli variants - UPK, CAS, FAB, Cargo (mi8 without PKTs, with FFV positions & animated doors)
+
+^ Added Su25 w/ Kh29 rockets variant
+ 
+^ Added random Mi24 skins script
+
+^ Added new rockets for S8 (FAE/tandem HEAT)
+
+^ Added CE penetration to S8 heat rockets 
+
+^ Added VV Shevrons
+
+^ Tigr PhysX updated
+
+^ Now clan patches can be used in Russian uniforms
+
+^ Tweaked RPG7 animation
+
+^ Ka-52 missiles uses proxies now (empty tube after shot)
+
+^ Tweaked CE penetrator behaviour (reduced timeToLive)
+
+^ Tweaked Mi24 damage selections
+
+^ Improved BTR-80 destruction materials
+
+^ Updated BMD series Physx
+
+^ Updated BMP-3 Physx
+
+^ Randomized scarf distribution
+
+^ Added numberphysicalwheels to Tigr
+
+^ SS21 PhysX and Buoyancy update
+
+^ Improved Russian flares intensity 
+
+^ Tweaked AK-74 hand anim
+
+^ Updated all grey aircraft textures (color unification)
+
+^ Tweaked 6Sh92 standalone variants to fit better on un-armoured bodies.
+
+^ BTR gunner & commanders may use compass now
+
+^ Added 7.62 mag in RU ammobox
+
+## FIXED IN 0.3.6
+
+@ Tweaked armor values of gear, so they can be displayed in the Virtual Arsenal
+
+@ Fixed UPK23 gun smoke position
+
+@ Fixed Mi8AMT door animations
+
+@ Fixed T-72B weapon magazines
+
+@ T-72B: reduced tankTurnForce (turning was too sensitive)
+
+@ Fixed UAZ open passenger seat
+
+@ Missing scope proxies from rifle lods
+
+@ Tweaked T-72 & T-80 loadouts
+
+@ Su25 corrected max speed to real value. 
+
+@ Tweaked 2A28 - AI should switch now between HE/AP rounds
+
+@ Reduced NSVT damage
+
+@ Fixed road wheels shadows + reduced amount of sections in shadow lod
+
+@ Corrected URAL hidden selection textures
+
+@ Fixed textures in patchless uniforms
+
+@ Fixed helicopters UPK23 tracer start point
+
+@ Increased hull minimalHit for BMP, BMD & Sprut-SD
+
+@ Tweaked BMD4 hitpoints position
+
+@ Fine tunning BMP/BMD tracks hitpoints
+
+@ Tweaked smoke grenades
+
+@ Fixed BMD-4 PhysX
+
+@ Fixed infinite last mag ammo when folding/unfolding
+
+@ Added lockWhenDriverOut = 1; to T-72 main turret
+
+@ Fixed T-72 shadows + Added shadows for NSVT
+
+@ Tweaked T-80 loadouts
+
+@ Fixed T-72B3 main shadow
+
+@ Tweaked OG7 and TGB7 penetration
+
+@ Added minimalHit to BTR turrets
+
+@ Inertia Tweaked
+
+@ Slowed down RPG reload anim (for realism sake)
+
+@ Fixed visibility of NSV bags
+
+@ Fixed Ataka missiles proxies
+
+@ Fixed URAL RPM indicator
+
+@ Tweaked Yak-B sound configuration
+
+@ Fixed missing muzzle flash on AK-74M w/ GP25
+
+@ T-80 2A26 can not longer use ATGM (as in Real life)
+
+@ Fixed missing muzzle flash for Mi24 (main armament)
+
+@ Fixed missing FFV for Mi24 variants
+
+@ Fixed Mi24 gun tracers
+
+@ Fixed ZSU destruction effects
+
+## REMOVED IN 0.3.6
+
+- Mi8AMT Cargo variant
+
+# 0.3.5.1
+
+## ADDED IN 0.3.5.1
+
++ Added FCS to BMP-3
+
++ Added AK-74M with plum magazine
+
+## IMPROVED IN 0.3.5.1
+
+^ Enabled retexturing with setObjectTexture command on UAZ & Ural
+
+^ HotFixed .rpt spam
+
+^ Reduced cost for Igla ammo
+
+^ Tweaked vest capacity
+
+^ Tweaked T72 NSVT handle anim
+
+^ Tweaked BMP front armour
+
+^ Added pedal anims to Mi-24, Ka-52 and Mi-8
+
+^ Added AGM_fuelCapacity parameter
+
+^ Added brake lights, shadow res lod & did small clean up in properties for BMP
+
+^ Added hidden selections to BMPs, BTR-80, Tigr & 2S3
+
+^ Reduced 2A42 dispersion
+
+^ Added deletion of AI disposed AT launchers after 300s
+
+^ Added missile reticle to BMP-2
+
+^ Fixed RShG-2 texture
+
+^ Improved Ka-52 HUD and MFD
+
+^ Added warning lights to Mi-24 cockpit
+
+^ First implementation of 2P130 in PRP-3
+
+^ Tweaked zeroing options for pso1
+
+## FIXED IN 0.3.5.1
+
+@ Add additional AK mag with no tracer rounds, remove tracers from SVD mags,
+
+@ Increased wheels armour for BTRs
+
+@ Increased tracks armour for BMD & SPRUT-SD
+
+@ Corrected firing angles for rear mi8amtsh gunner
+
+@  AK-74M folding disabled in vehicles
+
+@ Engagement of air targets with Yak-B Fixed
+
+@ Fixed RShG-2 zeroing
+
+@ Removed FFV positions from Kung GAZ-66
+
+@ Fixed some letters in FCS UI didnt show correctly
+
+@ Fixed zeroing for APCR shells in BMD-4 FCS
+
+@ Fixed Tigr and BTR-80 brake lights
+
+@ Fixed BTR-80 KPVT shadow
+
+@ Fixed some instruments in Ka-52 cockpit
+
+@ Fixed some Russian translations
+
+@ Removing alien technology from ZSU, the Russians will have to wait until 2035 to get them back...
+
+# 0.3.5
+
+## ADDED IN 0.3.5
+
++ Added: T-72B3
+
++ Added: Custom sounds for all heavy and light weapons
+
++ Added: ZEUS mission
+
++ Added: Mi-24 with sling load rack
+
++ Added: EKP-1S-03 
+
++ Added: 1P63
+
++ Added Kobra reticle [press <kbd>Num /</kbd> to change reticle (default secondary optics mode key)]
+
++ Added camo selection for vests (using hidden selections)
+
++ Added FCS calculations for PKT in BMD4
+
++ Added rpg7 magazines models
+
++ Added hint if extended armour is turned on & there are RHS vehicles on the map
+
++ Added Gaz-66 Ammunition resupply truck
+
++ Added A2 RPG7 reload animation
+
++ Added: Flora boonie hat
+
++ Added reload sequences to AK74M rifles
+
++ Added 1PN93-2 sight (Night sight for RPG-7V2)
+
++ Slingload feature Added to appropriate vehicles
+
++ Fire From Vehicles Added to appropriate places
+
+## IMPROVED IN 0.3.5
+
+^ Compatibility with other mods using Su-25 and Ka-52 in terms of skeleton manes
+
+^ Improved Mi-24 Advanced Flight Model configuration
+
+^ Damage scripts for vehicles
+
+^ HEAT penetrator behaviour
+
+^ Less debug info in RPT from certain scripts
+
+^ Gear change animations
+
+^ RPG-26 and RShG-2 functionality improvements
+
+^ Reduced helmet armour
+
+^ Tweaked damage textures for BTR-60, ZSU-23-4, UAZ & URAL
+
+^ Tweaked T-72B obr. 1985g & T-80BV hitpoints
+
+^ RequiredVersion Added to all folders
+
+^ General cleanup of unused resources
+
+^ RPG-7V2, SVD resolution and shadow improvements
+
+^ Resolution and shadow improvements for all scopes
+
+^ Buoyancy improvements for all vehicles (TankX based vehicles still cannot maneuver in water)
+
+^ Tweaked Mi-24 cargo shadows
+
+^ Tweaked Su-25 shadows
+
+^ Added cfgPatches entries to a3 stuff for better compatibility
+
+^ Tweaked ammo values
+
+^ Tweaked destruction materials for Tigr
+
+^ Tweaked RPG-26 position while on back
+
+^ Improved BTR-s geometry convexity
+
+^ Texture improvements for RPG-7V2 and PKP
+
+^ Hind texture tweaks
+
+^ TM-62 and PNM-2 mines are triggered by magnetic targets of >200kg
+
+^ Increased Tigr engine armour
+
+^ T-72B model improvements
+
+^ Added new driver optics to 2S3
+
+^ Improvements of Gaz-66 gearbox
+
+^ Changed inertia for MGs
+
+^ Tigr interior updated with better camo and normals file
+
+^ Reload sounds for AK family, PKP
+
+^ Added bipod functionality to PKP (Ctrl+C)
+
+^ Some infantry units now have scopes
+
+^ PhysX Update for UAZ
+
+^ Added cannon fire camera shake for RU air vehicles
+
+^ Increased 7.62 round damage
+
+^ Added motor burning texture to rpg7 projectiles
+
+^ Improved firegeo and shadows of T-72B
+
+^ Improved damage handling script (performance optimizations)
+
+^ New engine and suspension dataset for Gaz Tigr 
+
+^ New damage textures for older T-80s 
+
+^ Small torque curve corrections for BMP1 and BMP2
+
+^ UAZ name Changed to newer model
+
+^ RPG gunners will now attack helicopters with PG-7V rockets
+
+^ Enabled T-72B commander NSVT
+
+^ BTR geometry fixes
+
+^ Added stock fold functionality to simple AK [<kbd>Ctrl+C</kbd>]
+
+^ Removed ability to mount optics on folded AK
+
+^ Removed radar from Mi-24
+
+^ Correct ranging for PGO-7V3 sight
+
+^ Added editing zone size param to ZEUS missions
+
+## FIXED IN 0.3.5
+
+@ Damage and hitpoints on helicopters
+
+@ Graphical glitches on BTR-70 and BTR-80
+
+@ Missing ; token in BMP-2 PhysX config
+
+@ MaxFordingDepth for all vehicles
+
+@ Flying ESS goggles in distant LODs
+
+@ Residual NV grain effect for some custom FCS
+
+@ Commander FCS for BMD-4
+
+@ T-72B group names
+
+@ Gear change & wipers sound using animationSourceSound
+
+@ AI not engaging Ka-52
+
+@ Fixed T-80U some proxies not hiding on destruction
+
+@ Decals breaking if URAL and Tigr were on the same map
+
+@ Snorkel script
+
+@ Fixed Ataka resolution LODs order
+
+@ Fixed Mi-8 rpt enginehit errors
+
+@ Fixed PRP-3 using BMP-1 physx config instead of BMP-2
+
+@ Internal shadows in BMP-1/2
+
+@ Lights selections on T-72
+
+@ Added missing VV BMP-2 variants to cfgPatches
+
+@ Commander triplex uv maping on BTR-70/80
+
+@ Mi-8 cruise speed
+
+@ Commander optics stabilization on T-80
+
+@ Changed M112 ATGM to M119 on T-80A/U
+
+@ Changed T72 FCS laser & PL1 - should improve AI behaviour in T72, T80 (without letter) & Sprut-SD
+
+@ Reduced Mi24 fuel consumption rate
+
+@ Tweaks to TGP-A silencer
+
+@ Fixed some errors in 1G42 & 1G46 FCS
+
+@ Removed unused muzzleFlash effects entries
+
+@ Missing gunner getin dir memory points for UAZ open
+
+@ Fixed welcome screen handler
+
+@ Replaced TKN-1S with TKN-3 on BTR-80
+
+@ Removed wire cutter from pilot view of UMTBS backpack
+
+@ Reduced door action range on mi24
+
+@ Fixed last resolution LOD of 6B23 with 6Sh92
+
+@ Fixed some RPT errors (Ural missing oil source, cannot create FXcatridge_big, missing sections in diagnostic build)
+
+@ Fixed non closed structure on T-80U turret proxy shadow (shadow artefact)
+
+@ Fixed BMD-4 grain effect in driver optics
+
+@ Fixed Sprut-SD elevation bug
+
+@ No crosshair on 3rd person for Russian armament
+
+@ 2S3 gunner view issues
+
+@ Fording depth for Ural increased
+
+@ Gaz-66 Repair vehicle (No repair options)
+
+@ Decals on T-80s disappear on destruction
+
+@ Arma 2 vehicle thermal map fixes
+
+@ Removed driver triplex zoom
+
+@ Fixed Mi-8 AMTSh muzzle flashes
+
+@ PSO ranging and zeroing correct
+
+## REMOVED IN 0.3.5
+
+- Removed HMD from Ka-60
+
+# 0.3.0
+
+## ADDED IN 0.3.0
+
++ Weapons: SVD, PKP, RPG-7V2, RPG-18, RShG-2, Strela
+
++ Scopes: 1PN93, 1P29, PK-AS and PSO-1-M2
+
++ IFVs: PRP-3, BRM-1K, BMD-4 and BMD-4M
+
++ APC: BTR-80 and 80A, BTR-60PB
+
++ Tanks: T-72B, T-80U and 2S25
+
++ Artillery: 2S3 and BM-21
+
++ Anti-Air: ZSU-23-4
+
++ Trucks: GAZ-66 various kungs, Typhoon
+
++ Car: GAZ Tigr
+
++ Radars: P-37 and PRV-13, various kungs
+
++ Aviation: Mi-8, Mi-24, Ka-52, Su-25 and Ka-60
+
++ Troops: EMR-Leto uniforms for both VDV and MSV. Mountain-Flora uniform. Pilots.
+
++ Gear: all gear separated from uniforms
+
+## IMPROVED IN 0.3.0
+
+^ PhysX, Advanced Flight Model
+
+^ Improved, realistic scripted FCS
+
+^ Russian voice protocols
+
+^ Sling loading and FFV-ready
