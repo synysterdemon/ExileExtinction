@@ -96,7 +96,8 @@
 13, Exile_Weapon_Colt1911   // Colt 1911
 13, Exile_Weapon_Makarov	// Makarov
 13, Exile_Weapon_Taurus		// Taurus
-13, Exile_Weapon_TaurusGold	// Taurus (Gold)
+1, Exile_Weapon_TaurusGold	// Taurus (Gold)
+//Modded Pistols
 
 > PistolAmmo
 20, 11Rnd_45ACP_Mag				// 4-five
@@ -109,27 +110,33 @@
 20, Exile_Magazine_7Rnd_45ACP	// Colt 1911
 20, Exile_Magazine_8Rnd_9x18	// Makarov
 20, Exile_Magazine_6Rnd_45ACP	// Taurus
+//Modded Pistol Ammo
 
 > PistolAttachments
 36, muzzle_snds_L
 36, muzzle_snds_acp
-14, optic_Yorris		// No one needs this crap
+14, optic_Yorris		
 14, optic_MRD
+//Modded Pistol Attachments
 
 > Shotguns
 1, Exile_Weapon_M1014	//M1014
+//Modded Shotguns
 
 > ShotgunAmmo
 1, Exile_Magazine_8Rnd_74Slug		//M1014
+//Modded ShotgunAmmo
 
 > SMG
 34, SMG_01_F		// Vermin SMG .45 ACP
 33, SMG_02_F		// Sting 9 mm
 33, hgun_PDW2000_F	// PDW2000 9 mm
+//Modded SMGs
 
 > SMGAmmo
 50, 30Rnd_45ACP_Mag_SMG_01					// Vermin SMG
 50, 30Rnd_45ACP_Mag_SMG_01_Tracer_Green		// Vermin SMG
+//Modded SMG Ammo
 
 > SMGAttachments
 20, optic_Holosight_smg
@@ -137,6 +144,7 @@
 20, optic_Aco_smg
 20, optic_ACO_grn
 20, optic_Aco
+//Modded SMG Attatchments
 
 > Rifles
 10, arifle_Katiba_F			// Katiba 6.5 mm
@@ -170,7 +178,41 @@
 10, Exile_Weapon_SVD
 10, Exile_Weapon_SVDCamo
 10, Exile_Weapon_VSSVintorez
-
+//Modded Rifles
+	rhs_weap_ak103
+	rhs_weap_ak103_1
+	rhs_weap_ak103_2
+	rhs_weap_ak103_gp25
+	rhs_weap_ak103_gp25_npz
+	rhs_weap_ak103_npz
+	rhs_weap_ak104
+	rhs_weap_ak104_npz
+	rhs_weap_ak105
+	rhs_weap_ak105_npz
+	rhs_weap_ak74m
+	rhs_weap_ak74m_2mag
+	rhs_weap_ak74m_2mag_camo
+	rhs_weap_ak74m_2mag_npz
+	rhs_weap_ak74m_camo
+	rhs_weap_ak74m_camo_folded
+	rhs_weap_ak74m_camo_npz
+	rhs_weap_ak74m_desert
+	rhs_weap_ak74m_desert_folded
+	rhs_weap_ak74m_desert_npz
+	rhs_weap_ak74m_folded
+	rhs_weap_ak74m_gp25
+	rhs_weap_ak74m_gp25_npz
+	rhs_weap_ak74m_npz
+	rhs_weap_ak74m_plummag
+	rhs_weap_ak74m_plummag_folded
+	rhs_weap_ak74m_plummag_npz
+	rhs_weap_akm
+	rhs_weap_akm_gp25
+	rhs_weap_akms
+	rhs_weap_akms_gp25
+	rhs_weap_asval
+	rhs_weap_asval_npz
+	
 > RifleAmmo
 11, 20Rnd_556x45_UW_mag						// SDAR
 15, 30Rnd_556x45_Stanag						// TRG-20, TRG-21/EGLM, Mk20/C/EGLM, SDAR
@@ -197,7 +239,25 @@
 9, Exile_Magazine_10Rnd_762x54				// SVD
 9, Exile_Magazine_10Rnd_9x39				// VSS
 9, Exile_Magazine_20Rnd_9x39				// VSS
-
+//Modded Rifle Ammo
+	rhs_30Rnd_545x39_AK
+	rhs_30Rnd_545x39_AK_no_tracers	
+	rhs_30Rnd_545x39_AK_green
+	rhs_30Rnd_545x39_7N10_AK
+	rhs_30Rnd_545x39_7N22_AK
+	rhs_30Rnd_545x39_7U1_AK
+	rhs_45Rnd_545X39_7N22_AK
+	rhs_45Rnd_545X39_7N10_AK
+	rhs_45Rnd_545X39_AK_Green
+	rhs_45Rnd_545X39_AK
+	rhs_45Rnd_545X39_7U1_AK
+	rhs_30Rnd_762x39mm
+	rhs_30Rnd_762x39mm_tracer
+	rhs_30Rnd_762x39mm_89
+	rhs_30Rnd_762x39mm_U
+	rhs_20rnd_9x39mm_SP5
+	rhs_20rnd_9x39mm_SP6
+	
 > RifleAttachments
 10, muzzle_snds_M
 10, muzzle_snds_H
@@ -210,6 +270,7 @@
 10, optic_DMS
 5, optic_NVS
 //1, optic_tws
+//Modded Rifle Attachments
 
 > LMG
 25, arifle_MX_SW_Black_F	// MX SW 6.5 mm (Black)
@@ -219,6 +280,7 @@
 25, Exile_Weapon_RPK
 25, Exile_Weapon_PK
 25, Exile_Weapon_PKP
+//Modded LMGs
 
 > LMGAmmo
 12, 100Rnd_65x39_caseless_mag			// MX SW
@@ -234,12 +296,14 @@
 //10, 200Rnd_65x39_Belt_Tracer_Green	// Mk200
 //10, 200Rnd_65x39_Belt_Tracer_Red		// Mk200
 //10, 200Rnd_65x39_Belt_Tracer_Yellow	// Mk200
+//Modded LMG Ammo
 
 > Snipers
 28, srifle_DMR_01_F			// Rahim 7.62 mm
 28, srifle_EBR_F			// Mk18 ABR 7.62 mm
 22, srifle_GM6_F			// GM6 Lynx 12.7 mm
 22, srifle_LRR_F			// M320 LRR .408
+//Modded Snipers
 
 > SniperAmmo
 17, 5Rnd_127x108_Mag		// GM6 Lynx
@@ -247,6 +311,7 @@
 28, 10Rnd_762x54_Mag		// Rahim
 28, 20Rnd_762x51_Mag		// Mk18 ABR
 10, 5Rnd_127x108_APDS_Mag	// GM6 Lynx 
+//Modded Sniper Ammo
 
 > SniperAttachments
 19, muzzle_snds_B
@@ -255,6 +320,7 @@
 27, optic_DMS
 26, optic_SOS
 26, optic_LRPS
+//Modded Sniper Attachments
 
 > DLCRifles
 // To overpowered. Do not use in vanilla Exile
