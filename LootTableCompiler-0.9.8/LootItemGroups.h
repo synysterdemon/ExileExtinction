@@ -313,10 +313,6 @@
 9,	rhs_20rnd_9x39mm_SP6
 9,	rhsusf_20Rnd_762x51_m118_special_Mag
 9,	rhsusf_20Rnd_762x51_m993_Mag
-9,	30Rnd_556x45_Stanag
-9,	30Rnd_556x45_Stanag_Tracer_Green
-9,	30Rnd_556x45_Stanag_Tracer_Red
-9,	30Rnd_556x45_Stanag_Tracer_Yellow
 	
 > RifleAttachments
 10, muzzle_snds_M
