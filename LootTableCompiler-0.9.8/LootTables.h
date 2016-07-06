@@ -83,6 +83,7 @@
 1, Restraints
 10, Chemlights
 10, RoadFlares
+10,	ModdedBackpacks
 
 ///////////////////////////////////////////////////////////////////////////////
 // Apartments, Offices etc.
@@ -110,6 +111,7 @@
 10, Chemlights
 10, RoadFlares
 1, Restraints
+10,	ModdedBackpacks
 
 ///////////////////////////////////////////////////////////////////////////////
 // Kiosks, Supermarkets etc.
@@ -137,6 +139,7 @@
 3, IndustrialItems
 3, Restraints
 3, MedicalItems
+5,	ModdedBackpacks
 
 ///////////////////////////////////////////////////////////////////////////////
 // Construction Sites, Warehouses, Research etc.
@@ -206,7 +209,13 @@
 2, DLCSupressor
 2, Bipods
 5, Explosives
-
+1,	Launchers
+5,	LauncherAmmo
+10,	ModdedAttachments
+5,	ModdedUniforms
+3,	ModdedVests
+4,	ModdedBackpacks
+5,	ModdedHelmets
 ///////////////////////////////////////////////////////////////////////////////
 // Hospital, Medevac etc. (Does not spawn on Altis!)
 ///////////////////////////////////////////////////////////////////////////////
@@ -234,6 +243,7 @@
 4, Restraints
 4, MedicalItems
 4, Explosives
+10,	ModdedBackpacks
 
 ///////////////////////////////////////////////////////////////////////////////
 // Ghost Hotel Buildings
@@ -255,3 +265,10 @@
 4, MedicalItems
 10, Explosives
 4, EpicWeapons
+1,	EpicLaunchers
+3,	EpicLauncherAmmo
+2,	Launchers
+6,	LauncherAmmo
+10,	GrenadeLaunchers
+10,	GrenadeLauncherAmmo
+10,	ModdedBackpacks

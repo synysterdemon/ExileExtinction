@@ -98,7 +98,12 @@
 13, Exile_Weapon_Taurus		// Taurus
 1, Exile_Weapon_TaurusGold	// Taurus (Gold)
 //Modded Pistols
-
+13,	rhs_weap_makarov_pmm
+13,	rhs_weap_pya
+13,	rhsusf_weap_glock17g4
+13,	rhsusf_weap_m1911a1
+13,	rhsusf_weap_m9
+	
 > PistolAmmo
 20, 11Rnd_45ACP_Mag				// 4-five
 10, 16Rnd_9x21_Mag				// PDW2000, P07, ROOK-40
@@ -111,7 +116,14 @@
 20, Exile_Magazine_8Rnd_9x18	// Makarov
 20, Exile_Magazine_6Rnd_45ACP	// Taurus
 //Modded Pistol Ammo
-
+20,	rhs_mag_9x19_17
+20,	rhs_mag_9x18_12_57N181S
+20,	rhsusf_mag_7x45acp_MHP
+20,	rhsusf_mag_17Rnd_9x19_FMJ
+20,	rhsusf_mag_17Rnd_9x19_JHP
+20,	rhsusf_mag_15Rnd_9x19_FMJ
+20,	rhsusf_mag_15Rnd_9x19_JHP
+	
 > PistolAttachments
 36, muzzle_snds_L
 36, muzzle_snds_acp
@@ -122,11 +134,22 @@
 > Shotguns
 1, Exile_Weapon_M1014	//M1014
 //Modded Shotguns
-
+1,	rhs_weap_M590_5RD
+1,	rhs_weap_M590_8RD
+	
 > ShotgunAmmo
 1, Exile_Magazine_8Rnd_74Slug		//M1014
 //Modded ShotgunAmmo
-
+1,	rhsusf_5Rnd_00Buck
+1,	rhsusf_8Rnd_00Buck
+1,	rhsusf_5Rnd_Slug
+1,	rhsusf_8Rnd_Slug
+1,	rhsusf_5Rnd_HE
+1,	rhsusf_8Rnd_HE
+1,	rhsusf_5Rnd_FRAG
+1,	rhsusf_8Rnd_FRAG
+1,	rhsusf_5Rnd_doomsday_Buck
+1,	rhsusf_8Rnd_doomsday_Buck
 > SMG
 34, SMG_01_F		// Vermin SMG .45 ACP
 33, SMG_02_F		// Sting 9 mm
@@ -171,7 +194,7 @@
 10, Exile_Weapon_AK47		
 10, Exile_Weapon_AKM		
 10, Exile_Weapon_AKS		
-10, Exile_Weapon_AKS_Gold	
+1, Exile_Weapon_AKS_Gold	
 10, Exile_Weapon_DMR		
 10, Exile_Weapon_LeeEnfield
 10, Exile_Weapon_CZ550
@@ -179,39 +202,70 @@
 10, Exile_Weapon_SVDCamo
 10, Exile_Weapon_VSSVintorez
 //Modded Rifles
-	rhs_weap_ak103
-	rhs_weap_ak103_1
-	rhs_weap_ak103_2
-	rhs_weap_ak103_gp25
-	rhs_weap_ak103_gp25_npz
-	rhs_weap_ak103_npz
-	rhs_weap_ak104
-	rhs_weap_ak104_npz
-	rhs_weap_ak105
-	rhs_weap_ak105_npz
-	rhs_weap_ak74m
-	rhs_weap_ak74m_2mag
-	rhs_weap_ak74m_2mag_camo
-	rhs_weap_ak74m_2mag_npz
-	rhs_weap_ak74m_camo
-	rhs_weap_ak74m_camo_folded
-	rhs_weap_ak74m_camo_npz
-	rhs_weap_ak74m_desert
-	rhs_weap_ak74m_desert_folded
-	rhs_weap_ak74m_desert_npz
-	rhs_weap_ak74m_folded
-	rhs_weap_ak74m_gp25
-	rhs_weap_ak74m_gp25_npz
-	rhs_weap_ak74m_npz
-	rhs_weap_ak74m_plummag
-	rhs_weap_ak74m_plummag_folded
-	rhs_weap_ak74m_plummag_npz
-	rhs_weap_akm
-	rhs_weap_akm_gp25
-	rhs_weap_akms
-	rhs_weap_akms_gp25
-	rhs_weap_asval
-	rhs_weap_asval_npz
+10,	rhs_weap_ak103							//7.62
+10,	rhs_weap_ak103_1						//7.62
+10,	rhs_weap_ak103_2						//7.62
+10,	rhs_weap_ak103_gp25						//7.62
+10,	rhs_weap_ak103_gp25_npz					//7.62
+10,	rhs_weap_ak103_npz						//7.62
+10,	rhs_weap_ak104							//7.62
+10,	rhs_weap_ak104_npz						//7.62
+15,	rhs_weap_ak105							//5.45
+15,	rhs_weap_ak105_npz						//5.45
+15,	rhs_weap_ak74m							//5.45
+15,	rhs_weap_ak74m_2mag						//5.45
+15,	rhs_weap_ak74m_2mag_camo				//5.45
+15,	rhs_weap_ak74m_2mag_npz					//5.45
+15,	rhs_weap_ak74m_camo						//5.45
+15,	rhs_weap_ak74m_camo_folded				//5.45
+15,	rhs_weap_ak74m_camo_npz					//5.45
+15,	rhs_weap_ak74m_desert					//5.45
+15,	rhs_weap_ak74m_desert_folded			//5.45
+15,	rhs_weap_ak74m_desert_npz				//5.45
+15, rhs_weap_ak74m_folded					//5.45
+15,	rhs_weap_ak74m_gp25						//5.45
+15,	rhs_weap_ak74m_gp25_npz					//5.45
+15,	rhs_weap_ak74m_npz						//5.45
+15,	rhs_weap_ak74m_plummag					//5.45
+15,	rhs_weap_ak74m_plummag_folded			//5.45
+15,	rhs_weap_ak74m_plummag_npz				//5.45
+10,	rhs_weap_akm 							//7.62
+10,	rhs_weap_akm_gp25 						//7.62
+10,	rhs_weap_akms 							//7.62
+10,	rhs_weap_akms_gp25 						//7.62
+15,	rhs_weap_asval 							//9mm
+15,	rhs_weap_asval_npz						//9mm
+10,	rhs_weap_m14ebrri						//7.62
+15,	rhs_weap_m16a4							//5.56
+15,	rhs_weap_m16a4_carryhandle				//5.56
+15,	rhs_weap_m16a4_carryhandle_M203			//5.56
+15,	rhs_weap_m16a4_carryhandle_grip			//5.56
+15,	rhs_weap_m16a4_carryhandle_grip_pmag	//5.56
+15,	rhs_weap_m16a4_carryhandle_pmag			//5.56
+15,	rhs_weap_m16a4_grip						//5.56
+15,	rhs_weap_m27iar							//5.56
+15,	rhs_weap_m4								//5.56
+15,	rhs_weap_m4_carryhandle					//5.56
+15,	rhs_weap_m4_carryhandle_pmag			//5.56
+15,	rhs_weap_m4_grip						//5.56
+15,	rhs_weap_m4_grip2						//5.56
+15,	rhs_weap_m4_m203						//5.56
+15,	rhs_weap_m4_m203S						//5.56
+15,	rhs_weap_m4_m320						//5.56
+15,	rhs_weap_m4a1							//5.56
+15,	rhs_weap_m4a1_carryhandle				//5.56
+15,	rhs_weap_m4a1_carryhandle_grip			//5.56
+15,	rhs_weap_m4a1_carryhandle_grip2			//5.56
+15,	rhs_weap_m4a1_carryhandle_m203			//5.56
+15,	rhs_weap_m4a1_carryhandle_m203S			//5.56
+15,	rhs_weap_m4a1_carryhandle_pmag			//5.56
+15,	rhs_weap_m4a1_grip						//5.56
+15,	rhs_weap_m4a1_grip2						//5.56
+15,	rhs_weap_m4a1_m203						//5.56
+15,	rhs_weap_m4a1_m203s						//5.56
+15,	rhs_weap_m4a1_m320						//5.56
+10,	rhs_weap_sr25							//7.62
+10,	rhs_weap_sr25_ec						//7.62
 	
 > RifleAmmo
 11, 20Rnd_556x45_UW_mag						// SDAR
@@ -240,23 +294,29 @@
 9, Exile_Magazine_10Rnd_9x39				// VSS
 9, Exile_Magazine_20Rnd_9x39				// VSS
 //Modded Rifle Ammo
-	rhs_30Rnd_545x39_AK
-	rhs_30Rnd_545x39_AK_no_tracers	
-	rhs_30Rnd_545x39_AK_green
-	rhs_30Rnd_545x39_7N10_AK
-	rhs_30Rnd_545x39_7N22_AK
-	rhs_30Rnd_545x39_7U1_AK
-	rhs_45Rnd_545X39_7N22_AK
-	rhs_45Rnd_545X39_7N10_AK
-	rhs_45Rnd_545X39_AK_Green
-	rhs_45Rnd_545X39_AK
-	rhs_45Rnd_545X39_7U1_AK
-	rhs_30Rnd_762x39mm
-	rhs_30Rnd_762x39mm_tracer
-	rhs_30Rnd_762x39mm_89
-	rhs_30Rnd_762x39mm_U
-	rhs_20rnd_9x39mm_SP5
-	rhs_20rnd_9x39mm_SP6
+9,	rhs_30Rnd_545x39_AK
+9,	rhs_30Rnd_545x39_AK_no_tracers	
+9,	rhs_30Rnd_545x39_AK_green
+9,	rhs_30Rnd_545x39_7N10_AK
+9,	rhs_30Rnd_545x39_7N22_AK
+9,	rhs_30Rnd_545x39_7U1_AK
+9,	rhs_45Rnd_545X39_7N22_AK
+9,	rhs_45Rnd_545X39_7N10_AK
+9,	rhs_45Rnd_545X39_AK_Green
+9,	rhs_45Rnd_545X39_AK
+9,	rhs_45Rnd_545X39_7U1_AK
+9,	rhs_30Rnd_762x39mm
+9,	rhs_30Rnd_762x39mm_tracer
+9,	rhs_30Rnd_762x39mm_89
+9,	rhs_30Rnd_762x39mm_U
+9,	rhs_20rnd_9x39mm_SP5
+9,	rhs_20rnd_9x39mm_SP6
+9,	rhsusf_20Rnd_762x51_m118_special_Mag
+9,	rhsusf_20Rnd_762x51_m993_Mag
+9,	30Rnd_556x45_Stanag
+9,	30Rnd_556x45_Stanag_Tracer_Green
+9,	30Rnd_556x45_Stanag_Tracer_Red
+9,	30Rnd_556x45_Stanag_Tracer_Yellow
 	
 > RifleAttachments
 10, muzzle_snds_M
@@ -281,7 +341,16 @@
 25, Exile_Weapon_PK
 25, Exile_Weapon_PKP
 //Modded LMGs
-
+25,	rhs_weap_m240B
+25,	rhs_weap_m240B_CAP
+25,	rhs_weap_m240G
+25,	rhs_weap_m249_pip_L
+25,	rhs_weap_m249_pip_L_para
+25,	rhs_weap_m249_pip_L_vfg
+25,	rhs_weap_m249_pip_S
+25,	rhs_weap_m249_pip_S_para
+25,	rhs_weap_m249_pip_S_vfg
+	
 > LMGAmmo
 12, 100Rnd_65x39_caseless_mag			// MX SW
 10, 100Rnd_65x39_caseless_mag_Tracer	// MX SW
@@ -292,19 +361,42 @@
 10, Exile_Magazine_45Rnd_545x39_RPK_Green
 10, Exile_Magazine_75Rnd_545x39_RPK_Green
 10, Exile_Magazine_100Rnd_762x54_PK_Green
-//10, 200Rnd_65x39_Belt					// Mk200
-//10, 200Rnd_65x39_Belt_Tracer_Green	// Mk200
-//10, 200Rnd_65x39_Belt_Tracer_Red		// Mk200
-//10, 200Rnd_65x39_Belt_Tracer_Yellow	// Mk200
+10, 200Rnd_65x39_Belt					// Mk200
+10, 200Rnd_65x39_Belt_Tracer_Green		// Mk200
+10, 200Rnd_65x39_Belt_Tracer_Red		// Mk200
+10, 200Rnd_65x39_Belt_Tracer_Yellow		// Mk200
 //Modded LMG Ammo
-
+10,	rhs_200rnd_556x45_M_SAW
+10,	rhs_200rnd_556x45_T_SAW
+10,	rhs_200rnd_556x45_B_SAW
+10,	rhsusf_50Rnd_762x51
+10,	rhsusf_50Rnd_762x51_m61_ap
+10,	rhsusf_50Rnd_762x51_m62_tracer
+10,	rhsusf_50Rnd_762x51_m80a1epr
+10,	rhsusf_100Rnd_762x51
+10,	rhsusf_100Rnd_762x51_m61_ap
+10,	rhsusf_100Rnd_762x51_m62_tracer
+10,	rhsusf_100Rnd_762x51_m80a1epr
+10,	rhsusf_50Rnd_762x51_m993
+10,	rhsusf_100Rnd_762x51_m993
+	
 > Snipers
 28, srifle_DMR_01_F			// Rahim 7.62 mm
 28, srifle_EBR_F			// Mk18 ABR 7.62 mm
 22, srifle_GM6_F			// GM6 Lynx 12.7 mm
 22, srifle_LRR_F			// M320 LRR .408
 //Modded Snipers
-
+28,	rhs_weap_svdp
+28,	rhs_weap_svdp_npz
+28,	rhs_weap_svdp_wd
+28,	rhs_weap_svdp_wd_npz
+28,	rhs_weap_svds
+28,	rhs_weap_svds_npz
+22,	rhs_weap_XM2010
+22,	rhs_weap_XM2010_d
+22,	rhs_weap_XM2010_sa
+22, rhs_weap_XM2010_wd
+	
 > SniperAmmo
 17, 5Rnd_127x108_Mag		// GM6 Lynx
 17, 7Rnd_408_Mag			// M320 LRR
@@ -312,7 +404,9 @@
 28, 20Rnd_762x51_Mag		// Mk18 ABR
 10, 5Rnd_127x108_APDS_Mag	// GM6 Lynx 
 //Modded Sniper Ammo
-
+28,	rhs_10Rnd_762x54mmR_7N1
+17,	rhsusf_5Rnd_300winmag_xm2010
+	
 > SniperAttachments
 19, muzzle_snds_B
 //1, optic_tws
@@ -369,7 +463,7 @@
 40, muzzle_snds_93mmg_tan
 40, muzzle_snds_B
 
-> EpicWeapons
+> EpicWeapons //Ghost Hotel Only
 4, MMG_01_hex_F				//Navid
 4, MMG_01_tan_F				//Navid
 6, MMG_02_black_F			//SPMG
@@ -431,6 +525,423 @@
 20, APERSBoundingMine_Range_Mag
 20, APERSTripMine_Wire_Mag
 4, SatchelCharge_Remote_Mag
+
+///////////////////////////////////////////////////////////////////////////////
+// Custom Classes
+///////////////////////////////////////////////////////////////////////////////
+
+> EpicLaunchers //For Ghost Hotel Only
+1,	launch_NLAW_F
+1,	launch_B_Titan_F
+1,	launch_I_Titan_F
+1,	launch_O_Titan_F
+1,	launch_Titan_F
+1,	launch_B_Titan_short_F
+1,	launch_I_Titan_short_F
+1,	launch_O_Titan_short_F
+1,	launch_Titan_short_F
+//Modded Epic Launchers
+1,	rhs_weap_M136
+1,	rhs_weap_M136_hedp
+1,	rhs_weap_M136_hp
+1,	rhs_weap_fgm148
+1,	rhs_weap_fim92
+1,	rhs_weap_smaw
+1,	rhs_weap_smaw_green
+
+> EpicLauncherAmmo //For Ghost Hotel Only
+1,	NLAW_F
+1,	Titan_AA
+1,	Titan_AT
+1,	Titan_AP
+//Modded Epic Launcher Ammo
+1,	rhs_m136_mag
+1,	rhs_m136_hedp_mag
+1,	rhs_m136_hp_mag
+1,	rhs_fim92_mag
+1,	rhs_fgm148_magazine_AT
+1,	rhs_mag_smaw_HEAA
+1,	rhs_mag_smaw_HEDP
+1,	rhs_mag_smaw_SR
+
+> Launchers
+1,	launch_RPG32_F
+//Modded Launchers
+1,	rhs_weap_igla
+1,	rhs_weap_rpg26
+1,	rhs_weap_rpg7
+1,	rhs_weap_rshg2
+
+> LauncherAmmo
+1,	RPG32_F
+1,	RPG32_HE_F
+//Modded Launcher Ammo
+1,	rhs_rpg26_mag
+1,	rhs_rshg2_mag
+1,	rhs_rpg18_mag
+1,	rhs_rpg7_PG7VL_mag
+1,	rhs_rpg7_PG7VR_mag
+1,	rhs_rpg7_TBG7V_mag
+1,	rhs_rpg7_OG7V_mag
+1,	rhs_mag_9k32_rocket
+1,	rhs_mag_9k38_rocket
+	
+> GrenadeLaunchers //Ghost Hotel Only
+50,	rhs_weap_M320
+50,	rhs_weap_m32
+
+> GrenadeLauncherAmmo //Ghost Hotel Only
+1,	rhsusf_mag_6Rnd_M441_HE
+1,	rhsusf_mag_6Rnd_M433_HEDP
+1,	rhsusf_mag_6Rnd_M714_white
+1,	rhsusf_mag_6Rnd_M576_Buckshot
+1,	rhsusf_m112_mag
+1,	rhsusf_m112x4_mag
+1,	rhs_mag_m18_green
+1,	rhs_mag_m18_purple
+1,	rhs_mag_m18_red
+1,	rhs_mag_m18_yellow
+
+> ModdedAttachments
+1,	rhs_bipod
+1,	rhs_acc_tgpa
+1,	rhs_acc_pbs1
+1,	rhs_acc_dtk4short
+1,	rhs_acc_tgpv
+1,	rhs_acc_dtk4long
+1,	rhs_acc_dtk4screws
+1,	rhs_acc_muzzleFlash_dtk
+1,	rhs_acc_dtk3
+1,	rhs_acc_dtk1
+1,	rhs_acc_dtk
+1,	rhs_acc_dtk1l
+1,	rhs_acc_ak5
+1,	rhs_acc_1p29
+1,	rhs_acc_1p78	
+1,	rhs_acc_pkas
+1,	rhs_acc_ekp1
+1,	rhs_acc_1p63
+1,	rhs_acc_ekp1b
+1,	rhs_acc_ekp1c
+1,	rhs_acc_ekp1d	
+1,	rhs_acc_npz
+1,	rhs_acc_pso1m2
+1,	rhs_acc_pgo7v
+1,	rhs_acc_1pn93_1
+1,	rhs_acc_1pn93_2
+1,	rhsusf_acc_harris_bipod
+1,	rhs_acc_at4_handler
+1,	rhsusf_acc_anpeq15A
+1,	rhsusf_acc_anpeq15
+1,	rhsusf_acc_anpeq15_light
+1,	rhsusf_acc_M2010S
+1,	rhsusf_acc_anpeq15side
+1,	rhsusf_acc_SR25S
+1,	rhsusf_acc_rotex5_grey
+1,	rhsusf_acc_rotex5_tan
+1,	rhsusf_acc_nt4_black
+1,	rhsusf_acc_nt4_tan
+1,	rhsusf_acc_muzzleFlash_SF
+1,	rhsusf_acc_SF3P556
+1,	rhsusf_acc_SFMB556
+1,	rhsusf_acc_compm4
+1,	rhsusf_acc_eotech_552
+1,	rhsusf_acc_LEUPOLDMK4
+1,	rhsusf_acc_M2A1
+1,	rhsusf_acc_EOTECH
+1,	rhsusf_acc_LEUPOLDMK4_2
+1,	rhsusf_acc_ACOG3_USMC
+1,	rhsusf_acc_ACOG2_USMC
+1,	rhsusf_acc_ACOG_USMC
+1,	rhsusf_acc_ACOG3
+1,	rhsusf_acc_ACOG2
+1,	rhsusf_acc_ACOG_pip
+1,	rhsusf_acc_ACOG_sa
+1,	rhsusf_acc_ACOG_d
+1,	rhsusf_acc_ACOG_wd
+1,	rhsusf_acc_ACOG
+	
+> ModdedUniforms
+1,	rhs_uniform_FROG01_d
+1,	rhs_uniform_FROG01_m81
+1,	rhs_uniform_FROG01_wd
+1,	rhs_uniform_cu_ocp
+1,	rhs_uniform_cu_ocp_101st
+1,	rhs_uniform_cu_ocp_10th
+1,	rhs_uniform_cu_ocp_1stcav
+1,	rhs_uniform_cu_ocp_82nd
+1,	rhs_uniform_cu_ucp
+1,	rhs_uniform_cu_ucp_101st
+1,	rhs_uniform_cu_ucp_10th
+1,	rhs_uniform_cu_ucp_1stcav
+1,	rhs_uniform_cu_ucp_82nd
+1,	rhs_uniform_vdv_emr_des
+1,	rhs_uniform_emr_patchless
+1,	rhs_uniform_msv_emr
+1,	rhs_uniform_vdv_emr
+1,	rhs_uniform_flora_patchless
+1,	rhs_uniform_flora_patchless_alt
+1,	rhs_uniform_flora
+1,	rhs_uniform_vdv_flora
+1,	rhs_uniform_gorka_r_g
+1,	rhs_uniform_gorka_r_y
+1,	rhs_chdkz_uniform_5
+1,	rhs_chdkz_uniform_4
+1,	rhs_chdkz_uniform_3
+1,	rhs_chdkz_uniform_2
+1,	rhs_chdkz_uniform_1
+1,	rhs_uniform_mvd_izlom
+1,	rhs_uniform_mflora_patchless
+1,	rhs_uniform_vdv_mflora
+	
+> ModdedVests
+1,	rhsusf_iotv_ocp
+1,	rhsusf_iotv_ocp_Grenadier
+1,	rhsusf_iotv_ocp_Medic
+1,	rhsusf_iotv_ocp_Repair
+1,	rhsusf_iotv_ocp_Rifleman
+1,	rhsusf_iotv_ocp_SAW
+1,	rhsusf_iotv_ocp_Squadleader
+1,	rhsusf_iotv_ocp_Teamleader
+1,	rhsusf_iotv_ucp
+1,	rhsusf_iotv_ucp_Grenadier
+1,	rhsusf_iotv_ucp_Medic
+1,	rhsusf_iotv_ucp_Repair
+1,	rhsusf_iotv_ucp_Rifleman
+1,	rhsusf_iotv_ucp_SAW
+1,	rhsusf_iotv_ucp_Squadleader
+1,	rhsusf_iotv_ucp_Teamleader
+1,	rhsusf_spc
+1,	rhsusf_spc_corpsman
+1,	rhsusf_spc_crewman
+1,	rhsusf_spc_iar
+1,	rhsusf_spc_light
+1,	rhsusf_spc_marksman
+1,	rhsusf_spc_mg
+1,	rhsusf_spc_rifleman
+1,	rhsusf_spc_squadleader
+1,	rhsusf_spc_teamleader
+1,	rhs_6b13_Flora
+1,	rhs_6b13_Flora_6sh92
+1,	rhs_6b13_Flora_6sh92_headset_mapcase
+1,	rhs_6b13_Flora_6sh92_radio
+1,	rhs_6b13_Flora_6sh92_vog
+1,	rhs_6b13_Flora_crewofficer
+1,	rhs_6b13_EMR
+1,	rhs_6b13
+1,	rhs_6b13_6sh92
+1,	rhs_6b13_6sh92_headset_mapcase
+1,	rhs_6b13_6sh92_radio
+1,	rhs_6b13_6sh92_vog
+1,	rhs_6b13_crewofficer
+1,	rhs_6b23
+1,	rhs_6b23_6sh92
+1,	rhs_6b23_6sh92_headset
+1,	rhs_6b23_6sh92_headset_mapcase
+1,	rhs_6b23_6sh92_radio
+1,	rhs_6b23_6sh92_vog
+1,	rhs_6b23_6sh92_vog_headset
+1,	rhs_6b23_crewofficer
+1,	rhs_6b23_crew
+1,	rhs_6b23_engineer
+1,	rhs_6b23_medic
+1,	rhs_6b23_rifleman
+1,	rhs_6b23_sniper
+1,	rhs_6b23_vydra_3m
+1,	rhs_6b23_digi
+1,	rhs_6b23_digi_6sh92
+1,	rhs_6b23_digi_6sh92_headset
+1,	rhs_6b23_digi_6sh92_headset_spetsnaz
+1,	rhs_6b23_digi_6sh92_headset_mapcase
+1,	rhs_6b23_digi_6sh92_radio
+1,	rhs_6b23_digi_6sh92_Spetsnaz
+1,	rhs_6b23_digi_6sh92_vog
+1,	rhs_6b23_digi_6sh92_vog_headset
+1,	rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz
+1,	rhs_6b23_digi_crewofficer
+1,	rhs_6b23_digi_crew
+1,	rhs_6b23_digi_engineer	
+1,	rhs_6b23_digi_medic
+1,	rhs_6b23_digi_rifleman
+1,	rhs_6b23_digi_sniper
+1,	rhs_6b23_digi_vydra_3m
+1,	rhs_6b23_ML
+1,	rhs_6b23_ML_6sh92
+1,	rhs_6b23_ML_6sh92_headset
+1,	rhs_6b23_ML_6sh92_headset_mapcase
+1,	rhs_6b23_ML_6sh92_radio
+1,	rhs_6b23_ML_6sh92_vog
+1,	rhs_6b23_ML_6sh92_vog_headset
+1,	rhs_6b23_ML_crewofficer
+1,	rhs_6b23_ML_crew
+1,	rhs_6b23_ML_engineer
+1,	rhs_6b23_ML_medic
+1,	rhs_6b23_ML_rifleman
+1,	rhs_6b23_ML_sniper
+1,	rhs_6b23_ML_vydra_3m
+1,	rhs_6sh92
+1,	rhs_6sh92_headset
+1,	rhs_6sh92_radio
+1,	rhs_6sh92_vog
+1,	rhs_6sh92_vog_headset
+1,	rhs_6sh92_digi
+1,	rhs_6sh92_digi_headset
+1,	rhs_6sh92_digi_radio
+1,	rhs_6sh92_digi_vog
+1,	rhs_6sh92_digi_vog_headset
+
+> ModdedBackpacks
+1,	B_rhsusf_B_BACKPACK
+1,	rhsusf_assault_eagleaiii_coy
+1,	rhsusf_assault_eagleaiii_ocp
+1,	rhsusf_assault_eagleaiii_ucp
+1,	rhsusf_falconii
+1,	rhs_assault_umbts
+1,	rhs_assault_umbts_engineer_empty
+
+> ModdedHelmets
+1,	rhs_Booniehat_m81
+1,	rhs_Booniehat_marpatd
+1,	rhs_Booniehat_marpatwd
+1,	rhs_Booniehat_ocp
+1,	rhs_Booniehat_ucp
+1,	rhsusf_Bowman
+1,	rhsusf_ach_bare
+1,	rhsusf_ach_bare_des
+1,	rhsusf_ach_bare_des_ess
+1,	rhsusf_ach_bare_des_headset
+1,	rhsusf_ach_bare_des_headset_ess
+1,	rhsusf_ach_bare_ess
+1,	rhsusf_ach_bare_headset
+1,	rhsusf_ach_bare_headset_ess
+1,	rhsusf_ach_bare_semi
+1,	rhsusf_ach_bare_semi_ess
+1,	rhsusf_ach_bare_semi_headset
+1,	rhsusf_ach_bare_semi_headset_ess
+1,	rhsusf_ach_bare_tan
+1,	rhsusf_ach_bare_tan_ess
+1,	rhsusf_ach_bare_tan_headset
+1,	rhsusf_ach_bare_tan_headset_ess
+1,	rhsusf_ach_bare_wood
+1,	rhsusf_ach_bare_wood_ess
+1,	rhsusf_ach_bare_wood_headset
+1,	rhsusf_ach_bare_wood_headset_ess
+1,	rhsusf_ach_helmet_ESS_ocp
+1,	rhsusf_ach_helmet_ESS_ucp
+1,	rhsusf_ach_helmet_M81
+1,	rhsusf_ach_helmet_camo_ocp
+1,	rhsusf_ach_helmet_headset_ess_ocp
+1,	rhsusf_ach_helmet_headset_ess_ucp
+1,	rhsusf_ach_helmet_headset_ocp
+1,	rhsusf_ach_helmet_headset_ucp
+1,	rhsusf_ach_helmet_ocp
+1,	rhsusf_ach_helmet_ocp_norotos
+1,	rhsusf_ach_helmet_ucp
+1,	rhsusf_ach_helmet_ucp_norotos
+1,	rhsusf_bowman_cap
+1,	rhsusf_lwh_helmet_M1942
+1,	rhsusf_lwh_helmet_marpatd
+1,	rhsusf_lwh_helmet_marpatd_ess
+1,	rhsusf_lwh_helmet_marpatd_headset
+1,	rhsusf_lwh_helmet_marpatwd
+1,	rhsusf_lwh_helmet_marpatwd_ess
+1,	rhsusf_lwh_helmet_marpatwd_headset
+1,	rhsusf_mich_bare
+1,	rhsusf_mich_bare_alt
+1,	rhsusf_mich_bare_alt_semi
+1,	rhsusf_mich_bare_alt_tan
+1,	rhsusf_mich_bare_headset
+1,	rhsusf_mich_bare_norotos
+1,	rhsusf_mich_bare_norotos_alt
+1,	rhsusf_mich_bare_norotos_alt_headset
+1,	rhsusf_mich_bare_norotos_alt_semi
+1,	rhsusf_mich_bare_norotos_alt_semi_headset
+1,	rhsusf_mich_bare_norotos_alt_tan
+1,	rhsusf_mich_bare_norotos_alt_tan_headset
+1,	rhsusf_mich_bare_norotos_arc
+1,	rhsusf_mich_bare_norotos_arc_alt
+1,	rhsusf_mich_bare_norotos_arc_alt_headset
+1,	rhsusf_mich_bare_norotos_arc_alt_semi
+1,	rhsusf_mich_bare_norotos_arc_alt_semi_headset
+1,	rhsusf_mich_bare_norotos_arc_alt_tan
+1,	rhsusf_mich_bare_norotos_arc_alt_tan_headset
+1,	rhsusf_mich_bare_norotos_arc_headset
+1,	rhsusf_mich_bare_norotos_arc_semi
+1,	rhsusf_mich_bare_norotos_arc_semi_headset
+1,	rhsusf_mich_bare_norotos_arc_tan
+1,	rhsusf_mich_bare_norotos_headset
+1,	rhsusf_mich_bare_norotos_semi
+1,	rhsusf_mich_bare_norotos_semi_headset
+1,	rhsusf_mich_bare_norotos_tan
+1,	rhsusf_mich_bare_norotos_tan_headset
+1,	rhsusf_mich_bare_semi
+1,	rhsusf_mich_bare_semi_headset
+1,	rhsusf_mich_bare_tan
+1,	rhsusf_mich_bare_tan_headset
+1,	rhsusf_mich_helmet_marpatdItemMap
+1,	rhsusf_mich_helmet_marpatd_altItemMap
+1,	rhsusf_mich_helmet_marpatd_alt_headset
+1,	rhsusf_mich_helmet_marpatd_headset
+1,	rhsusf_mich_helmet_marpatd_norotos
+1,	rhsusf_mich_helmet_marpatd_norotos_arc
+1,	rhsusf_mich_helmet_marpatd_norotos_arc_headset
+1,	rhsusf_mich_helmet_marpatd_norotos_headset
+1,	rhsusf_mich_helmet_marpatwd
+1,	rhsusf_mich_helmet_marpatwd_alt
+1,	rhsusf_mich_helmet_marpatwd_alt_headset
+1,	rhsusf_mich_helmet_marpatwd_headset
+1,	rhsusf_mich_helmet_marpatwd_norotos
+1,	rhsusf_mich_helmet_marpatwd_norotos_arc
+1,	rhsusf_mich_helmet_marpatwd_norotos_arc_headset
+1,	rhsusf_mich_helmet_marpatwd_norotos_headset
+1,	rhsusf_opscore_bk
+1,	rhsusf_opscore_coy_cover
+1,	rhsusf_opscore_coy_cover_pelt
+1,	rhsusf_opscore_fg
+1,	rhsusf_opscore_mc_cover
+1,	rhsusf_opscore_mc_cover_pelt
+1,	rhsusf_opscore_rg_cover
+1,	rhsusf_opscore_rg_cover_pelt
+1,	rhsusf_opscore_ut
+1,	rhs_6b26_green
+1,	rhs_6b26_bala_green
+1,	rhs_6b26_ess_green
+1,	rhs_6b26_ess_bala_green
+1,	rhs_6b26
+1,	rhs_6b26_bala
+1,	rhs_6b26_ess
+1,	rhs_6b26_ess_bala
+1,	rhs_6b27m_green
+1,	rhs_6b27m_green_bala
+1,	rhs_6b27m_green_ess
+1,	rhs_6b27m_green_ess_bala
+1,	rhs_6b27m_digi
+1,	rhs_6b27m_digi_bala
+1,	rhs_6b27m_digi_ess
+1,	rhs_6b27m_digi_ess_bala
+1,	rhs_6b27m
+1,	rhs_6b27m_bala
+1,	rhs_6b27m_ess
+1,	rhs_6b27m_ess_bala
+1,	rhs_6b27m_ml
+1,	rhs_6b27m_ml_bala
+1,	rhs_6b27m_ml_ess
+1,	rhs_6b27m_ML_ess_bala
+1,	rhs_6b28_green
+1,	rhs_6b28_green_bala
+1,	rhs_6b28_green_ess
+1,	rhs_6b28_green_ess_bala
+1,	rhs_6b28
+1,	rhs_6b28_bala
+1,	rhs_6b28_ess
+1,	rhs_6b28_ess_bala
+1,	rhs_6b28_flora
+1,	rhs_6b28_flora_bala
+1,	rhs_6b28_flora_ess
+1,	rhs_6b28_flora_ess_bala
+1,	rhs_Booniehat_digi
+1,	rhs_Booniehat_flora
+1,	rhs_ssh68
 
 ///////////////////////////////////////////////////////////////////////////////
 // Clothing & Gear
