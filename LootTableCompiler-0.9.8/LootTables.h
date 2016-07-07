@@ -66,11 +66,11 @@
 > CivillianLowerClass
 30, Trash
 28, Food
-10, Drinks
-8, Pistols
+20, Drinks
+12, Pistols
 5, PistolAmmo
 3, PistolAttachments
-4, Shotguns
+8, Shotguns
 3, ShotgunAmmo
 4, SMG
 3, SMGAmmo
@@ -84,14 +84,14 @@
 10, Chemlights
 10, RoadFlares
 10,	ModdedBackpacks
-
+4, MedicalItems
 ///////////////////////////////////////////////////////////////////////////////
 // Apartments, Offices etc.
 ///////////////////////////////////////////////////////////////////////////////
 > CivillianUpperClass
 30, Trash
 28, Food
-10, Drinks
+20, Drinks
 8, Pistols
 5, PistolAmmo
 3, PistolAttachments
@@ -112,7 +112,7 @@
 10, RoadFlares
 1, Restraints
 10,	ModdedBackpacks
-
+4, MedicalItems
 ///////////////////////////////////////////////////////////////////////////////
 // Kiosks, Supermarkets etc.
 ///////////////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@
 3, Restraints
 3, MedicalItems
 5,	ModdedBackpacks
-
+4, MedicalItems
 ///////////////////////////////////////////////////////////////////////////////
 // Construction Sites, Warehouses, Research etc.
 ///////////////////////////////////////////////////////////////////////////////
@@ -173,7 +173,7 @@
 // Towers, Barracks, Hangars etc.
 ///////////////////////////////////////////////////////////////////////////////
 > Military
-100, Trash
+50, Trash
 4, CivilianItems
 4, GuerillaItems
 3, HEGrenades
@@ -182,7 +182,7 @@
 3, HandGrenades
 3, SmokeGrenades
 2, Restraints
-2, MedicalItems
+4, MedicalItems
 5, GuerillaClothing
 5, MilitaryClothing
 4, GuerillaBackpacks
@@ -195,21 +195,21 @@
 1, Ghillies
 1, DLCGhillies
 1, Rebreathers
-5, Rifles
-3, RifleAmmo
-3, RifleAttachments
-4, LMG
-2, LMGAmmo
-3, Snipers
-2, SniperAmmo
-2, SniperAttachments
-3, DLCRifles
-2, DLCAmmo
-2, DLCOptics
-2, DLCSupressor
-2, Bipods
-5, Explosives
-1,	Launchers
+10, Rifles
+6, RifleAmmo
+6, RifleAttachments
+8, LMG
+4, LMGAmmo
+6, Snipers
+4, SniperAmmo
+4, SniperAttachments
+6, DLCRifles
+4, DLCAmmo
+4, DLCOptics
+4, DLCSupressor
+4, Bipods
+4, Explosives
+2,	Launchers
 5,	LauncherAmmo
 10,	ModdedAttachments
 5,	ModdedUniforms
