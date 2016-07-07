@@ -96,19 +96,18 @@
 13, Exile_Weapon_Colt1911   // Colt 1911
 13, Exile_Weapon_Makarov	// Makarov
 13, Exile_Weapon_Taurus		// Taurus
-1, Exile_Weapon_TaurusGold	// Taurus (Gold)
 //Modded Pistols
 13,	rhs_weap_makarov_pmm
 13,	rhs_weap_pya
 13,	rhsusf_weap_glock17g4
 13,	rhsusf_weap_m1911a1
 13,	rhsusf_weap_m9
-	
+
 > PistolAmmo
 20, 11Rnd_45ACP_Mag				// 4-five
-10, 16Rnd_9x21_Mag				// PDW2000, P07, ROOK-40
-20, 30Rnd_9x21_Mag				// Sting, PDW2000, P07, ROOK-40
-16, 6Rnd_45ACP_Cylinder			// Zubr
+20, 16Rnd_9x21_Mag				// PDW2000, P07, ROOK-40
+10, 30Rnd_9x21_Mag				// Sting, PDW2000, P07, ROOK-40
+20, 6Rnd_45ACP_Cylinder			// Zubr
 7, 6Rnd_GreenSignal_F			// Starter Pistol
 7, 6Rnd_RedSignal_F				// Starter Pistol 
 20, 9Rnd_45ACP_Mag				// ACP-C2
@@ -123,7 +122,7 @@
 20,	rhsusf_mag_17Rnd_9x19_JHP
 20,	rhsusf_mag_15Rnd_9x19_FMJ
 20,	rhsusf_mag_15Rnd_9x19_JHP
-	
+
 > PistolAttachments
 36, muzzle_snds_L
 36, muzzle_snds_acp
@@ -132,24 +131,23 @@
 //Modded Pistol Attachments
 
 > Shotguns
-1, Exile_Weapon_M1014	//M1014
+33, Exile_Weapon_M1014	//M1014
 //Modded Shotguns
-1,	rhs_weap_M590_5RD
-1,	rhs_weap_M590_8RD
+33,	rhs_weap_M590_5RD
+33,	rhs_weap_M590_8RD
 	
 > ShotgunAmmo
-1, Exile_Magazine_8Rnd_74Slug		//M1014
+40, Exile_Magazine_8Rnd_74Slug		//M1014
 //Modded ShotgunAmmo
-1,	rhsusf_5Rnd_00Buck
-1,	rhsusf_8Rnd_00Buck
-1,	rhsusf_5Rnd_Slug
-1,	rhsusf_8Rnd_Slug
-1,	rhsusf_5Rnd_HE
-1,	rhsusf_8Rnd_HE
-1,	rhsusf_5Rnd_FRAG
-1,	rhsusf_8Rnd_FRAG
-1,	rhsusf_5Rnd_doomsday_Buck
-1,	rhsusf_8Rnd_doomsday_Buck
+40,	rhsusf_5Rnd_00Buck
+40,	rhsusf_8Rnd_00Buck
+40,	rhsusf_5Rnd_Slug
+40,	rhsusf_8Rnd_Slug
+10,	rhsusf_5Rnd_HE
+10,	rhsusf_8Rnd_HE
+10,	rhsusf_5Rnd_FRAG
+10,	rhsusf_8Rnd_FRAG
+
 > SMG
 34, SMG_01_F		// Vermin SMG .45 ACP
 33, SMG_02_F		// Sting 9 mm
@@ -193,8 +191,7 @@
 10, Exile_Weapon_AK74
 10, Exile_Weapon_AK47		
 10, Exile_Weapon_AKM		
-10, Exile_Weapon_AKS		
-1, Exile_Weapon_AKS_Gold	
+10, Exile_Weapon_AKS			
 10, Exile_Weapon_DMR		
 10, Exile_Weapon_LeeEnfield
 10, Exile_Weapon_CZ550
@@ -527,169 +524,170 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 > EpicLaunchers //For Ghost Hotel Only
-1,	launch_NLAW_F
-1,	launch_B_Titan_F
-1,	launch_I_Titan_F
-1,	launch_O_Titan_F
-1,	launch_Titan_F
-1,	launch_B_Titan_short_F
-1,	launch_I_Titan_short_F
-1,	launch_O_Titan_short_F
-1,	launch_Titan_short_F
+6,	launch_NLAW_F
+6,	launch_B_Titan_F
+6,	launch_I_Titan_F
+6,	launch_O_Titan_F
+6,	launch_Titan_F
+6,	launch_B_Titan_short_F
+6,	launch_I_Titan_short_F
+6,	launch_O_Titan_short_F
+6,	launch_Titan_short_F
 //Modded Epic Launchers
-1,	rhs_weap_M136
-1,	rhs_weap_M136_hedp
-1,	rhs_weap_M136_hp
-1,	rhs_weap_fgm148
-1,	rhs_weap_fim92
-1,	rhs_weap_smaw
-1,	rhs_weap_smaw_green
+6,	rhs_weap_M136
+6,	rhs_weap_M136_hedp
+6,	rhs_weap_M136_hp
+6,	rhs_weap_fgm148
+6,	rhs_weap_fim92
+6,	rhs_weap_smaw
+6,	rhs_weap_smaw_green
 
 > EpicLauncherAmmo //For Ghost Hotel Only
-1,	NLAW_F
-1,	Titan_AA
-1,	Titan_AT
-1,	Titan_AP
+8,	NLAW_F
+8,	Titan_AA
+8,	Titan_AT
+8,	Titan_AP
 //Modded Epic Launcher Ammo
-1,	rhs_m136_mag
-1,	rhs_m136_hedp_mag
-1,	rhs_m136_hp_mag
-1,	rhs_fim92_mag
-1,	rhs_fgm148_magazine_AT
-1,	rhs_mag_smaw_HEAA
-1,	rhs_mag_smaw_HEDP
-1,	rhs_mag_smaw_SR
+8,	rhs_m136_mag
+8,	rhs_m136_hedp_mag
+8,	rhs_m136_hp_mag
+8,	rhs_fim92_mag
+8,	rhs_fgm148_magazine_AT
+8,	rhs_mag_smaw_HEAA
+8,	rhs_mag_smaw_HEDP
+8,	rhs_mag_smaw_SR
 
 > Launchers
-1,	launch_RPG32_F
+20,	launch_RPG32_F
 //Modded Launchers
-1,	rhs_weap_igla
-1,	rhs_weap_rpg26
-1,	rhs_weap_rpg7
-1,	rhs_weap_rshg2
+20,	rhs_weap_igla
+20,	rhs_weap_rpg26
+20,	rhs_weap_rpg7
+20,	rhs_weap_rshg2
 
 > LauncherAmmo
-1,	RPG32_F
-1,	RPG32_HE_F
+9,	RPG32_F
+9,	RPG32_HE_F
 //Modded Launcher Ammo
-1,	rhs_rpg26_mag
-1,	rhs_rshg2_mag
-1,	rhs_rpg18_mag
-1,	rhs_rpg7_PG7VL_mag
-1,	rhs_rpg7_PG7VR_mag
-1,	rhs_rpg7_TBG7V_mag
-1,	rhs_rpg7_OG7V_mag
-1,	rhs_mag_9k32_rocket
-1,	rhs_mag_9k38_rocket
+9,	rhs_rpg26_mag
+9,	rhs_rshg2_mag
+9,	rhs_rpg18_mag
+9,	rhs_rpg7_PG7VL_mag
+9,	rhs_rpg7_PG7VR_mag
+9,	rhs_rpg7_TBG7V_mag
+9,	rhs_rpg7_OG7V_mag
+9,	rhs_mag_9k32_rocket
+9,	rhs_mag_9k38_rocket
 	
 > GrenadeLaunchers //Ghost Hotel Only
 50,	rhs_weap_M320
 50,	rhs_weap_m32
 
 > GrenadeLauncherAmmo //Ghost Hotel Only
-1,	rhsusf_mag_6Rnd_M441_HE
-1,	rhsusf_mag_6Rnd_M433_HEDP
-1,	rhsusf_mag_6Rnd_M714_white
-1,	rhsusf_mag_6Rnd_M576_Buckshot
-1,	rhsusf_m112_mag
-1,	rhsusf_m112x4_mag
-1,	rhs_mag_m18_green
-1,	rhs_mag_m18_purple
-1,	rhs_mag_m18_red
-1,	rhs_mag_m18_yellow
-
+10,	rhsusf_mag_6Rnd_M441_HE
+10,	rhsusf_mag_6Rnd_M433_HEDP
+10,	rhsusf_mag_6Rnd_M714_white
+10,	rhsusf_mag_6Rnd_M576_Buckshot
+10,	rhsusf_m112_mag
+10,	rhsusf_m112x4_mag
+10,	rhs_mag_m18_green
+10,	rhs_mag_m18_purple
+10,	rhs_mag_m18_red
+10,	rhs_mag_m18_yellow
+1,	rhsusf_5Rnd_doomsday_Buck
+1,	rhsusf_8Rnd_doomsday_Buck
 > ModdedAttachments
-1,	rhs_bipod
-1,	rhs_acc_tgpa
-1,	rhs_acc_pbs1
-1,	rhs_acc_dtk4short
-1,	rhs_acc_tgpv
-1,	rhs_acc_dtk4long
-1,	rhs_acc_dtk4screws
-1,	rhs_acc_muzzleFlash_dtk
-1,	rhs_acc_dtk3
-1,	rhs_acc_dtk1
-1,	rhs_acc_dtk
-1,	rhs_acc_dtk1l
-1,	rhs_acc_ak5
-1,	rhs_acc_1p29
-1,	rhs_acc_1p78	
-1,	rhs_acc_pkas
-1,	rhs_acc_ekp1
-1,	rhs_acc_1p63
-1,	rhs_acc_ekp1b
-1,	rhs_acc_ekp1c
-1,	rhs_acc_ekp1d	
-1,	rhs_acc_npz
-1,	rhs_acc_pso1m2
-1,	rhs_acc_pgo7v
-1,	rhs_acc_1pn93_1
-1,	rhs_acc_1pn93_2
-1,	rhsusf_acc_harris_bipod
-1,	rhs_acc_at4_handler
-1,	rhsusf_acc_anpeq15A
-1,	rhsusf_acc_anpeq15
-1,	rhsusf_acc_anpeq15_light
-1,	rhsusf_acc_M2010S
-1,	rhsusf_acc_anpeq15side
-1,	rhsusf_acc_SR25S
-1,	rhsusf_acc_rotex5_grey
-1,	rhsusf_acc_rotex5_tan
-1,	rhsusf_acc_nt4_black
-1,	rhsusf_acc_nt4_tan
-1,	rhsusf_acc_muzzleFlash_SF
-1,	rhsusf_acc_SF3P556
-1,	rhsusf_acc_SFMB556
-1,	rhsusf_acc_compm4
-1,	rhsusf_acc_eotech_552
-1,	rhsusf_acc_LEUPOLDMK4
-1,	rhsusf_acc_M2A1
-1,	rhsusf_acc_EOTECH
-1,	rhsusf_acc_LEUPOLDMK4_2
-1,	rhsusf_acc_ACOG3_USMC
-1,	rhsusf_acc_ACOG2_USMC
-1,	rhsusf_acc_ACOG_USMC
-1,	rhsusf_acc_ACOG3
-1,	rhsusf_acc_ACOG2
-1,	rhsusf_acc_ACOG_pip
-1,	rhsusf_acc_ACOG_sa
-1,	rhsusf_acc_ACOG_d
-1,	rhsusf_acc_ACOG_wd
-1,	rhsusf_acc_ACOG
+2,	rhs_bipod
+2,	rhs_acc_tgpa
+2,	rhs_acc_pbs1
+2,	rhs_acc_dtk4short
+2,	rhs_acc_tgpv
+2,	rhs_acc_dtk4long
+2,	rhs_acc_dtk4screws
+2,	rhs_acc_muzzleFlash_dtk
+2,	rhs_acc_dtk3
+2,	rhs_acc_dtk1
+2,	rhs_acc_dtk
+2,	rhs_acc_dtk1l
+2,	rhs_acc_ak5
+2,	rhs_acc_1p29
+2,	rhs_acc_1p78	
+2,	rhs_acc_pkas
+2,	rhs_acc_ekp1
+2,	rhs_acc_1p63
+2,	rhs_acc_ekp1b
+2,	rhs_acc_ekp1c
+2,	rhs_acc_ekp1d	
+2,	rhs_acc_npz
+2,	rhs_acc_pso1m2
+2,	rhs_acc_pgo7v
+2,	rhs_acc_1pn93_1
+2,	rhs_acc_1pn93_2
+2,	rhsusf_acc_harris_bipod
+2,	rhs_acc_at4_handler
+2,	rhsusf_acc_anpeq15A
+2,	rhsusf_acc_anpeq15
+2,	rhsusf_acc_anpeq15_light
+2,	rhsusf_acc_M2010S
+2,	rhsusf_acc_anpeq15side
+2,	rhsusf_acc_SR25S
+2,	rhsusf_acc_rotex5_grey
+2,	rhsusf_acc_rotex5_tan
+2,	rhsusf_acc_nt4_black
+2,	rhsusf_acc_nt4_tan
+2,	rhsusf_acc_muzzleFlash_SF
+2,	rhsusf_acc_SF3P556
+2,	rhsusf_acc_SFMB556
+2,	rhsusf_acc_compm4
+2,	rhsusf_acc_eotech_552
+2,	rhsusf_acc_LEUPOLDMK4
+2,	rhsusf_acc_M2A1
+2,	rhsusf_acc_EOTECH
+2,	rhsusf_acc_LEUPOLDMK4_2
+2,	rhsusf_acc_ACOG3_USMC
+2,	rhsusf_acc_ACOG2_USMC
+2,	rhsusf_acc_ACOG_USMC
+2,	rhsusf_acc_ACOG3
+2,	rhsusf_acc_ACOG2
+2,	rhsusf_acc_ACOG_pip
+2,	rhsusf_acc_ACOG_sa
+2,	rhsusf_acc_ACOG_d
+2,	rhsusf_acc_ACOG_wd
+2,	rhsusf_acc_ACOG
 	
 > ModdedUniforms
-1,	rhs_uniform_FROG01_d
-1,	rhs_uniform_FROG01_m81
-1,	rhs_uniform_FROG01_wd
-1,	rhs_uniform_cu_ocp
-1,	rhs_uniform_cu_ocp_101st
-1,	rhs_uniform_cu_ocp_10th
-1,	rhs_uniform_cu_ocp_1stcav
-1,	rhs_uniform_cu_ocp_82nd
-1,	rhs_uniform_cu_ucp
-1,	rhs_uniform_cu_ucp_101st
-1,	rhs_uniform_cu_ucp_10th
-1,	rhs_uniform_cu_ucp_1stcav
-1,	rhs_uniform_cu_ucp_82nd
-1,	rhs_uniform_vdv_emr_des
-1,	rhs_uniform_emr_patchless
-1,	rhs_uniform_msv_emr
-1,	rhs_uniform_vdv_emr
-1,	rhs_uniform_flora_patchless
-1,	rhs_uniform_flora_patchless_alt
-1,	rhs_uniform_flora
-1,	rhs_uniform_vdv_flora
-1,	rhs_uniform_gorka_r_g
-1,	rhs_uniform_gorka_r_y
-1,	rhs_chdkz_uniform_5
-1,	rhs_chdkz_uniform_4
-1,	rhs_chdkz_uniform_3
-1,	rhs_chdkz_uniform_2
-1,	rhs_chdkz_uniform_1
-1,	rhs_uniform_mvd_izlom
-1,	rhs_uniform_mflora_patchless
-1,	rhs_uniform_vdv_mflora
-	
+3,	rhs_uniform_FROG01_d
+3,	rhs_uniform_FROG01_m81
+3,	rhs_uniform_FROG01_wd
+3,	rhs_uniform_cu_ocp
+3,	rhs_uniform_cu_ocp_101st
+3,	rhs_uniform_cu_ocp_10th
+3,	rhs_uniform_cu_ocp_1stcav
+3,	rhs_uniform_cu_ocp_82nd
+3,	rhs_uniform_cu_ucp
+3,	rhs_uniform_cu_ucp_101st
+3,	rhs_uniform_cu_ucp_10th
+3,	rhs_uniform_cu_ucp_1stcav
+3,	rhs_uniform_cu_ucp_82nd
+3,	rhs_uniform_vdv_emr_des
+3,	rhs_uniform_emr_patchless
+3,	rhs_uniform_msv_emr
+3,	rhs_uniform_vdv_emr
+3,	rhs_uniform_flora_patchless
+3,	rhs_uniform_flora_patchless_alt
+3,	rhs_uniform_flora
+3,	rhs_uniform_vdv_flora
+3,	rhs_uniform_gorka_r_g
+3,	rhs_uniform_gorka_r_y
+3,	rhs_chdkz_uniform_5
+3,	rhs_chdkz_uniform_4
+3,	rhs_chdkz_uniform_3
+3,	rhs_chdkz_uniform_2
+3,	rhs_chdkz_uniform_1
+3,	rhs_uniform_mvd_izlom
+3,	rhs_uniform_mflora_patchless
+3,	rhs_uniform_vdv_mflora
+
 > ModdedVests
 1,	rhsusf_iotv_ocp
 1,	rhsusf_iotv_ocp_Grenadier
@@ -787,13 +785,13 @@
 1,	rhs_6sh92_digi_vog_headset
 
 > ModdedBackpacks
-1,	B_rhsusf_B_BACKPACK
-1,	rhsusf_assault_eagleaiii_coy
-1,	rhsusf_assault_eagleaiii_ocp
-1,	rhsusf_assault_eagleaiii_ucp
-1,	rhsusf_falconii
-1,	rhs_assault_umbts
-1,	rhs_assault_umbts_engineer_empty
+14,	B_rhsusf_B_BACKPACK
+14,	rhsusf_assault_eagleaiii_coy
+14,	rhsusf_assault_eagleaiii_ocp
+14,	rhsusf_assault_eagleaiii_ucp
+14,	rhsusf_falconii
+14,	rhs_assault_umbts
+14,	rhs_assault_umbts_engineer_empty
 
 > ModdedHelmets
 1,	rhs_Booniehat_m81
@@ -938,6 +936,10 @@
 1,	rhs_Booniehat_digi
 1,	rhs_Booniehat_flora
 1,	rhs_ssh68
+
+> GoldWeapons
+50, Exile_Weapon_TaurusGold
+50, Exile_Weapon_AKS_Gold
 
 ///////////////////////////////////////////////////////////////////////////////
 // Clothing & Gear
@@ -1237,10 +1239,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 > MedicalItems
-2, Exile_Item_InstaDoc
-5, Exile_Item_Bandage
-10, Exile_Item_Vishpirin
-10, Exile_Item_Heatpack
+4, Exile_Item_InstaDoc
+10, Exile_Item_Bandage
+20, Exile_Item_Vishpirin
+20, Exile_Item_Heatpack
+3, Exile_Item_Defibrillator
 
 > IndustrialItems
 1, Exile_Item_ThermalScannerPro
@@ -1319,5 +1322,4 @@
 14, Exile_Item_Hammer
 5, Exile_Item_Carwheel
 5, Exile_Item_SleepingMat
-5, Exile_Item_Defibrillator
 5, Exile_Item_Wrench
