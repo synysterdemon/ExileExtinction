@@ -216,6 +216,7 @@
 3,	ModdedVests
 4,	ModdedBackpacks
 5,	ModdedHelmets
+1,	GoldWeapons
 ///////////////////////////////////////////////////////////////////////////////
 // Hospital, Medevac etc. (Does not spawn on Altis!)
 ///////////////////////////////////////////////////////////////////////////////
@@ -272,3 +273,4 @@
 10,	GrenadeLaunchers
 10,	GrenadeLauncherAmmo
 10,	ModdedBackpacks
+3, GoldWeapons
