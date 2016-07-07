@@ -147,8 +147,7 @@
 10,	rhsusf_8Rnd_HE
 10,	rhsusf_5Rnd_FRAG
 10,	rhsusf_8Rnd_FRAG
-1,	rhsusf_5Rnd_doomsday_Buck //move to rad zone
-1,	rhsusf_8Rnd_doomsday_Buck //move to rad zone
+
 > SMG
 34, SMG_01_F		// Vermin SMG .45 ACP
 33, SMG_02_F		// Sting 9 mm
@@ -595,7 +594,8 @@
 10,	rhs_mag_m18_purple
 10,	rhs_mag_m18_red
 10,	rhs_mag_m18_yellow
-
+1,	rhsusf_5Rnd_doomsday_Buck
+1,	rhsusf_8Rnd_doomsday_Buck
 > ModdedAttachments
 2,	rhs_bipod
 2,	rhs_acc_tgpa
@@ -687,7 +687,7 @@
 3,	rhs_uniform_mvd_izlom
 3,	rhs_uniform_mflora_patchless
 3,	rhs_uniform_vdv_mflora
-	
+
 > ModdedVests
 1,	rhsusf_iotv_ocp
 1,	rhsusf_iotv_ocp_Grenadier
@@ -1322,5 +1322,4 @@
 14, Exile_Item_Hammer
 5, Exile_Item_Carwheel
 5, Exile_Item_SleepingMat
-5, Exile_Item_Defibrillator
 5, Exile_Item_Wrench
