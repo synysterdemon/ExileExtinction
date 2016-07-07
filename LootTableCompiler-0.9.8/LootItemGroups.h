@@ -594,8 +594,9 @@
 10,	rhs_mag_m18_purple
 10,	rhs_mag_m18_red
 10,	rhs_mag_m18_yellow
-1,	rhsusf_5Rnd_doomsday_Buck
-1,	rhsusf_8Rnd_doomsday_Buck
+1, rhsusf_5Rnd_doomsday_Buck
+1, rhsusf_8Rnd_doomsday_Buck
+
 > ModdedAttachments
 2,	rhs_bipod
 2,	rhs_acc_tgpa
