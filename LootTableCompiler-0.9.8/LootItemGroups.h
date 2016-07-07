@@ -102,7 +102,7 @@
 13,	rhsusf_weap_glock17g4
 13,	rhsusf_weap_m1911a1
 13,	rhsusf_weap_m9
-	
+
 > PistolAmmo
 20, 11Rnd_45ACP_Mag				// 4-five
 20, 16Rnd_9x21_Mag				// PDW2000, P07, ROOK-40
@@ -122,7 +122,7 @@
 20,	rhsusf_mag_17Rnd_9x19_JHP
 20,	rhsusf_mag_15Rnd_9x19_FMJ
 20,	rhsusf_mag_15Rnd_9x19_JHP
-	
+
 > PistolAttachments
 36, muzzle_snds_L
 36, muzzle_snds_acp
@@ -139,7 +139,7 @@
 > ShotgunAmmo
 40, Exile_Magazine_8Rnd_74Slug		//M1014
 //Modded ShotgunAmmo
-40,	rhsusf_5Rnd_00Buck/
+40,	rhsusf_5Rnd_00Buck
 40,	rhsusf_8Rnd_00Buck
 40,	rhsusf_5Rnd_Slug
 40,	rhsusf_8Rnd_Slug
