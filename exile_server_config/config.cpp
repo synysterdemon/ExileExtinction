@@ -5089,7 +5089,7 @@ class CfgSettings
 	class CBA 
 	{
 		// Set this to 1 if you want to have CBA support
-		useStackedEH = 0;
+		useStackedEH = 1;
 
 		// If you set this to 1 ...........................................
 		iReallyWantToGetHackedAndImRetarded = 0;
@@ -5281,7 +5281,9 @@ class CfgSettings
 			"ItemMap", // Because why not
 			"Exile_Item_XM8",
 			"ItemRadio",
-			"Exile_Item_PlasticBottleFreshWater"
+			"Exile_Item_PlasticBottleFreshWater",
+			"Exile_Melee_Axe",
+			"Exile_Magazine_Swing"
 		};
 
 		/**
@@ -5349,13 +5351,13 @@ class CfgSettings
 		* smaller the number more vehicles,
 		* you get the point
 		*/
-		vehiclesGridSize = 2200;
+		vehiclesGridSize = 3000;
 
 		/**
 		* Vehicle ammount per grid
 		* kinda self explanitory
 		*/
-		vehiclesGridAmount = 2;
+		vehiclesGridAmount = 3;
 
 		/**
 		* Creates global markers for vehicle spawn tweeking,
@@ -5407,7 +5409,84 @@ class CfgSettings
 			"Exile_Car_LandRover_Ambulance_Desert",
 			"Exile_Car_Tractor_Red",
 			"Exile_Car_OldTractor_Red",
-			"Exile_Car_Octavius_White"
+			"Exile_Car_Octavius_White",
+			"rhs_gaz66_r142_vmf",
+			"rhs_gaz66_repair_vmf",
+			"rhs_gaz66_vmf",
+			"rhs_gaz66_flat_vdv",
+			"rhs_gaz66o_vdv",
+			"rhs_gaz66o_flat_vdv",
+			"rhs_gaz66_ammo_vmf",
+"rhs_gaz66_vv",
+"rhs_gaz66_msv",
+"rhs_gaz66_flat_vmf",
+"rhs_gaz66_flat_vv",
+"rhs_gaz66_flat_msv",
+"rhs_gaz66o_vmf",
+"rhs_gaz66o_vv",
+"rhs_gaz66o_msv",
+"rhs_gaz66o_flat_vmf",
+"rhs_gaz66o_flat_vv",
+"rhs_gaz66o_flat_msv",
+"rhs_gaz66_r142_vdv",
+"rhs_gaz66_r142_msv",
+"rhs_gaz66_r142_vv",
+"rhs_gaz66_repair_vdv",
+"rhs_gaz66_repair_vv",
+"rhs_gaz66_repair_msv",
+			"rhsusf_m1025_w",
+			"rhsusf_m1025_w_m2",
+			"rhsusf_m998_w_2dr",
+			"rhsusf_m998_w_4dr",
+			"rhsusf_m998_w_s_2dr_fulltop",
+			"rhsusf_m998_d_s_2dr_fulltop",
+			"rhsusf_m998_w_s_2dr_halftop",
+			"rhsusf_m998_d_s_2dr_halftop",
+			"rhsusf_m998_d_s_4dr_fulltop",
+			"rhsusf_m998_w_s_4dr_fulltop",
+			"rhsusf_m998_d_s_4dr_halftop",
+			"rhsusf_m998_w_s_4dr_halftop",
+			"rhsusf_M1078A1P2_wd_fmtv_usarmy",
+			"rhsusf_M1078A1P2_d_fmtv_usarmy",
+			"rhsusf_M1078A1P2_wd_open_fmtv_usarmy",
+			"rhsusf_M1078A1P2_d_open_fmtv_usarmy",
+			"rhsusf_M1078A1P2_wd_flatbed_fmtv_usarmy",
+			"rhsusf_M1078A1P2_d_flatbed_fmtv_usarmy",
+			"rhsusf_M1078A1P2_B_d_fmtv_usarmy",
+			"rhsusf_M1078A1P2_B_wd_fmtv_usarmy",
+			"rhsusf_M1078A1P2_B_wd_open_fmtv_usarmy",
+			"rhsusf_M1078A1P2_B_d_open_fmtv_usarmy",
+			"rhsusf_M1078A1P2_B_wd_flatbed_fmtv_usarmy",
+			"rhsusf_M1078A1P2_B_d_flatbed_fmtv_usarmy",
+"rhsusf_M1083A1P2_B_M2_d_MHQ_fmtv_usarmy",
+"rhsusf_M1083A1P2_B_M2_d_Medical_fmtv_usarmy",			
+			"rhsusf_rg33_d",
+			"rhsusf_rg33_wd",
+			"rhs_uaz_vmf",
+			"rhs_uaz_open_vmf",
+			"RHS_Ural_Open_Civ_01",
+			"RHS_Ural_Open_Civ_02",
+			"RHS_Ural_Open_Civ_03",
+"RHS_Ural_MSV_01",
+"RHS_Ural_VDV_01",
+"RHS_Ural_VMF_01",
+"RHS_Ural_VV_01",
+"RHS_Ural_Flat_MSV_01",
+"RHS_Ural_Flat_VDV_01",
+"RHS_Ural_Flat_VMF_01",
+"RHS_Ural_Flat_VV_01",
+"RHS_Ural_Open_MSV_01",
+"RHS_Ural_Open_VDV_01",
+"RHS_Ural_Open_VMF_01",
+"RHS_Ural_Open_VV_01",
+"RHS_Ural_Open_Flat_MSV_01",
+"RHS_Ural_Open_Flat_VDV_01",
+"RHS_Ural_Open_Flat_VMF_01",
+"RHS_Ural_Open_Flat_VV_01",
+"RHS_Ural_Fuel_MSV_01",
+"RHS_Ural_Fuel_VDV_01",
+"RHS_Ural_Fuel_VMF_01",
+"RHS_Ural_Fuel_VV_01",
 		};
 
 		/**
@@ -5416,7 +5495,7 @@ class CfgSettings
 		 * 0 = off
 		 * 1 = on
 		 */
-		nightVision = 1;
+		nightVision = 0;
 
 		/**
 		 * Enables or disables thermal optics on ALL vehicles
@@ -5449,7 +5528,7 @@ class CfgSettings
 			weather type of be more dominant compared to others, add it multiple times
 		*/
 		//keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
-		keyframes[] = {"Sunny"}; 
+		keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
 
 		/*
 			This is a keyframe. Look up the BIKI to get more details about the parameters
@@ -5520,7 +5599,7 @@ class CfgSettings
 		// time in ARMA FORMAT << CONFIG
 		// https://community.bistudio.com/wiki/setDate
 
-		staticTime[] = {2039,10,24,15,30};
+		staticTime[] = {2045,10,24,15,30};
 	};
 
 
@@ -5531,7 +5610,7 @@ class CfgSettings
 		*/
 
 		// This needs to match config.cfg serverCommandPassword
-		serverPassword = "";
+		serverPassword = "muffins";
 
 		// Autolocks server until its ready to accept players
 		useAutoLock = 0;
@@ -5556,14 +5635,14 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useAutoKick = 0;
+		useAutoKick = 1;
 
 		/*
 			Number of minutes before the server kicks players that did
 			not disconnect before the restart. Should at least be two
 			minutes!
 		*/
-		kickTime = 2;
+		kickTime = 1;
 
 		/*
 			Self-explanatory
@@ -5571,21 +5650,21 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useRestartMessages = 0;
+		useRestartMessages = 1;
 
 		/*
 			Number of minutes before the restart to inform your players.
 
 			Only use full minutes here. Value like 5.5 have not been tested.
 		*/
-		restartWarningTime[] = {15, 10, 5, 3}; 
+		restartWarningTime[] = {30, 15, 10, 5, 3}; 
 
 		/* 
 			If set to 1 server will execute '#shutdown',
 			to try to shutdown the server
 		*/
 
-		useShutdown = 0;
+		useShutdown = 1;
 	};
 
 	class ServerSettings
@@ -5615,7 +5694,7 @@ class CfgSettings
 		/*
 			A list of events that are active
 		*/
-		enabledEvents[] = {"SupplyBox", "AbandonedSafe", "AmbientFlyOver"}; 
+		enabledEvents[] = {"SupplyBox", "AbandonedSafe"}; 
 
 		class SupplyBox 
 		{
