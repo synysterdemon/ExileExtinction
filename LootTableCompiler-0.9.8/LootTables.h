@@ -138,7 +138,6 @@
 4, SmokeGrenades
 3, IndustrialItems
 3, Restraints
-3, MedicalItems
 5,	ModdedBackpacks
 ///////////////////////////////////////////////////////////////////////////////
 // Construction Sites, Warehouses, Research etc.
