@@ -9,6 +9,12 @@
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
  
+			#include "MarXet\CfgMarXet.cpp"
+ 
+  class CfgNetworkMessages
+            {
+                #include "MarXet\CfgMarXetNetworkMessages.hpp"
+            };
 
 class CfgClans
 {
@@ -17,7 +23,7 @@ class CfgClans
 
 		Default: 20,000
 	*/
-	registrationFee = 20000;
+	registrationFee = 500000;
 
 	/*
 		A list of all characters allowed in a clan *name*
@@ -1606,18 +1612,18 @@ class CfgExileArsenal
 	class Exile_Item_JunkMetal						{ quality = 1; price = 400; };
 	class Exile_Item_LightBulb						{ quality = 1; price = 20; };
 	class Exile_Item_MetalBoard						{ quality = 1; price = 600; };
-	//class Exile_Item_MetalHedgehogKit				{ quality = 1; price = 1200; };
+	class Exile_Item_MetalHedgehogKit				{ quality = 1; price = 1200; };
 	class Exile_Item_SafeKit						{ quality = 4; price = 25000; };
 	class Exile_Item_CodeLock						{ quality = 1; price = 5000; };
-	//class Exile_Item_Laptop						{ quality = 2; price = 9000; };
-	//class Exile_Item_BaseCameraKit				{ quality = 2; price = 5000; };
+	class Exile_Item_Laptop						{ quality = 2; price = 9000; };
+	class Exile_Item_BaseCameraKit				{ quality = 2; price = 5000; };
 	class Exile_Item_CamoTentKit					{ quality = 1; price = 250; };
 	class Exile_Item_MetalPole						{ quality = 1; price = 800; };
-	//class Exile_Item_MetalScrews					{ quality = 1; price = 100; };
-	//class Exile_Item_MetalWire						{ quality = 1; price = 100; };
-	//class Exile_Item_Cement							{ quality = 1; price = 20; };
-	//class Exile_Item_Sand							{ quality = 1; price = 20; };
-	//class Exile_Item_CarWheel						{ quality = 1; price = 1000; };
+	class Exile_Item_MetalScrews					{ quality = 1; price = 100; };
+	class Exile_Item_MetalWire						{ quality = 1; price = 100; };
+	class Exile_Item_Cement							{ quality = 1; price = 20; };
+	class Exile_Item_Sand							{ quality = 1; price = 20; };
+	class Exile_Item_CarWheel						{ quality = 1; price = 1000; };
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Food
@@ -1659,8 +1665,7 @@ class CfgExileArsenal
 	class Exile_Item_Vishpirin						{ quality = 3; price = 300; };
 	class Exile_Item_Bandage	                    { quality = 2; price = 100; };
 	class Exile_Item_Heatpack	                    { quality = 1; price = 50; };
-
-	//class Exile_Item_Defibrillator				{ quality = 1; price = 7500; };
+	class Exile_Item_Defibrillator				{ quality = 1; price = 10000; };
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Tools
@@ -1674,16 +1679,16 @@ class CfgExileArsenal
 	class Exile_Item_Pliers							{ quality = 2; price = 350; };
 	class Exile_Item_Grinder						{ quality = 2; price = 1250; };
 	class Exile_Item_Foolbox						{ quality = 2; price = 4000; };
-	//class Exile_Item_CordlessScrewdriver			{ quality = 1; price = 750; };
-	//class Exile_Item_FireExtinguisher				{ quality = 1; price = 650; };
-	//class Exile_Item_Hammer						{ quality = 1; price = 600; };
-	//class Exile_Item_OilCanister					{ quality = 1; price = 1750; };
-	//class Exile_Item_Screwdriver					{ quality = 1; price = 250; };
-	//class Exile_Item_Shovel						{ quality = 1; price = 700; };
-	//class Exile_Item_Wrench						{ quality = 1; price = 250; };
-	//class Exile_Item_SleepingMat					{ quality = 1; price = 1250; };
-	//class Exile_Item_ToiletPaper					{ quality = 1; price = 5; };
-	//class Exile_Item_ZipTie						{ quality = 1; price = 250; };
+	class Exile_Item_CordlessScrewdriver			{ quality = 1; price = 750; };
+	class Exile_Item_FireExtinguisher				{ quality = 1; price = 650; };
+	class Exile_Item_Hammer						{ quality = 1; price = 600; };
+	class Exile_Item_OilCanister					{ quality = 1; price = 1750; };
+	class Exile_Item_Screwdriver					{ quality = 1; price = 250; };
+	class Exile_Item_Shovel						{ quality = 1; price = 700; };
+	class Exile_Item_Wrench						{ quality = 1; price = 250; };
+	class Exile_Item_SleepingMat					{ quality = 1; price = 1250; };
+	class Exile_Item_ToiletPaper					{ quality = 1; price = 5; };
+	class Exile_Item_ZipTie						{ quality = 1; price = 250; };
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Navigation
@@ -2716,20 +2721,10 @@ class CfgExileArsenal
 
 class CfgExileCustomCode 
 {
-	/*
-		You can overwrite every single file of our code without touching it.
-		To do that, add the function name you want to overwrite plus the 
-		path to your custom file here. If you wonder how this works, have a
-		look at our bootstrap/fn_preInit.sqf function.
-
-		Simply add the following scheme here:
-
-		<Function Name of Exile> = "<New File Name>";
-
-		Example:
-
-		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
-	*/
+	//REVIVE SCRIPT//
+	 ExileClient_object_player_death_startBleedingOut = "custom\EnigmaRevive\ExileClient_object_player_death_startBleedingOut.sqf"; //Happys Revive
+    ExileClient_object_player_event_onInventoryOpened = "custom\EnigmaRevive\ExileClient_object_player_event_onInventoryOpened.sqf"; //Happys Revive AntiDupe ---NEW with v0.65
+	
 };
 class CfgExileEnvironment
 {
@@ -3555,6 +3550,15 @@ class CfgInteractionMenus
 				condition = "!(alive ExileClientInteractionObject)";
 				action = "_this call ExileClient_object_player_identifyBody";
 			};
+			
+			//////////////Added by [_ZEN_]happydayz/////////////////
+
+        class Revive: ExileAbstractAction
+        {
+            title = "Perform CPR";
+            condition = "(!(alive ExileClientInteractionObject) && (ExileClientInteractionObject getVariable ['EnigmaRevivePermitted', true]) && (magazines player find 'Exile_Item_Defibrillator' >= 0))";
+            action = "_this spawn Enigma_RevivePlyr";
+        };   
 			
 			class HideCorpse: ExileAbstractAction
 			{
@@ -4488,10 +4492,8 @@ class Glasses
 			"Exile_Item_MetalPole",
 			"Exile_Item_SafeKit",
 			"Exile_Item_CamoTentKit",
-			"Exile_Item_CodeLock"
-			
-			/*
-			--Not for Sale--
+			"Exile_Item_CodeLock",
+			"Exile_Item_Rope",
 			"Exile_Item_MetalScrews",
 			"Exile_Item_MetalWire",
 			"Exile_Item_Laptop",
@@ -4500,17 +4502,13 @@ class Glasses
 			"Exile_Item_Cement",
 			"Exile_Item_Sand",
 			"Exile_Item_MobilePhone",
-			--Unused--
 			"Exile_Item_CordlessScrewdriver",
 			"Exile_Item_FireExtinguisher",
 			"Exile_Item_OilCanister",
 			"Exile_Item_Hammer",
 			"Exile_Item_Carwheel",
 			"Exile_Item_SleepingMat",
-			"Exile_Item_Defibrillator",
-			"Exile_Item_Wrench",
-			"Exile_Item_Rope"
-		*/
+			"Exile_Item_Wrench"
 		};
 	};
 
@@ -4617,10 +4615,8 @@ class Glasses
 			"Exile_Item_InstaDoc",
 			"Exile_Item_Bandage",
 			"Exile_Item_Vishpirin",
-			"Exile_Item_Heatpack"
-
-			// Not available in 0.9.4!
-			//"Exile_Item_Defibrillator"
+			"Exile_Item_Heatpack",
+			"Exile_Item_Defibrillator"
 		};
 	};
 

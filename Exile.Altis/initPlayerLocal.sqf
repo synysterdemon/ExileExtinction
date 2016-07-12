@@ -506,3 +506,89 @@ call ExileClient_object_trader_create;
     187.428
 ]
 call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// MINE Equipment Trader
+///////////////////////////////////////////////////////////////////////////
+_trader = 
+[
+    "Exile_Trader_Equipment",
+    "Exile_Trader_Equipment",
+    "WhiteHead_19",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [18456,14255.3,0.00500107],
+    0
+]
+call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// MINE Armory Trader
+///////////////////////////////////////////////////////////////////////////
+
+_trader = 
+[
+    "Exile_Trader_Armory",
+    "Exile_Trader_Armory",
+    "PersianHead_A3_02",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [18461.4,14254,0.00546455],
+    0
+]
+call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// MINE Hardware Trader
+///////////////////////////////////////////////////////////////////////////
+
+_trader = 
+[
+    "Exile_Trader_Hardware",
+    "Exile_Trader_Hardware",
+    "PersianHead_A3_02",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [18478.2,14299.7,0.000780106],
+    124.243
+]
+call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// MINE Specops Trader
+///////////////////////////////////////////////////////////////////////////
+_trader = 
+[
+    "Exile_Trader_SpecialOperations",
+    "Exile_Trader_SpecialOperations",
+    "AfricanHead_02",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [18495.9,14250.1,0.000383377],
+    291.566
+]
+call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// MINE Office Trader
+///////////////////////////////////////////////////////////////////////////
+_trader = 
+[
+    "Exile_Trader_Office",
+    "Exile_Trader_Office",
+    "GreekHead_A3_04",
+    ["HubBriefing_scratch", "HubBriefing_stretch", "HubBriefing_think", "HubBriefing_lookAround1", "HubBriefing_lookAround2"],
+    [18495.9,14280.6,0.608179],
+    322.908
+]
+call ExileClient_object_trader_create;
+
+///////////////////////////////////////////////////////////////////////////
+// MINE Food Trader
+///////////////////////////////////////////////////////////////////////////
+_trader = 
+[
+    "Exile_Trader_Food",
+    "Exile_Trader_Food",
+    "AfricanHead_02",
+    ["HubStanding_idle1", "HubStanding_idle2", "HubStanding_idle3"],
+    [18514.4,14307,0.000579834],
+    238.671
+]
+call ExileClient_object_trader_create;

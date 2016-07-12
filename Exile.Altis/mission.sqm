@@ -1045,7 +1045,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=26;
+		items=28;
 
 		class Item0
 		{
@@ -1325,9 +1325,31 @@ class Mission
 		{
 			position[]={21845.1,0,20977.6};
 			name="ContaminatedZoneGhostHotelIcon";
-			text="";
+			text="Highly Contaminated Area";
 			type="ExileContaminatedZoneIcon";
 		};
+		
+		class Item26
+		{
+			position[]={18456.229,0,14281.29};
+			name="MineTraderZone";
+			text="Mine Traders";
+			type="ExileTraderZone";
+			markerType="ELLIPSE";
+			colorName="ColorBlack";
+			fillName="Border";
+			a=175;
+			b=175;
+			drawBorder=1;
+		};
+		class Item27
+		{
+			position[]={18456.229,0,14281.29};
+			name="MineTraderMarkerIcon";
+			text="Abandoned Mine Traders";
+			type="ExileTraderZoneIcon";
+		};
+		
 	};
 };
 class Intro
