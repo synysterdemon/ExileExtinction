@@ -1195,7 +1195,7 @@ class Mission
 		{
 			position[]={14599.966,22.349989,16797.193};
 			name="TraderCityMarkerIcon";
-			text="";
+			text="Trader Central";
 			type="ExileTraderZoneIcon";
 		};
 
@@ -1216,7 +1216,7 @@ class Mission
 		{
 			position[]={23334.605,4.0095582,24188.938};
 			name="TraderZoneSilderasIcon";
-			text="";
+			text="Trader Zone";
 			type="ExileTraderZoneIcon";
 		};
 
@@ -1237,7 +1237,7 @@ class Mission
 		{
 			position[]={2998.0603,3.7756021,18175.479};
 			name="TraderZoneFoliaIcon";
-			text="";
+			text="Trader Zone";
 			type="ExileTraderZoneIcon";
 		};
 
