@@ -5429,7 +5429,7 @@ class CfgSettings
 	class CBA 
 	{
 		// Set this to 1 if you want to have CBA support
-		useStackedEH = 1;
+		useStackedEH = 0;
 
 		// If you set this to 1 ...........................................
 		iReallyWantToGetHackedAndImRetarded = 0;
