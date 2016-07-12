@@ -3516,6 +3516,10 @@ class CfgExileCustomCode
 	 ExileClient_object_player_death_startBleedingOut = "Custom\EnigmaRevive\ExileClient_object_player_death_startBleedingOut.sqf"; //Happys Revive
     ExileClient_object_player_event_onInventoryOpened = "Custom\EnigmaRevive\ExileClient_object_player_event_onInventoryOpened.sqf"; //Happys Revive AntiDupe ---NEW with v0.65
 	ExileClient_util_playerEquipment_add = "Custom\overrides\ExileClient_util_playerEquipment_add.sqf";  // Rocket launcher fix
+	//Vehicle Protection System
+		ExileServer_object_player_database_load = "Custom\overrides\ExileServer_object_player_database_load.sqf";
+		ExileServer_object_vehicle_database_load = "Custom\overrides\ExileServer_object_vehicle_database_load.sqf";
+		ExileServer_object_vehicle_database_update = "Custom\overrides\ExileServer_object_vehicle_database_update.sqf";
 	
 };
 class CfgExileEnvironment
@@ -3898,6 +3902,13 @@ class CfgInteractionMenus
 				condition = "((locked ExileClientInteractionObject) isEqualTo 2) && ((locked ExileClientInteractionObject) != 1)";
 				action = "['HotwireVehicle', _this select 0] call ExileClient_action_execute";
 			};
+			
+			class ClaimVehicle: ExileAbstractAction
+			{
+				title = "Claim Ownership";
+				condition = "true";
+				action = "call ExileClient_ClaimVehicles_network_claimRequestSend";
+			};
 
 			// Flips a vehicle so the player doesnt have to call an admin
 			// Check if vector up is fucked
@@ -3963,6 +3974,14 @@ class CfgInteractionMenus
 				condition = "((locked ExileClientInteractionObject) isEqualTo 2) && ((locked ExileClientInteractionObject) != 1)";
 				action = "['HotwireVehicle', _this select 0] call ExileClient_action_execute";
 			};
+			
+			class ClaimVehicle: ExileAbstractAction
+			{
+				title = "Claim Ownership";
+				condition = "true";
+				action = "call ExileClient_ClaimVehicles_network_claimRequestSend";
+			};
+
 
 			// Repairs a vehicle to 100%. Requires Duckttape
 			class Repair: ExileAbstractAction
