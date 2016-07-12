@@ -39,13 +39,13 @@ ZCP_MaxWaitTime = 120; // random between 0 and THIS number added to the ZCP_MinW
 ZCP_BaseCleanupDelay = 180; // seconds to wait to delete a captured base.
 
 ZCP_RewardRelativeToPlayersOnline = true; // This will recalculate the crypto reward according the amount of online players.
-ZCP_PoptabReward = 500; // Poptab reward for capping per player online. ( When poptab reward is selected or randomly chosen ).
-ZCP_MinPoptabReward = 100000; // Poptabreward is added to this number
+ZCP_PoptabReward = 5000; // Poptab reward for capping per player online. ( When poptab reward is selected or randomly chosen ).
+ZCP_MinPoptabReward = 500000; // Poptabreward is added to this number
 
 /* Reputation is ALWAYS given as addition on the normal reward.*/
-ZCP_ReputationReward = 25; // Respect reward for capping per  player online.
-ZCP_MinReputationReward = 5000; // ZCP_ReputationReward is added to this number
-ZCP_ReputationRewardForGroup = 500; // Each group members gets this amount of reputation ( for the trouble).
+ZCP_ReputationReward = 50; // Respect reward for capping per  player online.
+ZCP_MinReputationReward = 250000; // ZCP_ReputationReward is added to this number
+ZCP_ReputationRewardForGroup = 10000; // Each group members gets this amount of reputation ( for the trouble).
 ZCP_CONFIG_GroupDistanceForRespect = 200; // meters to be close to the capper to get the group award
 
 ZCP_CleanupBase = true; // Let the base dissappear after completing
@@ -84,7 +84,7 @@ ZCP_CapPoints = [
 	[
 		"Control Point", // name (0)
 		[[10000,10000,0],[10000,10000,0]], // [[x,y,z],[x,y,z]] if using static location (1)
-		["Random","Random","Reputation"], // Reward -> Random, Poptabs, Vehicle, Buildingbox, WeaponBox , BigWeaponBox, SniperWeaponBox (2)
+		["Poptabs","Random","Poptabs"], // Reward -> Random, Poptabs, Vehicle, Buildingbox, WeaponBox , BigWeaponBox, SniperWeaponBox (2)
 		"alpha", // unique varname -> this gets checked and fixed automaticly on server start ( so don't really worry about it ).
 		0, // unique index -> this gets checked and fixed automaticly on server start ( so don't really worry about it ).
 		true, // spawnAI on start of the missions ( NEEDS AI system for this ) (5)
@@ -104,7 +104,7 @@ ZCP_CapPoints = [
 			[
 				15, // procentage of the cap time to start attack (50 = 50% of the total captime)
 				3, // Amount of AI units in a group
-				2, // Amount of AI groups
+				1, // Amount of AI groups
 				200, // distance in meter form ZCP for the ai to spawn
 				true // false -> all groups from 1 random location, true -> all groups from their own random location
 			]
@@ -112,15 +112,15 @@ ZCP_CapPoints = [
 			[
 				45, // procentage of the cap time to start attack (50 = 50% of the total captime)
 				3, // Amount of AI units in a group
-				3, // Amount of AI groups
+				1, // Amount of AI groups
 				200, // distance in meter form ZCP for the ai to spawn
 				false // false -> all groups from 1 random location, true -> all groups from their own random location
 			]
 			,
 			[
 				60, // procentage of the cap time to start attack (50 = 50% of the total captime)
-				2, // Amount of AI units in a group
-				4, // Amount of AI groups
+				3, // Amount of AI units in a group
+				2, // Amount of AI groups
 				200, // distance in meter form ZCP for the ai to spawn
 				true // false -> all groups from 1 random location, true -> all groups from their own random location
 			]
@@ -134,7 +134,7 @@ ZCP_CapPoints = [
     [
         "High Value Control Point", // name (0)
         [[10000,10000,0],[10000,10000,0]], // [[x,y,z],[x,y,z]] if using static location (1)
-        ["Random","Random","Reputation"], // Reward -> Random, Poptabs, Vehicle, Buildingbox, WeaponBox , BigWeaponBox, SniperWeaponBox (2)
+        ["Poptabs","Poptabs","Reputation"], // Reward -> Random, Poptabs, Vehicle, Buildingbox, WeaponBox , BigWeaponBox, SniperWeaponBox (2)
         "beta", // unique varname -> this gets checked and fixed automaticly on server start ( so don't really worry about it ).
         1, // unique index -> this gets checked and fixed automaticly on server start ( so don't really worry about it ).
         true, // spawnAI on start of the missions ( NEEDS AI system for this ) (5)
@@ -152,15 +152,15 @@ ZCP_CapPoints = [
         true, // use Waves of AI to attack the base when a player is capping (17)
         [ // array of waves of AI () (18)
             [
-                30, // procentage of the cap time to start attack (50 = 50% of the total captime)
-                3, // Amount of AI units in a group
-                2, // Amount of AI groups
+                50, // procentage of the cap time to start attack (50 = 50% of the total captime)
+                5, // Amount of AI units in a group
+                1, // Amount of AI groups
                 200, // distance in meter form ZCP for the ai to spawn
                 true // false -> all groups from 1 random location, true -> all groups from their own random location
             ]
             ,
             [
-                75, // procentage of the cap time to start attack (50 = 50% of the total captime)
+                80, // procentage of the cap time to start attack (50 = 50% of the total captime)
                 3, // Amount of AI units in a group
                 3, // Amount of AI groups
                 200, // distance in meter form ZCP for the ai to spawn
@@ -176,7 +176,7 @@ ZCP_CapPoints = [
     [
         "Control Point Bravo", // name (0)
         [[10000,10000,0],[10000,10000,0]], // [[x,y,z],[x,y,z]] if using static location (1)
-        ["Random","Random","Reputation"], // Reward -> Random, Poptabs, Vehicle, Buildingbox, WeaponBox, BigWeaponBox, SniperWeaponBox (2)
+        ["Poptabs","Poptabs","Reputation"], // Reward -> Random, Poptabs, Vehicle, Buildingbox, WeaponBox, BigWeaponBox, SniperWeaponBox (2)
         "charlie", // unique varname -> this gets checked and fixed automaticly on server start ( so don't really worry about it ).
         2, // unique index -> this gets checked and fixed automaticly on server start ( so don't really worry about it ).
         true, // spawnAI on start of the missions ( NEEDS AI system for this ) (5)
@@ -401,22 +401,6 @@ ZCP_DMS_BoxWeapons =					[							// List of weapons that can spawn in a crate
 			"rhs_weap_ak103",
 			"rhs_weap_ak103_npz",
 			"rhs_weap_ak103_1",
-			"rhs_weap_ak74m",
-			"rhs_weap_ak74m_2mag",
-			"rhs_weap_ak74m_2mag_camo",
-			"rhs_weap_ak74m_2mag_npz",
-			"rhs_weap_ak74m_camo",
-			"rhs_weap_ak74m_desert",
-			"rhs_weap_ak74m_desert_npz",
-			"rhs_weap_ak74m_desert_folded",
-			"rhs_weap_ak74m_plummag_folded",
-			"rhs_weap_ak74m_folded",
-			"rhs_weap_ak74m_camo_folded",
-			"rhs_weap_ak74m_gp25",
-			"rhs_weap_ak74m_gp25_npz",
-			"rhs_weap_ak74m_npz",
-			"rhs_weap_ak74m_plummag",
-			"rhs_weap_ak74m_plummag_npz",
 			"rhs_weap_akm",
 			"rhs_weap_akm_gp25",
 			"rhs_weap_akms",
