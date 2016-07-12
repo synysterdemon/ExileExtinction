@@ -1,0 +1,447 @@
+/*
+	Author: Chris(tian) "infiSTAR" Lorenzen
+	Contact: infiSTAR23@gmail.com // www.infiSTAR.de
+	
+	Description:
+	Arma AntiHack & AdminTools - infiSTAR.de
+	
+	DO NOT POST THIS FILE ON PASTEBIN
+	IF I SEE THIS IN PUBLIC; I WILL DISCONTINUE WRITING CHANGELOGS AGAIN..
+*/
+------------------------------------------------------------
+05.07.2016 - v0054
++ Added: Adding/removing money to Bank via admin menu
++ Updated: when spectating you can see money on player, on bank and respect now!
++ Updated: you now have to hold SHIFT down now to drag and drop a vehicle / player on the map!
++ Updated: BE Filters
++ Made better: A lot of things within the background
+------------------------------------------------------------
+30.06.2016 - v0053
++ Updated: 0.9.8 "Kiwi" support
+------------------------------------------------------------
+28.06.2016 - v0052b
++ Added: TP Map selected Object
+			When you have MapIcons turned on, you can select a player or vehicle by holding the left mouse button down on it, 
+			when you release the mousebutton somewhere on the map, the selected object will be teleported to that location!
+------------------------------------------------------------
+26.06.2016 - v0052a
++ Updated: Fixed a bug where Anti TP was keeping people on spawn island (had to change anti-tp to counter new hacks)
++ Updated: BE Filters to work with Arsenal (I really got used to Arsenal, cool thing to have)
+------------------------------------------------------------
+26.06.2016 - v0052
+++ FIXED: logging Admin Actions to a file (needed a small change)
+
++ Added: Revive (not fully tested yet) - if the target did not respawn yet and you are able to select him in the Admin Menu - you can revive him! :)
++ Added: a little edit field above the information of the selected vehicle / item in the admin spawn menu:
+	https://share.infistar.de/XLdnADu5lAi57oW64YpaP.jpg
+	It will allow you to select the classname and copy it, just incase you need that for custom scripts/editing!
++ Added: new info display when pressing shift + i
+	it still shows information about "what you are aiming at" but a bit more beautiful and more information.
+	https://share.infistar.de/SaS3eEAdpYUyFGQdeisZa.png
+	especially usefull for base parts to find out who owns them and/or see if a door is locked etc.
++ Added: ZEUS (called it LIGHT) to Exile Admin Menu. To shoot a Lightning on a Location or Target.
+	If you aim at something just hold  CTRL + press 1 - it will create a Lightning! - you can also just do it via admin menu
++ Added: "Unconscious" option to the Admin Menu (nice to punish player that do bad thigns at the trader)
+	You will have to "Remove Unconscious" from a player or he will be Unconscious forever.
++ Added: "Remove Unconscious"
+
++ Updated: "delete" function on delete key.  In v51 it was not possible to delete a vehicle if a player was in it. Now it is working again.
++ Updated: fixbackpackduping: now working very well. (Especially for the Tanoa Map very important at the moment, due to APEX / DEV build bugs)
++ Updated: Anti Teleport - will now take care if surface is water or not
++ Updated: Anti Teleport - will now temp ban a player for 10 minutes if the player got logged at least 4 times for "POTENTIAL-TP-REVERTED1"
+
++ Updated: debug.sqf
++ Updated: BE Filters
+
+------------------------------------------------------------
+20.06.2016 - v0051
++ Added: experimental_dupe_check
+	checking for duped backpacks and not taking any actions besides logging. Need to test more before It will start to remove duped items.
++ Added: "fixbackpackduping"
+	Tells players to put their backpack down before looting a new one.
+	If they have a backpack equipped and take a new one from the ground (for example) it would dupe the backpack (arma bug).
+	This check will remove the backpacks from the groundweaponholder in that case (or vehicle, or safe or whatever the player might have taken the new backpack from)
++ Added: check that stops infiSTAR from starting if your Arma3 Server is below version 1.60 
++ Added: option to enable/disable the "drawing" check
++ Added: Admin power "Arsenal" - if you have it you can add an action on numpad , key that allows you to open the Arsenal
+	(I had that in from testing and some people liked it so I kept it in)
+
++ Fixed: A bug in the Unfiform and Vest replacement.
+
++ Updated: how the restart and shutdown timer work
++ Updated: admin_showinfo function (Keybind for it is  shift + i), looking much better now with more information.
++ Updated: not saving support boxes automatically anymore. players need to "install" them to keep them (better imo)
++ Updated: BE Filters (scripts.txt)
+
++ Rage change: Removed a few lines from the scripts.txt, I am getting far to many people asking me questions about the stupid Battleye scripts.txt
+	it is not my desire to do scripts.txt 24/7 for each different server/script.
+	People that still hack and "bypass Battleye" surely know how to bypass the scripts.txt anyways.. so at the end of the day it probably just costs FPS and time.
+------------------------------------------------------------
+10.06.2016 - v0050B
++ Fixed: "Teleport - Target To Me"
++ Removed: productVersion check
++ Tweaked: Debug Console (F3)
++ Tweaked: Set many checks to false by default in the config (many people are not reading the config file.. not even when they have a problem. so this will make it easier for me)
++ Please replace your BE Filters (scripts.txt)
++ Updated a few minor things
+------------------------------------------------------------
+07.06.2016 - v0050A
++ Please replace your BE Filters (scripts.txt)
++ Updated a few minor things
+------------------------------------------------------------
+04.06.2016 - v0050
++ Added: Added productversion check to see if the Arma server and infiSTAR fit together
++ Fixed: A bug where some "MapIcons" buttons where not deleted when disabling the Icons (thanks to arma update)
++ Fixed: Vehicle Godmode
++ Fixed: Loot issues (dead body to close problem)
++ Fixed: ~picturething
++ Removed: VoiceOverNetwork blocking as it can now be done by Arma for example through the config (or description.ext or via script command, next Exile update will bring you another way to allow/disable that as well)
+	description.ext Example (that file is in your MPMission!):
+
+	0 = Global
+	1 = Side
+	2 = Command
+	3 = Group
+	4 = Vehicle
+	5 = Direct
+	6 = System // not  sure if one can still see systemMessage output by scripts if it is disabled, maybe better choice to not even touch that one?
+
+	disableChannels[]={{0, true, true},{1, false, true},{2, true, true},{3, false, false},{4, false, false},{5, false, false},{6, true, true}};
+	Enables text chat only on side, voice and text chat in vehicle, group and direct
+
++++ more.. :)
+------------------------------------------------------------
+02.06.2016 - v0049
++ Added: When a player draws on the map it will now delete the drawing and write the player name and uid in the hacklog! (just for global, side and commandchat)
++ Added: When a player places a marker it puts the player name within the markertext now! (just for global, side and commandchat)
++ Fixed: A bug where some "MapIcons" buttons where not deleted when disabling the Icons (thanks to arma update)
++ Fixed: Vehicle Godmode
++ Tweaked: Heal (colors)
++ Tweaked: EXILE_AHAT_CONFIG.hpp changed (please replace your current one!)
++ Tweaked: for 0961 and Arma Update to 1.60
++++ more.
+------------------------------------------------------------
+29.05.2016 - v0048B
++ Added: LocalWhitelist (read more in the EXILE_AHAT_CONFIG.php)
++ Tweaked: problem with the "Teleport - Target To Me" function
+------------------------------------------------------------
+28.05.2016 - v0048A
++ NOTE: SMALL UPDATE - DID NOT DO A BE FILTER CHECK! WHEN BE FILTERS CAUSE TROUBLE:
+	http://www.exilemod.com/topic/74-how-to-battleye-filters-do-it-yourself/?do=findComment&comment=1077
+
++ Added: possibility to whitelist people from within your exile database
+	account table, more information in "infiSTAR.de_Exile\SERVER_ARMA3_FOLDER\db_related_changes\additions_for_exile.ini"
+	response to:
+		http://www.exilemod.com/topic/14491-infistar-spieler-whitelist-frage/
+------------------------------------------------------------
+26.05.2016 - v0048
++ Added: antihack related things for example:
+	some more bad addons,
+	check for locally created vehicles
++ Added: well readded the old vest & uniform bugfix as arma still seems to be broken.
++ Added: block "vaulting" when close to a exile building part (like walls and such) or other static/buildings (to block that annoying glitching)
++ Tweaked: anti teleport
++ Tweaked: priv chat
++ Changed: stopSafeGlitch to -> stopSafeGlitchAndCorpseDupe ;-]
++ Changed: spawned vehicles are now unlocked (again)
++ Changed: vehicle godmode
++ Changed: vehicle speed boost
++ Changed: flip vehicle to F8 Key
++ Changed: F3 console (because on dev build the default console was broken..)
+------------------------------------------------------------
+15.05.2016 - v0047
+--- no changelog
+------------------------------------------------------------
+27.04.2016 (3am.. tired.com) - v0046d
++ Tweaked: "Let me copy Classnames and more!" 
+	http://www.exilemod.com/topic/13773-classnames-in-infistar-to-a-file/?do=findComment&comment=88671
+	-> select an item / vehicle in the spawn menu(s) and press F8 to copy paste the class name into the editbox that popsup
+------------------------------------------------------------
+27.04.2016 - v0046c
++ Added: "Let me copy Classnames and more!" function for admins (in menu and on F8 key)
+	-> this is done as response to this post:
+		http://www.exilemod.com/topic/13773-classnames-in-infistar-to-a-file
+	- it can return any value of any variable so you can copy paste it
+	- you can copy paste a function and get a return value
+	- it can return you all the vehicles that you can find in the infiSTAR "Vehicles" spawn menu
+	- it can return you all the items that you can find in the infiSTAR "Items" spawn menu
+------------------------------------------------------------
+26.04.2016 - v0046b
++ Tweaked: SupportBoxes are now persistent. Once spawned in they will stay and the content is saved, make sure to have a flag close ;).
+------------------------------------------------------------
+26.04.2016 - v0046a
++ Added: option checkMissionEventhandler (true/false)
++ Added: config for MissionEventhandler check
+------------------------------------------------------------
+26.04.2016 - v0046
++ Tweaked: wall glitch check
++ Tweaked: getout -> getoutman now.
++ Tweaked: changed anti teleport
++ Tweaked: default settings in config.hpp (enabled more checks by default!)
++ Tweaked: restart timer
++ Tweaked: text shown after using an admin menu function
++ Tweaked: glitcher punishment
+			1. warn
+			2. warn + handcuff (if you logout handcuffed, you die!) + tell players
+			3. now instead of just a kick (so they could come back and glitch again -.- ) we tempban for 300 seconds!
++ Tweaked: changed tempban function(s)
++ Tweaked: missioneventhandler check(s)
+++ many many other things
+------------------------------------------------------------
+09.04.2016 - v0045
++ many many things - will write it later/next time have to hurry now and wanted to supply you guys the latest version before I disappear for a few days ;)
+
+trouble with BE filters?
+
+Battleye Filter TXT GUIDE:
+http://www.exilemod.com/topic/74-how-to-battleye-filters-do-it-yourself/?do=findComment&comment=1077
+or https://pastebin.com/9FBdjS1u if forum thread is gone
+
+Battleye Filter Tools:
+1. BattlEye Filters are time consuming and are different if you are running a modifed version.
+	Check out http://www.exilemod.com/topic/9708-battleye-filter-editor/
+2. http://bfe.marma.io/
+------------------------------------------------------------
+03.04.2016 - v0044
++ added - TempBan option(s)
++ added - You can enter a reason for a kick/ban/tempban now
++ added - Noficiations (to replace BEC messages) read more in the CONFIG.hpp file!
++ updated - Godmode to work vs radiation
++ updated - Godmode to work vs zombies (heal loop ..)
++ updated - Anti Teleport check (there was a problem when people were going to fast while using free fall (halo) spawn)
++ updated - Mag size check
++ updated - !chat / private chat that can be bound to "USER ACTION 3" in custom controls of your gameclient (can be used by all players)
++ updated - EXILE_AHAT_CONFIG.hpp file
+
+++ a few more things I already forgot about
+++++ BUT SUPER COOL!
+------------------------------------------------------------
+24.03.2016 - v0043
++ added chatCommand partitial (read in EXILE_AHAT_CONFIG.hpp)
++ changed Hidden Object check
+------------------------------------------------------------
+17.03.2016 - v0042A
++ added Loggings for single Map Icon options @Hell Raiser (http://www.exilemod.com/topic/12629-infistar-map-icons-logging/)
+------------------------------------------------------------
+17.03.2016 - v0042
++ New Keybind "BackSpace" to teleport back to your previous location after teleporting to another player using "Teleport - Me To Target"
++ updated Heal (to get rid of radiation)
++ updated Godmode (to not get damage by radiation)
++ updated day/night voting
++ updated scripts.txt
+------------------------------------------------------------
+14.03.2016 - v0041
++ added Loot ESP (350m range)
++ added check_Notifications - checks if BIS_fnc_showNotification was used, as it is used with many hacks - some custom addons however use them too
++ added Copy Worldspace(coords) to RPT & Chat - @ElDubya - http://www.exilemod.com/topic/12539-worldspace-co-ords-like-a2ah/
++ added self detection of CUP (CUP_Weapons) is running
++ updated day/night voting
+------------------------------------------------------------
+10.03.2016 - v0040C
++ added LOG_PATH with default value: "infiSTAR_Logs/"
+	create a folder called "infiSTAR_Logs" in your Arma3Server directory - you need to do that or the ARMA_LOG.dll can not write Log files!
+	unless you change LOG_PATH = "infiSTAR_Logs/";  to LOG_PATH = ""; in the EXILE_AHAT_CONFIG.hpp, then it will write log files to the Arma3Server directory.
+	why am I putting default value "infiSTAR_Logs/"? so people actually recognize something has changed as most are not reading the changelog or readme files..
+------------------------------------------------------------
+10.03.2016 - v0040B
++ added options for the MapIcon Menu
++ updated Map Icon Menu (moved it to the center of the screen)
++ updated Trader Spawn Menu
++ updated Heal/SelfHeal
+------------------------------------------------------------
+09.03.2016 - v0040A
++ added a second God Mode (for admins) "God Mode (no stats change)"
+	@kuplion http://www.exilemod.com/topic/12294-infistar-request-revert-godmode-stats-after-use/
++ updated ChatMenu check
+------------------------------------------------------------
+09.03.2016 - v0040
++ added exception for haloJump spawning (so it works along with anti teleport)
++ added Minimum votes required (for day / night vote)
++ added Minimum Vote Percentage (for day / night vote)
++ added Time (in seconds) to wait until nex vote is possible (for day / night vote)
+	@ canuckbrian http://www.exilemod.com/topic/12277-infistar-feature-request-vote-system-improvements/
++ updated godmode (for admins) to fix issues with "Pomelo" variables
+------------------------------------------------------------
+08.03.2016 - v0039B
++ updated scripts.txt again
++ updated Anti Teleport for Namalsk
+------------------------------------------------------------
+08.03.2016 - v0039A
++ updated scripts.txt & a few other things for Pomelo
+------------------------------------------------------------
+07.03.2016 - v0039
++ updated for Exile 0.9.6 "Pomelo"
++ changed - invisible object checks + made them disabled them by default (since people are not reading through the config file and then email me about problems -.- ..)
++ changed - attachto checks + made them disabled them by default (since people are not reading through the config file and then email me about problems -.- ..)
++ changed - BE Filter(s)
+------------------------------------------------------------
+05.03.2016 - v0038
++ added - options for KeyUp & KeyDown checks
++ added - more new AH checks
++ changed - variables to work with advanced banking system
++ changed - KeyUp & KeyDown checks
+------------------------------------------------------------
+02.03.2016 - v0037A
++ changed - KeyDown check
+------------------------------------------------------------
+01.03.2016 - v0037
++ added - "hiddenSuperAdmin": These admins are seen as normal players by normal admins, their actions are not logged either (to keep an eye out on your admins)
++ added - more AH checks.
+------------------------------------------------------------
+27.02.2016 - v0036A
++ added - Create Billboard - define custom textures in your EXILE_AHAT_CONFIG.hpp {"name shown in adminmenu","path to texture"}
++ fixed - error when using ExileDevFriendlyMode
++ updated - infiSTAR_Exile_AdminMenu.hpp
++ updated - things I did not write down here :o
+------------------------------------------------------------
+25.02.2016 - v0036
++ added - Create Billboard - define custom textures in your EXILE_AHAT_CONFIG.hpp {"name shown in adminmenu","path to texture"}
+
++ updated - created billboards are now permanent unless you use infiSTAR admin tool to to delete them (saved in vehicles table)
++ updated - infiSTAR MapIcons
+	+ added "Show Vehicle Types"
+	+ added "Show Vehicle lockstate" (light blue - nonPersistent vehicle, green - unlocked persisten vehicle, orange - locked persistent vehicle)
+------------------------------------------------------------
+24.02.2016 - v0035
++ added - check on startup of the server if you have advanced banking system installed
+	http://www.exilemod.com/topic/11466-release-advanced-banking-version-22/?page=1
+	if you have it installed it will change / add different functions to the admin menu & serverside AntiHack.
+	It will allow you to add / remove money to peoples bank or purses.
+	if you spectate somebody, it will show you his current money on purse and on bank
++ added - Create Billboard - define custom textures in your EXILE_AHAT_CONFIG.hpp {"name shown in adminmenu","path to texture"}
+
++ updated - validation of admin uid
++ updated - wall glitch check (if you or one of your group members has build rights you are allowed to glitch..)
++ updated - HC working fine now
++ updated - day / night vote (thanks for the headsup @exilerist on forum)
++ updated - BadVehicle check
+
++ changed - BE Filter(s)
++ changed - "infiSTAR_Exile_AdminMenu.hpp"
+------------------------------------------------------------
+22.02.2016 - v0034a
++ added option - UVC_adminspawn - use vehicle check(s) on vehicles spawned by infiSTAR.de admin?
++ added option - ForbiddenVehicles_check
++ added option - VehicleWhiteList_check
++ added option - ExileDevFriendlyMode - adds Exile Devs to your AdminList - makes it easier for them to debug their mod live
+
++ updated - vehicle check
++ updated - exception for HC
++ updated - "too many script threads" check to allow a higher number
++ updated - variable checks
++ updated - safe glitch protection
+
++ changed - "infiSTAR_Exile_AdminMenu.hpp"
++ changed - "CfgRemoteExec.hpp"
++ changed - BE Filter(s)
+------------------------------------------------------------
+22.02.2016 - v0034
++ added for DirtySanchez
+	slingload_check - forbid sling loading / rope attaching a vehicle with a crew
+
++ added attach_to_check	- logs and detaches attached vehicles that are close.. basically completely disallow attaching of vehicles!
++ added "too many script threads" check
++ updated anti teleport
++ changed teleporting (admin menu)
++ changed viewdistance changer from admin menu (F5 Key)
+------------------------------------------------------------
+17.02.2016 - v0033
++ added for WolfkillArcadia
+	chatCommands: {chatcommand,text shown to player}
+
++ updated uniform_and_vest_check
++ fixed undefined var problem
+------------------------------------------------------------
+10.02.2016 - v0032
++ added vehicle spawning ("Spawn Vehicles","Spawn Persistent Vehicles")
+	"Spawn Vehicles" - will be nonPersistent
+	"Spawn Persistent Vehicles" - will be Persistent
+	You can simply remove "Spawn Persistent Vehicles" from the "adminUIDandAccess" in your EXILE_AHAT_CONFIG.hpp
+	and your admins can not spawn random vehicles to your database anymore.
+
++ added some new anti-hack checks (I am not going to tell what here .. ;-) ).
++ added option -> log_uniform_and_vest_check_actions (false by default)
++ updated uniform_and_vest_check
++ updated integrity checks (thanks serveratze)
++ updated stopSafeGlitch
+------------------------------------------------------------
+08.02.2016 - v0031
++ added for Falcon911 (http://www.exilemod.com/topic/10967-suggestion-respect-and-poptab-increase-alert/): 
+	checkPopTabIncrease = false;
+	LogPopTabIncrease = 15000;				/* Only if checkPopTabIncrease = true; logs if poptabs increased by x within ~10 seconds */
+
+	checkRespectIncrease = false;
+	LogRespectIncrease = 5000;				/* Only if checkRespectIncrease = true; logs if respect increased by x within ~10 seconds */
+
+	uniform_and_vest_check = true;			/* In the current version of Arma3 it may happen that the uniform or vest you wear is not shown to other players due to a bug, this will log & fix that issue! */
+
++ added taru pods to vehicle spawnmenu (someone on the forum asked for it too, I forgot who tho)
++ added integrity checks
++ updated safe glitch prevention
++ updated admin tools
+------------------------------------------------------------
+29.01.2016 - v0030
++ added for Z80CPU: 
+	Admin Menu toggleables can now be saved by clicking "SAVE TOGGLE STATE".
+	if you reconnect it will automatically toggle/enable the options you had toggled the last time you were online as an admin.
+------------------------------------------------------------
+23.01.2016 - v0029
++ IMPORTANT INFORMATION:
+	MGT Dave and I found out that having a big "PROFILENAME.vars.Arma3Profile" on your server, causes desync up to massive desync.
+	Looks like teleporting vehicles..
+	If you know where to find that file on your server, just remove it. (Write a bat to do it before each restart?) somewhat like
+	
+	del /Q /F "PROFILENAME.vars.Arma3Profile"
+
+
++ added "USE_UID_WHITELIST" option incase you have a subscriber only server and want to kick people that are not white-listed when they try to connect.
++ added "needAdminNameTag" somebody asked me if I could make it so his admins only have admin rights when they have a tag within their name, so I made this
++ removed total connection counter (I removed everything using profileNameSpace on serverside)
++ removed total playtime (I removed everything using profileNameSpace on serverside)
++ updated an error where spawned vehicles were not saved to the database
+------------------------------------------------------------
+
+19.01.2016 - v0028
++ added "USE_UID_WHITELIST" option incase you have a subscriber only server and want to kick people that are not white-listed when they try to connect.
++ added "needAdminNameTag" somebody asked me if I could make it so his admins only have admin rights when they have a tag within their name, so I made this
++ added total connection counter for your players (logged in the ConnectLog, so you can see if a player that for example got caught for hacking was a new player or not)
++ added total playtime for your players (logged in the ConnectLog, so you can see if a player that for example got caught for hacking was a new player or not)
++ removed "Tn did not update" check
++ removed "wall_look_2" check
++ updated location of BadName check so admins are not affected
++ updated BE Filters
+------------------------------------------------------------
+15.01.2016 - v0027D
++ minor changes
+------------------------------------------------------------
+13.01.2016 - v0027C
++ now preventing an annoying bug of Arma3 where glitchers could access vehicles and safes that were locked!
++ added day/night option to admin menu ("ChangeTime" in "adminUIDandAccess")
++ scripts.txt updated
++ added message/instructions for admins that have a server from gtxgaming
+------------------------------------------------------------
+12.01.2016 - v0027B
++ added settings for default shadow view distance
++ added another "looking through wall" check (wall_look_2), this time for all objects (well those that considered objects by Arma) and not just Exile walls
+	it will only force the player in first person if it triggers
++ added a speed hack check (SpeedHackCheck)
+~ modified "Player Low Rating!" check
+------------------------------------------------------------
+10.01.2016 - v0027A
++ added "allSupportBoxes" in the EXILE_AHAT_CONFIG.hpp can now get a custom "name" by you!
+~ fixed an issue related to: http://www.exilemod.com/topic/9980-players-kicked-to-lobby-randomly/
+------------------------------------------------------------
+08.01.2016 - v0027
+*** reworked the antihack to use .hpp config file instead of an .sqf config file
+** also using publicVariableServer to communitcate from Client to Server (again) 
+	as remoteExecCall seems to be broken since 1.54 and causing server crahes/lags (read: https://pastebin.com/dMD6aq7p)
+* make sure to news new MPMission files, BE filters, PBO basically if you update from an older version, check everything for changes.
+
+Also make sure to have the config setup correctly!
+If you have trouble like infiSTAR is not loading on your server, check your server.rpt file. It will show you your error/problem.
+
+You need to set the serverCommandPassword to the serverCommandPassword you have in your servers Config.cfg
+if there is no serverCommandPassword in your Config.cfg yet, set it like:
+serverCommandPassword = "passwordhere";
+------------------------------------------------------------
+#xoxo#
