@@ -4726,7 +4726,7 @@ class CfgTerritories
 };
 class CfgTraderCategories 
 {
-	class Community
+	class RHSUniforms
 	{
 		name = "Community Items";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4736,7 +4736,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Community2
+	class RHSVests
 	{
 		name = "Community Items 2";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4746,7 +4746,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Community3
+	class RHSHeadgar
 	{
 		name = "Community Items 3";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
