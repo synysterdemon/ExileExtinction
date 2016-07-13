@@ -6248,6 +6248,7 @@ class Glasses
 			"rhs_weap_akm_gp25",
 			"rhs_weap_akms",
 			"rhs_weap_akms_gp25"
+			
 		};
 	};
 	
@@ -6375,6 +6376,7 @@ class Glasses
 			"Exile_Car_QilinUnarmed",
 			"Exile_Car_MB4WD",
 			"Exile_Car_MB4WDOpen",
+			//RHS
 			"rhs_uaz_vmf",
 			"rhs_uaz_open_vmf"
 		};
@@ -6396,29 +6398,42 @@ class Glasses
 			"Exile_Car_Tempest",
 			"Exile_Car_HEMMT",
 			"Exile_Car_Ikarus_Blue",
+			//RHS
 			"RHS_Ural_Open_Civ_01",
+			/*
 			"RHS_Ural_Open_Civ_02",
 			"RHS_Ural_Open_Civ_03",
-"RHS_Ural_MSV_01",
-"RHS_Ural_VDV_01",
-"RHS_Ural_VMF_01",
-"RHS_Ural_VV_01",
-"RHS_Ural_Flat_MSV_01",
-"RHS_Ural_Flat_VDV_01",
-"RHS_Ural_Flat_VMF_01",
-"RHS_Ural_Flat_VV_01",
-"RHS_Ural_Open_MSV_01",
-"RHS_Ural_Open_VDV_01",
-"RHS_Ural_Open_VMF_01",
-"RHS_Ural_Open_VV_01",
-"RHS_Ural_Open_Flat_MSV_01",
-"RHS_Ural_Open_Flat_VDV_01",
-"RHS_Ural_Open_Flat_VMF_01",
-"RHS_Ural_Open_Flat_VV_01",
-"RHS_Ural_Fuel_MSV_01",
-"RHS_Ural_Fuel_VDV_01",
-"RHS_Ural_Fuel_VMF_01",
-"RHS_Ural_Fuel_VV_01",
+			*/
+			"RHS_Ural_MSV_01",
+			/*
+			"RHS_Ural_VDV_01",
+			"RHS_Ural_VMF_01",
+			"RHS_Ural_VV_01",
+			*/
+			"RHS_Ural_Flat_MSV_01",
+			/*
+			"RHS_Ural_Flat_VDV_01",
+			"RHS_Ural_Flat_VMF_01",
+			"RHS_Ural_Flat_VV_01",
+			*/
+			"RHS_Ural_Open_MSV_01",
+			/*
+			"RHS_Ural_Open_VDV_01",
+			"RHS_Ural_Open_VMF_01",
+			"RHS_Ural_Open_VV_01",
+			*/
+			"RHS_Ural_Open_Flat_MSV_01",
+			/*
+			"RHS_Ural_Open_Flat_VDV_01",
+			"RHS_Ural_Open_Flat_VMF_01",
+			"RHS_Ural_Open_Flat_VV_01",
+			*/
+			"RHS_Ural_Fuel_MSV_01",
+			/*
+			"RHS_Ural_Fuel_VDV_01",
+			"RHS_Ural_Fuel_VMF_01",
+			"RHS_Ural_Fuel_VV_01"
+			*/
 		};
 	};
 
@@ -6439,27 +6454,34 @@ class Glasses
 			"Exile_Chopper_Mohawk_FIA",
 			"Exile_Chopper_Huron_Black",
 			"Exile_Chopper_Hellcat_Green",
+			/*
 			"RHS_CH_47F",
 			"RHS_CH_47F_10",
 			"rhs_ka60_c",
 			"rhs_ka60_grey",
-"RHS_Ka52_vvsc",
-"RHS_Ka52_vvs",
-"RHS_Ka52_UPK23_vvs",
-"RHS_Ka52_UPK23_vvsc",
-"RHS_AH1Z",
-"RHS_AH1Z_GS",
-"RHS_AH1Z_CS",
-"RHS_AH1Z_wd",
-"RHS_AH1Z_wd_GS",
-"RHS_AH1Z_wd_CS",	
+			"RHS_Ka52_vvsc",
+			"RHS_Ka52_vvs",
+			"RHS_Ka52_UPK23_vvs",
+			"RHS_Ka52_UPK23_vvsc",
+			*/
+			"RHS_AH1Z",
+			/*
+			"RHS_AH1Z_GS",
+			"RHS_AH1Z_CS",
+			"RHS_AH1Z_wd",
+			"RHS_AH1Z_wd_GS",
+			"RHS_AH1Z_wd_CS",
+			*/
 			"RHS_UH60M",
+			/*
 			"rhs_UH60M_MEV2_d",
 			"RHS_UH60M_MEV2",	
-"RHS_UH60M_MEV",
-"RHS_UH60M_d",
-"RHS_UH60M_MEV_d",
+			"RHS_UH60M_MEV",
+			"RHS_UH60M_d",
+			"RHS_UH60M_MEV_d",
+			*/
 			"RHS_Mi8mt_vvs",
+			/*
 			"RHS_Mi8mt_vvsc",
 			"rhs_Mi8mt_cargo_vvs",
 			"RHS_Mi8mt_Cargo_vdv",
@@ -6468,61 +6490,70 @@ class Glasses
 			"RHS_MI8MTV3_vvs",
 			"RHS_MI8MTV3_UPK23_vvsc",
 			"RHS_MI8MTV3_UPK23_vvs",
+			*/
 			"RHS_Mi24Vt_vvs",
-"RHS_Mi24P_vvs",
-"RHS_Mi24P_vvsc",
-"RHS_Mi24P_CAS_vvs",
-"RHS_Mi24P_CAS_vvsc",
-"RHS_Mi24P_CAS_vdv",
-"RHS_Mi24P_AT_vvs",
-"RHS_Mi24P_AT_vvsc",
-"RHS_Mi24P_AT_vdv",
-"RHS_Mi24P_vdv",
-"RHS_Mi24V_vvs",
-"RHS_Mi24V_vvsc",
-"RHS_Mi24V_FAB_vvs",
-"RHS_Mi24V_FAB_vvsc",
-"RHS_Mi24V_FAB_vdv",
-"RHS_Mi24V_UPK23_vvs",
-"RHS_Mi24V_UPK23_vvsc",
-"RHS_Mi24V_UPK23_vdv",
-"RHS_Mi24V_AT_vvs",
-"RHS_Mi24V_AT_vvsc",
-"RHS_Mi24V_AT_vdv",
-"RHS_Mi24V_vdv",
+			/*
+			"RHS_Mi24P_vvs",
+			"RHS_Mi24P_vvsc",
+			"RHS_Mi24P_CAS_vvs",
+			"RHS_Mi24P_CAS_vvsc",
+			"RHS_Mi24P_CAS_vdv",
+			"RHS_Mi24P_AT_vvs",
+			"RHS_Mi24P_AT_vvsc",
+			"RHS_Mi24P_AT_vdv",
+			"RHS_Mi24P_vdv",
+			"RHS_Mi24V_vvs",
+			"RHS_Mi24V_vvsc",
+			"RHS_Mi24V_FAB_vvs",
+			"RHS_Mi24V_FAB_vvsc",
+			"RHS_Mi24V_FAB_vdv",
+			"RHS_Mi24V_UPK23_vvs",
+			"RHS_Mi24V_UPK23_vvsc",
+			"RHS_Mi24V_UPK23_vdv",
+			"RHS_Mi24V_AT_vvs",
+			"RHS_Mi24V_AT_vvsc",
+			"RHS_Mi24V_AT_vdv",
+			"RHS_Mi24V_vdv",
+			*/
 			"RHS_Mi8mt_vdv",
-"RHS_Mi8mt_vv",
-"RHS_Mi8mt_Cargo_vvsc",
-"RHS_Mi8mt_Cargo_vv",
-"RHS_Mi8MTV3_vdv",
-"RHS_Mi8MTV3_UPK23_vdv",
-"RHS_Mi8MTV3_FAB_vvs",
-"RHS_Mi8MTV3_FAB_vvsc",
-"RHS_Mi8MTV3_FAB_vdv",
-"RHS_Mi8AMT_vvs",
-"RHS_Mi8AMT_vvsc",
-"RHS_Mi8AMT_vdv",
-"RHS_Mi8AMTSh_vvs",
-"RHS_Mi8AMTSh_vvsc",
-"RHS_Mi8AMTSh_UPK23_vvs",
-"RHS_Mi8AMTSh_UPK23_vvsc",
-"RHS_Mi8AMTSh_FAB_vvs",
-"RHS_Mi8AMTSh_FAB_vvsc",
-"RHS_AH64D",
-"RHS_AH64D_GS",
-"RHS_AH64D_CS",
-"RHS_AH64D_wd",
-"RHS_AH64D_wd_GS",
-"RHS_AH64D_wd_CS",
-"RHS_AH64D_AA",
-"RHS_AH64D_wd_AA",
-"RHS_AH64DGrey",
+			/*
+			"RHS_Mi8mt_vv",
+			"RHS_Mi8mt_Cargo_vvsc",
+			"RHS_Mi8mt_Cargo_vv",
+			"RHS_Mi8MTV3_vdv",
+			"RHS_Mi8MTV3_UPK23_vdv",
+			"RHS_Mi8MTV3_FAB_vvs",
+			"RHS_Mi8MTV3_FAB_vvsc",
+			"RHS_Mi8MTV3_FAB_vdv",
+			"RHS_Mi8AMT_vvs",
+			"RHS_Mi8AMT_vvsc",
+			"RHS_Mi8AMT_vdv",
+			"RHS_Mi8AMTSh_vvs",
+			"RHS_Mi8AMTSh_vvsc",
+			"RHS_Mi8AMTSh_UPK23_vvs",
+			"RHS_Mi8AMTSh_UPK23_vvsc",
+			"RHS_Mi8AMTSh_FAB_vvs",
+			"RHS_Mi8AMTSh_FAB_vvsc",
+			*/
+			"RHS_AH64D",
+			/*
+			"RHS_AH64D_GS",
+			"RHS_AH64D_CS",
+			"RHS_AH64D_wd",
+			"RHS_AH64D_wd_GS",
+			"RHS_AH64D_wd_CS",
+			"RHS_AH64D_AA",
+			"RHS_AH64D_wd_AA",
+			"RHS_AH64DGrey",
 			"rhs_UH1Y_unarmed",
-"RHS_UH1Y_UNARMED_d",
-"RHS_UH1Y_d",
-"RHS_UH1Y_FFAR",
-"RHS_UH1Y_FFAR_d",			
+			"RHS_UH1Y_UNARMED_d",
+			*/
+			"RHS_UH1Y_d",
+			/*
+			"RHS_UH1Y_FFAR",
+			"RHS_UH1Y_FFAR_d",			
 			"RHS_UH1Y"
+			*/
 		};
 	};
 
@@ -6559,11 +6590,13 @@ class Glasses
 			"Exile_Plane_Ceasar",
 			"Exile_Plane_BlackfishInfantry",
 			"Exile_Plane_BlackfishVehicle",
-			"RHS_A10",
+			//"RHS_A10",
 			"RHS_Su25SM_vvs",
+			/*
 			"RHS_T50_vvs_051",
 			"rhsusf_f22",
 			"RHS_C130J"
+			*/
 		};
 	};
 
