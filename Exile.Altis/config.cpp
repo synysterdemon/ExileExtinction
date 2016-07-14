@@ -4662,7 +4662,7 @@ class CfgTerritories
 };
 class CfgTraderCategories 
 {
-	class Community
+	class ApexAir
 	{
 		name = "Community Items";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4672,7 +4672,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Community2
+	class ApexGround
 	{
 		name = "Community Items 2";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4682,7 +4682,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Community3
+	class RUSAir
 	{
 		name = "Community Items 3";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4692,7 +4692,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class Community4
+	class RUSGround
 	{
 		name = "Community Items 4";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
