@@ -4678,47 +4678,136 @@ class CfgTraderCategories
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
 		items[] = 
 		{
-			// Add your items here <3
+			"Exile_Car_ProwlerLight",
+			"Exile_Car_ProwlerUnarmed",
+			"Exile_Car_QilinUnarmed",
+			"Exile_Car_MB4WD",
+			"Exile_Car_MB4WDOpen"
 		};
 	};
 
-	class RUSAir
+	class ApexUniforms
 	{
 		name = "Community Items 3";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
 		items[] = 
 		{
-			// Add your items here <3
+			"U_B_T_Soldier_F",
+			"U_B_T_Soldier_AR_F",
+			"U_B_T_Soldier_SL_F",
+			//"U_B_T_Sniper_F",
+			//"U_B_T_FullGhillie_tna_F",
+			"U_B_CTRG_Soldier_F",
+			"U_B_CTRG_Soldier_2_F",
+			"U_B_CTRG_Soldier_3_F",
+			"U_B_GEN_Soldier_F",
+			"U_B_GEN_Commander_F",
+			"U_O_T_Soldier_F",
+			"U_O_T_Officer_F",
+			//"U_O_T_Sniper_F",
+			//"U_O_T_FullGhillie_tna_F",
+			"U_O_V_Soldier_Viper_F",
+			"U_O_V_Soldier_Viper_hex_F",
+			"U_I_C_Soldier_Para_1_F",
+			"U_I_C_Soldier_Para_2_F",
+			"U_I_C_Soldier_Para_3_F",
+			"U_I_C_Soldier_Para_4_F",
+			"U_I_C_Soldier_Para_5_F",
+			"U_I_C_Soldier_Bandit_1_F",
+			"U_I_C_Soldier_Bandit_2_F",
+			"U_I_C_Soldier_Bandit_3_F",
+			"U_I_C_Soldier_Bandit_4_F",
+			"U_I_C_Soldier_Bandit_5_F",
+			"U_I_C_Soldier_Camo_F",
+			"U_C_man_sport_1_F",
+			"U_C_man_sport_2_F",
+			"U_C_man_sport_3_F",
+			"U_C_Man_casual_1_F",
+			"U_C_Man_casual_2_F",
+			"U_C_Man_casual_3_F",
+			"U_C_Man_casual_4_F",
+			"U_C_Man_casual_5_F",
+			"U_C_Man_casual_6_F",
+			"U_B_CTRG_Soldier_urb_1_F",
+			"U_B_CTRG_Soldier_urb_2_F",
+			"U_B_CTRG_Soldier_urb_3_F"
 		};
 	};
 
-	class RUSGround
+	class ApexVests
 	{
 		name = "Community Items 4";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
 		items[] = 
 		{
-			// Add your items here <3
+			"V_TacChestrig_grn_F",
+			"V_TacChestrig_oli_F",
+			"V_TacChestrig_cbr_F",
+			"V_PlateCarrier1_tna_F",
+			"V_PlateCarrier2_tna_F",
+			"V_PlateCarrierSpec_tna_F",
+			"V_PlateCarrierGL_tna_F",
+			"V_HarnessO_ghex_F",
+			"V_HarnessOGL_ghex_F",
+			"V_BandollierB_ghex_F",
+			"V_TacVest_gen_F",
+			"V_PlateCarrier1_rgr_noflag_F",
+			"V_PlateCarrier2_rgr_noflag_F"
 		};
 	};
 
-	class Community5
+	class ApexHeadgear
 	{
 		name = "Community Items 5";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
 		items[] = 
 		{
-			// Add your items here <3
+			"H_Helmet_Skate",
+			"H_HelmetB_TI_tna_F",
+			//"H_HelmetO_ViperSP_hex_F",
+			//"H_HelmetO_ViperSP_ghex_F",
+			"H_HelmetB_tna_F",
+			"H_HelmetB_Enh_tna_F",
+			"H_HelmetB_Light_tna_F",
+			"H_HelmetSpecO_ghex_F",
+			"H_HelmetLeaderO_ghex_F",
+			"H_HelmetO_ghex_F",
+			"H_HelmetCrew_O_ghex_F",
+			"H_MilCap_tna_F",
+			"H_MilCap_ghex_F",
+			"H_Booniehat_tna_F",
+			"H_Beret_gen_F",
+			"H_MilCap_gen_F",
+			"H_Cap_oli_Syndikat_F",
+			"H_Cap_tan_Syndikat_F",
+			"H_Cap_blk_Syndikat_F",
+			"H_Cap_grn_Syndikat_F"
 		};
 	};
 
-	class Community6
+	class ApexBackpacks
 	{
 		name = "Community Items 6";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
 		items[] = 
 		{
-			// Add your items here <3
+			"B_Bergen_mcamo_F",
+			"B_Bergen_dgtl_F",
+			"B_Bergen_hex_F",
+			"B_Bergen_tna_F",
+			"B_AssaultPack_tna_F",
+			"B_Carryall_ghex_F",
+			"B_FieldPack_ghex_F",
+			"B_ViperHarness_blk_F",
+			"B_ViperHarness_ghex_F",
+			"B_ViperHarness_hex_F",
+			"B_ViperHarness_khk_F",
+			"B_ViperHarness_oli_F",
+			"B_ViperLightHarness_blk_F",
+			"B_ViperLightHarness_ghex_F",
+			"B_ViperLightHarness_hex_F",
+			"B_ViperLightHarness_khk_F",
+			"B_ViperLightHarness_oli_F"
 		};
 	};
 
@@ -4839,46 +4928,6 @@ class CfgTraderCategories
 			"U_B_PilotCoveralls",
 			"U_I_pilotCoveralls",
 			"U_O_PilotCoveralls",
-			//Apex
-			"U_B_T_Soldier_F",
-			"U_B_T_Soldier_AR_F",
-			"U_B_T_Soldier_SL_F",
-			//"U_B_T_Sniper_F",
-			//"U_B_T_FullGhillie_tna_F",
-			"U_B_CTRG_Soldier_F",
-			"U_B_CTRG_Soldier_2_F",
-			"U_B_CTRG_Soldier_3_F",
-			"U_B_GEN_Soldier_F",
-			"U_B_GEN_Commander_F",
-			"U_O_T_Soldier_F",
-			"U_O_T_Officer_F",
-			//"U_O_T_Sniper_F",
-			//"U_O_T_FullGhillie_tna_F",
-			"U_O_V_Soldier_Viper_F",
-			"U_O_V_Soldier_Viper_hex_F",
-			"U_I_C_Soldier_Para_1_F",
-			"U_I_C_Soldier_Para_2_F",
-			"U_I_C_Soldier_Para_3_F",
-			"U_I_C_Soldier_Para_4_F",
-			"U_I_C_Soldier_Para_5_F",
-			"U_I_C_Soldier_Bandit_1_F",
-			"U_I_C_Soldier_Bandit_2_F",
-			"U_I_C_Soldier_Bandit_3_F",
-			"U_I_C_Soldier_Bandit_4_F",
-			"U_I_C_Soldier_Bandit_5_F",
-			"U_I_C_Soldier_Camo_F",
-			"U_C_man_sport_1_F",
-			"U_C_man_sport_2_F",
-			"U_C_man_sport_3_F",
-			"U_C_Man_casual_1_F",
-			"U_C_Man_casual_2_F",
-			"U_C_Man_casual_3_F",
-			"U_C_Man_casual_4_F",
-			"U_C_Man_casual_5_F",
-			"U_C_Man_casual_6_F",
-			"U_B_CTRG_Soldier_urb_1_F",
-			"U_B_CTRG_Soldier_urb_2_F",
-			"U_B_CTRG_Soldier_urb_3_F",
 			//RHS
 			"rhs_uniform_cu_ocp",
 			"rhs_uniform_cu_ucp",
@@ -4964,20 +5013,6 @@ class CfgTraderCategories
 			"V_PlateCarrierSpec_blk",
 			"V_PlateCarrierSpec_mtp",
 			"V_PlateCarrierSpec_rgr",
-			//Apex
-			"V_TacChestrig_grn_F",
-			"V_TacChestrig_oli_F",
-			"V_TacChestrig_cbr_F",
-			"V_PlateCarrier1_tna_F",
-			"V_PlateCarrier2_tna_F",
-			"V_PlateCarrierSpec_tna_F",
-			"V_PlateCarrierGL_tna_F",
-			"V_HarnessO_ghex_F",
-			"V_HarnessOGL_ghex_F",
-			"V_BandollierB_ghex_F",
-			"V_TacVest_gen_F",
-			"V_PlateCarrier1_rgr_noflag_F",
-			"V_PlateCarrier2_rgr_noflag_F",
 			//RHS
 			"rhs_6sh92",
 			"rhs_6sh92_radio",
@@ -5160,27 +5195,6 @@ class CfgTraderCategories
 			"H_PilotHelmetHeli_B",
 			"H_PilotHelmetHeli_I",
 			"H_PilotHelmetHeli_O",
-			//Apex
-			"H_Helmet_Skate",
-			"H_HelmetB_TI_tna_F",
-			//"H_HelmetO_ViperSP_hex_F",
-			//"H_HelmetO_ViperSP_ghex_F",
-			"H_HelmetB_tna_F",
-			"H_HelmetB_Enh_tna_F",
-			"H_HelmetB_Light_tna_F",
-			"H_HelmetSpecO_ghex_F",
-			"H_HelmetLeaderO_ghex_F",
-			"H_HelmetO_ghex_F",
-			"H_HelmetCrew_O_ghex_F",
-			"H_MilCap_tna_F",
-			"H_MilCap_ghex_F",
-			"H_Booniehat_tna_F",
-			"H_Beret_gen_F",
-			"H_MilCap_gen_F",
-			"H_Cap_oli_Syndikat_F",
-			"H_Cap_tan_Syndikat_F",
-			"H_Cap_blk_Syndikat_F",
-			"H_Cap_grn_Syndikat_F",
 			//RHS
 			"rhs_6b27m_digi",
 	        "rhs_6b27m_digi_ess",
@@ -5760,25 +5774,7 @@ class Glasses
 			"B_TacticalPack_mcamo",
 			"B_TacticalPack_ocamo",
 			"B_TacticalPack_oli",
-			"B_TacticalPack_rgr",
-			//Apex
-			"B_Bergen_mcamo_F",
-			"B_Bergen_dgtl_F",
-			"B_Bergen_hex_F",
-			"B_Bergen_tna_F",
-			"B_AssaultPack_tna_F",
-			"B_Carryall_ghex_F",
-			"B_FieldPack_ghex_F",
-			"B_ViperHarness_blk_F",
-			"B_ViperHarness_ghex_F",
-			"B_ViperHarness_hex_F",
-			"B_ViperHarness_khk_F",
-			"B_ViperHarness_oli_F",
-			"B_ViperLightHarness_blk_F",
-			"B_ViperLightHarness_ghex_F",
-			"B_ViperLightHarness_hex_F",
-			"B_ViperLightHarness_khk_F",
-			"B_ViperLightHarness_oli_F"
+			"B_TacticalPack_rgr"
 		};
 	};
 
@@ -6325,15 +6321,7 @@ class Glasses
 			"Exile_Car_HMMWV_UNA_Green",
 			"Exile_Car_Strider",
 			"Exile_Car_Hunter",
-			"Exile_Car_Ifrit",
-			"Exile_Car_ProwlerLight",
-			"Exile_Car_ProwlerUnarmed",
-			"Exile_Car_QilinUnarmed",
-			"Exile_Car_MB4WD",
-			"Exile_Car_MB4WDOpen",
-			//RHS
-			"rhs_uaz_vmf",
-			"rhs_uaz_open_vmf"
+			"Exile_Car_Ifrit"
 		};
 	};
 
