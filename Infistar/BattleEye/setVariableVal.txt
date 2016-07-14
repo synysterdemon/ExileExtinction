@@ -1,2 +1,0 @@
-//new
-7 "" !="true" !="false" !"Exile_Unit_Player" !="\"\" [0-9]*:[0-9]* Exile_Unit_Player" !="[0-9]{1,2}"

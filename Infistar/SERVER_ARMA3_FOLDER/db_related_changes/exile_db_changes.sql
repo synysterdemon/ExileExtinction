@@ -1,1 +1,0 @@
-ALTER TABLE `account` ADD `whitelisted` INT(1) UNSIGNED NOT NULL DEFAULT '0';
