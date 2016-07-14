@@ -1,10 +1,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Server Settings - Modify at will
 ///////////////////////////////////////////////////////////////////////////////
-author = "Arma : EXTINCTION";
-onLoadName = "Version 2.1.3";
-onLoadMission= "Version 2.1.0";
-loadScreen = "textures\serverload.paa"; 
+author = "Exile Mod Team";
+onLoadName = "Exile Mod";
+onLoadMission= "www.exilemod.com";
+loadScreen = "exile_assets\texture\mod\logo.paa"; 
 disableChannels[] = {0, 2};
 OnLoadIntro = "";
 OnLoadIntroTime = false;
@@ -15,11 +15,6 @@ class Header
     gameType = Survive; // Do NOT change this
     minPlayers = 1;
     maxPlayers = 100;
-};
-
-class RscTitles
-{
-	#include "Custom\StatusBar\statusBar.hpp"
 };
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -70,7 +65,5 @@ showHUD[] =
 };
 
 #include "config.cpp"
-#include "MarXet\dialog\RscMarXetDefines.hpp"
-#include "MarXet\dialog\RscMarXetDialog.hpp"
 #include "CfgRemoteExec.hpp"
 #include "infiSTAR_AdminMenu.hpp"

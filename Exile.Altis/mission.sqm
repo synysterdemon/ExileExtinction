@@ -1045,7 +1045,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=28;
+		items=26;
 
 		class Item0
 		{
@@ -1195,7 +1195,7 @@ class Mission
 		{
 			position[]={14599.966,22.349989,16797.193};
 			name="TraderCityMarkerIcon";
-			text="Trader Central";
+			text="";
 			type="ExileTraderZoneIcon";
 		};
 
@@ -1216,7 +1216,7 @@ class Mission
 		{
 			position[]={23334.605,4.0095582,24188.938};
 			name="TraderZoneSilderasIcon";
-			text="Trader Zone";
+			text="";
 			type="ExileTraderZoneIcon";
 		};
 
@@ -1237,7 +1237,7 @@ class Mission
 		{
 			position[]={2998.0603,3.7756021,18175.479};
 			name="TraderZoneFoliaIcon";
-			text="Trader Zone";
+			text="";
 			type="ExileTraderZoneIcon";
 		};
 
@@ -1325,31 +1325,9 @@ class Mission
 		{
 			position[]={21845.1,0,20977.6};
 			name="ContaminatedZoneGhostHotelIcon";
-			text="Highly Contaminated Area";
+			text="";
 			type="ExileContaminatedZoneIcon";
 		};
-		
-		class Item26
-		{
-			position[]={18456.229,0,14281.29};
-			name="MineTraderZone";
-			text="Mine Traders";
-			type="ExileTraderZone";
-			markerType="ELLIPSE";
-			colorName="ColorBlack";
-			fillName="Border";
-			a=175;
-			b=175;
-			drawBorder=1;
-		};
-		class Item27
-		{
-			position[]={18456.229,0,14281.29};
-			name="MineTraderMarkerIcon";
-			text="Abandoned Mine Traders";
-			type="ExileTraderZoneIcon";
-		};
-		
 	};
 };
 class Intro

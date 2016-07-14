@@ -9,12 +9,6 @@
  * To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/.
  */
  
-			#include "MarXet\CfgMarXet.cpp"
- 
-  class CfgNetworkMessages
-            {
-                #include "MarXet\CfgMarXetNetworkMessages.hpp"
-            };
 
 class CfgClans
 {
@@ -23,7 +17,7 @@ class CfgClans
 
 		Default: 20,000
 	*/
-	registrationFee = 500000;
+	registrationFee = 20000;
 
 	/*
 		A list of all characters allowed in a clan *name*
@@ -76,8 +70,6 @@ class Exile_AbstractCraftingRecipe
 
 class CfgCraftingRecipes
 {
-	
-	#include "EBM\recipes.hpp" 
 	
 class BreachingChargeBigMomma: Exile_AbstractCraftingRecipe
 {
@@ -1614,18 +1606,18 @@ class CfgExileArsenal
 	class Exile_Item_JunkMetal						{ quality = 1; price = 400; };
 	class Exile_Item_LightBulb						{ quality = 1; price = 20; };
 	class Exile_Item_MetalBoard						{ quality = 1; price = 600; };
-	class Exile_Item_MetalHedgehogKit				{ quality = 1; price = 1200; };
+	//class Exile_Item_MetalHedgehogKit				{ quality = 1; price = 1200; };
 	class Exile_Item_SafeKit						{ quality = 4; price = 25000; };
 	class Exile_Item_CodeLock						{ quality = 1; price = 5000; };
-	class Exile_Item_Laptop						{ quality = 2; price = 9000; };
-	class Exile_Item_BaseCameraKit				{ quality = 2; price = 5000; };
+	//class Exile_Item_Laptop						{ quality = 2; price = 9000; };
+	//class Exile_Item_BaseCameraKit				{ quality = 2; price = 5000; };
 	class Exile_Item_CamoTentKit					{ quality = 1; price = 250; };
 	class Exile_Item_MetalPole						{ quality = 1; price = 800; };
-	class Exile_Item_MetalScrews					{ quality = 1; price = 100; };
-	class Exile_Item_MetalWire						{ quality = 1; price = 100; };
-	class Exile_Item_Cement							{ quality = 1; price = 20; };
-	class Exile_Item_Sand							{ quality = 1; price = 20; };
-	class Exile_Item_CarWheel						{ quality = 1; price = 1000; };
+	//class Exile_Item_MetalScrews					{ quality = 1; price = 100; };
+	//class Exile_Item_MetalWire						{ quality = 1; price = 100; };
+	//class Exile_Item_Cement							{ quality = 1; price = 20; };
+	//class Exile_Item_Sand							{ quality = 1; price = 20; };
+	//class Exile_Item_CarWheel						{ quality = 1; price = 1000; };
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Food
@@ -1667,7 +1659,8 @@ class CfgExileArsenal
 	class Exile_Item_Vishpirin						{ quality = 3; price = 300; };
 	class Exile_Item_Bandage	                    { quality = 2; price = 100; };
 	class Exile_Item_Heatpack	                    { quality = 1; price = 50; };
-	class Exile_Item_Defibrillator				{ quality = 1; price = 10000; };
+
+	//class Exile_Item_Defibrillator				{ quality = 1; price = 7500; };
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Tools
@@ -1681,29 +1674,17 @@ class CfgExileArsenal
 	class Exile_Item_Pliers							{ quality = 2; price = 350; };
 	class Exile_Item_Grinder						{ quality = 2; price = 1250; };
 	class Exile_Item_Foolbox						{ quality = 2; price = 4000; };
-	class Exile_Item_CordlessScrewdriver			{ quality = 1; price = 750; };
-	class Exile_Item_FireExtinguisher				{ quality = 1; price = 650; };
-	class Exile_Item_Hammer						{ quality = 1; price = 600; };
-	class Exile_Item_OilCanister					{ quality = 1; price = 1750; };
-	class Exile_Item_Screwdriver					{ quality = 1; price = 250; };
-	class Exile_Item_Shovel						{ quality = 1; price = 700; };
-	class Exile_Item_Wrench						{ quality = 1; price = 250; };
-	class Exile_Item_SleepingMat					{ quality = 1; price = 1250; };
-	class Exile_Item_ToiletPaper					{ quality = 1; price = 5; };
-	class Exile_Item_ZipTie						{ quality = 1; price = 250; };
-	
-	
-	///////////////////////////////////////////////////////////////////////////////
-	// HIGH VALUE LOOT
-	///////////////////////////////////////////////////////////////////////////////
-	class Exile_Weapon_AKS_Gold						{ quality = 3; price = 250000; };
-	class Exile_Weapon_TaurusGold					{ quality = 1; price = 50000; };
-	class Exile_Item_Magazine01						{ quality = 1; price = 1200; };
-	class Exile_Item_Magazine02						{ quality = 1; price = 1200; };
-	class Exile_Item_Magazine03						{ quality = 1; price = 1200; };
-	
-	
-	
+	//class Exile_Item_CordlessScrewdriver			{ quality = 1; price = 750; };
+	//class Exile_Item_FireExtinguisher				{ quality = 1; price = 650; };
+	//class Exile_Item_Hammer						{ quality = 1; price = 600; };
+	//class Exile_Item_OilCanister					{ quality = 1; price = 1750; };
+	//class Exile_Item_Screwdriver					{ quality = 1; price = 250; };
+	//class Exile_Item_Shovel						{ quality = 1; price = 700; };
+	//class Exile_Item_Wrench						{ quality = 1; price = 250; };
+	//class Exile_Item_SleepingMat					{ quality = 1; price = 1250; };
+	//class Exile_Item_ToiletPaper					{ quality = 1; price = 5; };
+	//class Exile_Item_ZipTie						{ quality = 1; price = 250; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// Navigation
 	///////////////////////////////////////////////////////////////////////////////
@@ -1998,6 +1979,7 @@ class CfgExileArsenal
 	class Exile_Weapon_AK47							{ quality = 3; price = 500; };
 	class Exile_Weapon_AKM							{ quality = 3; price = 500; };
 	class Exile_Weapon_AKS							{ quality = 3; price = 500; };
+	class Exile_Weapon_AKS_Gold						{ quality = 3; price = 550; };
 	class Exile_Weapon_DMR							{ quality = 3; price = 650; };
 	class Exile_Weapon_LeeEnfield					{ quality = 1; price = 250; };
 	class Exile_Weapon_CZ550						{ quality = 2; price = 400; };
@@ -2010,6 +1992,7 @@ class CfgExileArsenal
 	class Exile_Weapon_Colt1911						{ quality = 1; price = 100; };
 	class Exile_Weapon_Makarov						{ quality = 1; price = 100; };
 	class Exile_Weapon_Taurus						{ quality = 1; price = 100; };
+	class Exile_Weapon_TaurusGold					{ quality = 1; price = 150; };
 	class Exile_Weapon_M1014						{ quality = 2; price = 200; };
 	
 	///////////////////////////////////////////////////////////////////////////////
@@ -2728,13 +2711,6 @@ class CfgExileArsenal
 	class Exile_Item_FlagStolen9						{ quality = 1; price = 45000; sellPrice = 45000; };
 	class Exile_Item_FlagStolen10						{ quality = 1; price = 50000; sellPrice = 50000; };
 	
-	
-	
-	///////////////////////////////////////////////////////////////////////////////
-	// RHS Weapons [CiC]red_ned http://cic-gaming.co.uk
-	// Thanks to XxFri3ndlyxX for update of items
-	///////////////////////////////////////////////////////////////////////////////
-	
 	///////////////////////////////////////////////////////////////////////////////
 	// Uniforms
 	///////////////////////////////////////////////////////////////////////////////	
@@ -3164,6 +3140,7 @@ class CfgExileArsenal
 	class rhs_weap_ak103							{ quality = 1; price = 250; };
 	class rhs_weap_ak103_npz						{ quality = 1; price = 250; };
 	class rhs_weap_ak103_1							{ quality = 1; price = 250; };
+	/*
 	class rhs_weap_ak74m							{ quality = 1; price = 250; };
 	class rhs_weap_ak74m_2mag						{ quality = 1; price = 250; };
 	class rhs_weap_ak74m_2mag_camo					{ quality = 2; price = 200; };
@@ -3180,6 +3157,7 @@ class CfgExileArsenal
 	class rhs_weap_ak74m_npz						{ quality = 1; price = 200; };
 	class rhs_weap_ak74m_plummag					{ quality = 2; price = 250; };
 	class rhs_weap_ak74m_plummag_npz				{ quality = 2; price = 300; };
+	*/
 	class rhs_weap_akm								{ quality = 1; price = 250; };
 	class rhs_weap_akm_gp25							{ quality = 1; price = 250; };
 	class rhs_weap_akms								{ quality = 1; price = 250; };
@@ -3235,18 +3213,16 @@ class CfgExileArsenal
 	class rhs_mine_m19_mag 							{ quality = 4; price = 1500; };
 	
 	///////////////////////////////////////////////////////////////////////////////
-	//RGS VEHICLES  [CiC]red_ned http://cic-gaming.co.uk
-	///////////////////////////////////////////////////////////////////////////////
-	///////////////////////////////////////////////////////////////////////////////
 	// GAZ-233011
 	///////////////////////////////////////////////////////////////////////////////
+	/*
 	class rhs_tigr_ffv_3camo_vdv					{ quality = 3; price = 25000; };
 	class rhs_tigr_3camo_vdv						{ quality = 3; price = 25000; };
 	class rhs_tigr_ffv_vdv							{ quality = 3; price = 25000; };
 	class rhs_tigr_vdv								{ quality = 3; price = 25000; };
-	
+	*/
 	///////////////////////////////////////////////////////////////////////////////
-	// GAZ-66
+	// GAZ-66 //Sell Only
 	//////////////////////////////////////////////////////////////////////////////
 	class rhs_gaz66_vmf 							{ quality = 1; price = 11250; };
 	class rhs_gaz66_vv 								{ quality = 1; price = 11250; };
@@ -3274,7 +3250,7 @@ class CfgExileArsenal
 	class rhs_gaz66o_flat_msv						{ quality = 1; price = 11250; };
 	
 	///////////////////////////////////////////////////////////////////////////////
-	// HMVE
+	// HMVE //Sell Only
 	//////////////////////////////////////////////////////////////////////////////
 	class rhsusf_m1025_w							{ quality = 1; price = 13000; };
 	class rhsusf_m1025_w_m2							{ quality = 1; price = 16000; };
@@ -3290,7 +3266,7 @@ class CfgExileArsenal
 	class rhsusf_m998_w_s_4dr_halftop				{ quality = 1; price = 13000; };
 
 	///////////////////////////////////////////////////////////////////////////////
-	// M1078A1P2
+	// M1078A1P2 //Sell Only
 	//////////////////////////////////////////////////////////////////////////////
 	class rhsusf_M1078A1P2_wd_fmtv_usarmy			{ quality = 2; price = 14500; };
 	class rhsusf_M1078A1P2_d_fmtv_usarmy			{ quality = 2; price = 14500; };
@@ -3317,106 +3293,133 @@ class CfgExileArsenal
 	// URAL
 	//////////////////////////////////////////////////////////////////////////////
 	class RHS_Ural_Open_Civ_01						{ quality = 1; price = 25000; };
+	/*
 	class RHS_Ural_Open_Civ_02						{ quality = 1; price = 25000; };
 	class RHS_Ural_Open_Civ_03						{ quality = 1; price = 25000; };
+	*/
 	class RHS_Ural_Open_MSV_01						{ quality = 1; price = 25000; };
+	/*
 	class RHS_Ural_Open_VDV_01						{ quality = 1; price = 25000; };
 	class RHS_Ural_Open_VMF_01						{ quality = 1; price = 25000; };
 	class RHS_Ural_Open_VV_01						{ quality = 1; price = 25000; };
+	*/
 	class RHS_Ural_MSV_01							{ quality = 1; price = 25000; };
+	/*
 	class RHS_Ural_VDV_01							{ quality = 1; price = 25000; };
 	class RHS_Ural_VMF_01							{ quality = 1; price = 25000; };
 	class RHS_Ural_VV_01							{ quality = 1; price = 25000; };
+	*/
 	class RHS_Ural_Open_Flat_MSV_01					{ quality = 1; price = 35000; };
+	/*
 	class RHS_Ural_Open_Flat_VDV_01					{ quality = 1; price = 35000; };
 	class RHS_Ural_Open_Flat_VMF_01					{ quality = 1; price = 35000; };
 	class RHS_Ural_Open_Flat_VV_01					{ quality = 1; price = 35000; };
+	*/
 	class RHS_Ural_Fuel_MSV_01						{ quality = 2; price = 35000; };
+	/*
 	class RHS_Ural_Fuel_VDV_01						{ quality = 2; price = 35000; };
 	class RHS_Ural_Fuel_VMF_01						{ quality = 2; price = 35000; };
 	class RHS_Ural_Fuel_VV_01						{ quality = 2; price = 35000; };
+	*/
 	class RHS_Ural_Flat_MSV_01 						{ quality = 2; price = 25000; };
+	/*
 	class RHS_Ural_Flat_VDV_01 						{ quality = 2; price = 25000; };
 	class RHS_Ural_Flat_VMF_01 						{ quality = 2; price = 25000; };
 	class RHS_Ural_Flat_VV_01 						{ quality = 2; price = 25000; };
 	class rhs_typhoon_vdv							{ quality = 3; price = 50000; };
+	*/
+	
 	///////////////////////////////////////////////////////////////////////////////
-	// BTR some commented out due to animation/repair bugs
-	//////////////////////////////////////////////////////////////////////////////	
+	// BTR
+	//////////////////////////////////////////////////////////////////////////////
+	/*
 	class rhs_btr60_vmf 							{ quality = 4; price = 125000; };
 	class rhs_btr60_vdv 							{ quality = 4; price = 125000; };
 	class rhs_btr60_vv 								{ quality = 4; price = 125000; };
 	class rhs_btr60_msv 							{ quality = 4; price = 125000; };
-	//class RHS_BTR70 								{ quality = 4; price = 125000; };
-	//class RHS_BTR70_MSV 							{ quality = 4; price = 125000; };
+	//class RHS_BTR70 								{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
+	//class RHS_BTR70_MSV 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
 	class RHS_BTR70_VDV 							{ quality = 4; price = 175000; };
-	//class RHS_BTR70_VMF 							{ quality = 4; price = 125000; };
-	//class RHS_BTR70_VV 							{ quality = 4; price = 125000; };
+	//class RHS_BTR70_VMF 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
+	//class RHS_BTR70_VV 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
 	class RHS_BTR80_MSV 							{ quality = 4; price = 175000; };
-	//class RHS_BTR80_VDV 							{ quality = 4; price = 125000; };
-	//class RHS_BTR80_VMF 							{ quality = 4; price = 125000; };
+	//class RHS_BTR80_VDV 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
+	//class RHS_BTR80_VMF 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
 	class RHS_BTR80_VV 								{ quality = 4; price = 175000; };
 	class RHS_BTR80A_MSV 							{ quality = 4; price = 175000; };
-	//class RHS_BTR80A_VDV 							{ quality = 4; price = 125000; };
-	//class RHS_BTR80A_VMF 							{ quality = 4; price = 125000; };
-	//class RHS_BTR80A_VV 							{ quality = 4; price = 125000; };
-
+	//class RHS_BTR80A_VDV 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
+	//class RHS_BTR80A_VMF 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
+	//class RHS_BTR80A_VV 							{ quality = 4; price = 125000; }; //Bugged, Do Not Put In Game
+	*/
+	
 	///////////////////////////////////////////////////////////////////////////////
 	// TRACKED
 	//////////////////////////////////////////////////////////////////////////////
 	class rhsusf_rg33_d         				    { quality = 3; price = 50000; };
 	class rhsusf_rg33_wd         				    { quality = 3; price = 50000; };
+	/*
 	class rhsusf_rg33_m2_d         				    { quality = 3; price = 50000; };
 	class rhsusf_rg33_m2_wd         				{ quality = 3; price = 50000; };
 	class rhsusf_rg33_usmc_d         				{ quality = 3; price = 50000; };
 	class rhsusf_rg33_usmc_wd         				{ quality = 3; price = 50000; };
 	class rhsusf_rg33_m2_usmc_d         			{ quality = 3; price = 50000; };
 	class rhsusf_rg33_m2_usmc_wd         			{ quality = 3; price = 50000; };
-	
+	*/
 	///////////////////////////////////////////////////////////////////////////////
 	// CH-47
 	//////////////////////////////////////////////////////////////////////////////
+	/*
 	class RHS_CH_47F								{ quality = 3; price = 35000; };
 	class RHS_CH_47F_10					            { quality = 3; price = 35000; };
+	*/
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Ka-60
 	//////////////////////////////////////////////////////////////////////////////
+	/*
 	class rhs_ka60_c					            { quality = 3; price = 28000; };
 	class rhs_ka60_grey								{ quality = 3; price = 28000; };
+	*/
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Ka-52
 	//////////////////////////////////////////////////////////////////////////////
+	/*
 	class RHS_Ka52_vvsc					    		{ quality = 4; price = 125000; };
 	class RHS_Ka52_vvs					    		{ quality = 4; price = 125000; };
 	class RHS_Ka52_UPK23_vvs					    { quality = 4; price = 125000; };
 	class RHS_Ka52_UPK23_vvsc					    { quality = 4; price = 125000; };
-
+	*/
+	
 	///////////////////////////////////////////////////////////////////////////////
 	// AH1Z
 	//////////////////////////////////////////////////////////////////////////////	
 	class RHS_AH1Z					    			{ quality = 4; price = 125000; };
+	/*
 	class RHS_AH1Z_GS					    		{ quality = 4; price = 125000; };
 	class RHS_AH1Z_CS					    		{ quality = 4; price = 125000; };
 	class RHS_AH1Z_wd					    		{ quality = 4; price = 125000; };
 	class RHS_AH1Z_wd_GS					    	{ quality = 4; price = 125000; };
 	class RHS_AH1Z_wd_CS					    	{ quality = 4; price = 125000; };
+	*/
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// UH-60M
 	//////////////////////////////////////////////////////////////////////////////
 	class RHS_UH60M              				    { quality = 3; price = 50000; };
+	/*
 	class RHS_UH60M_MEV         				    { quality = 3; price = 50000; };
 	class RHS_UH60M_d         				    	{ quality = 3; price = 50000; };
 	class rhs_UH60M_MEV2_d 							{ quality = 3; price = 50000; };
 	class RHS_UH60M_MEV_d         				    { quality = 3; price = 50000; };
 	class RHS_UH60M_MEV2					        { quality = 3; price = 50000; };	
+	*/
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Mi8
 	//////////////////////////////////////////////////////////////////////////////
 	class RHS_Mi8mt_vvs					            { quality = 1; price = 25000; };
+	/*
 	class RHS_Mi8mt_vvsc					        { quality = 1; price = 25000; };
 	class RHS_Mi8mt_vdv					        	{ quality = 1; price = 25000; };
 	class RHS_Mi8mt_vv					        	{ quality = 1; price = 25000; };
@@ -3443,11 +3446,13 @@ class CfgExileArsenal
 	class RHS_Mi8MTV3_FAB_vdv					    { quality = 4; price = 155000; };
 	class RHS_Mi8AMTSh_FAB_vvs					    { quality = 4; price = 155000; };
 	class RHS_Mi8AMTSh_FAB_vvsc					    { quality = 4; price = 155000; };
+	*/
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Mi24
 	//////////////////////////////////////////////////////////////////////////////
 	class RHS_Mi24Vt_vvs					        { quality = 1; price = 50000; };
+	/*
 	class RHS_Mi24P_vvs					        	{ quality = 3; price = 125000; };
 	class RHS_Mi24P_vvsc					        { quality = 3; price = 125000; };
 	class RHS_Mi24P_CAS_vvs					        { quality = 3; price = 125000; };
@@ -3469,11 +3474,13 @@ class CfgExileArsenal
 	class RHS_Mi24V_AT_vvsc					        { quality = 3; price = 125000; };
 	class RHS_Mi24V_AT_vdv					        { quality = 3; price = 125000; };
 	class RHS_Mi24V_vdv					        	{ quality = 3; price = 125000; };
-
+	*/
+	
 	///////////////////////////////////////////////////////////////////////////////
 	// AH64 Apache
 	//////////////////////////////////////////////////////////////////////////////	
 	class RHS_AH64D					        		{ quality = 4; price = 175000; };
+	/*
 	class RHS_AH64D_GS					        	{ quality = 4; price = 175000; };
 	class RHS_AH64D_CS					        	{ quality = 4; price = 175000; };
 	class RHS_AH64D_wd					        	{ quality = 4; price = 175000; };
@@ -3482,45 +3489,46 @@ class CfgExileArsenal
 	class RHS_AH64D_AA					        	{ quality = 4; price = 175000; };
 	class RHS_AH64D_wd_AA					       	{ quality = 4; price = 175000; };
 	class RHS_AH64DGrey					        	{ quality = 4; price = 175000; };	
-		
+	*/
+	
 	///////////////////////////////////////////////////////////////////////////////
 	// UH1Y
 	//////////////////////////////////////////////////////////////////////////////
-	class rhs_UH1Y_unarmed 							{ quality = 1; price = 40000; };
-	class RHS_UH1Y_UNARMED_d						{ quality = 1; price = 40000; };
-	class RHS_UH1Y							        { quality = 3; price = 145000; };
+	//class rhs_UH1Y_unarmed 							{ quality = 1; price = 40000; };
+	//lass RHS_UH1Y_UNARMED_d						{ quality = 1; price = 40000; };
+	//class RHS_UH1Y							        { quality = 3; price = 145000; };
 	class RHS_UH1Y_d						        { quality = 3; price = 145000; };
-	class RHS_UH1Y_FFAR						        { quality = 3; price = 145000; };
-	class RHS_UH1Y_FFAR_d						    { quality = 3; price = 145000; };
+	//class RHS_UH1Y_FFAR						        { quality = 3; price = 145000; };
+	//class RHS_UH1Y_FFAR_d						    { quality = 3; price = 145000; };
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Planes
 	//////////////////////////////////////////////////////////////////////////////	
-	class RHS_C130J 								{ quality = 1; price = 999999; };  
-	class RHS_A10 									{ quality = 6; price = 550000; };
+	//class RHS_C130J 								{ quality = 1; price = 999999; };  
+	//class RHS_A10 									{ quality = 6; price = 550000; };
 	class RHS_Su25SM_vvs							{ quality = 6; price = 550000; };
-	class RHS_T50_vvs_051							{ quality = 6; price = 550000; };
-	class rhsusf_f22								{ quality = 6; price = 550000; };
-	
-	
-	
-	
-	
+	//class RHS_T50_vvs_051							{ quality = 6; price = 550000; };
+	//class rhsusf_f22								{ quality = 6; price = 550000; };
 };
 
 
 
 class CfgExileCustomCode 
 {
-	//REVIVE SCRIPT//
-	 ExileClient_object_player_death_startBleedingOut = "Custom\EnigmaRevive\ExileClient_object_player_death_startBleedingOut.sqf"; //Happys Revive
-    ExileClient_object_player_event_onInventoryOpened = "Custom\EnigmaRevive\ExileClient_object_player_event_onInventoryOpened.sqf"; //Happys Revive AntiDupe ---NEW with v0.65
-	ExileClient_util_playerEquipment_add = "Custom\overrides\ExileClient_util_playerEquipment_add.sqf";  // Rocket launcher fix
-	//Vehicle Protection System
-		ExileServer_object_player_database_load = "Custom\overrides\ExileServer_object_player_database_load.sqf";
-		ExileServer_object_vehicle_database_load = "Custom\overrides\ExileServer_object_vehicle_database_load.sqf";
-		ExileServer_object_vehicle_database_update = "Custom\overrides\ExileServer_object_vehicle_database_update.sqf";
-	
+	/*
+		You can overwrite every single file of our code without touching it.
+		To do that, add the function name you want to overwrite plus the 
+		path to your custom file here. If you wonder how this works, have a
+		look at our bootstrap/fn_preInit.sqf function.
+
+		Simply add the following scheme here:
+
+		<Function Name of Exile> = "<New File Name>";
+
+		Example:
+
+		ExileClient_util_fusRoDah = "myaddon\myfunction.sqf";
+	*/
 };
 class CfgExileEnvironment
 {
@@ -3810,7 +3818,7 @@ class CfgExileMobileXM8
 	 * Add the 4 digit permission code here, so players can authorize
 	 * your server to send them messages to their Mobile XM8 app.
 	 */
-	code = "2391";
+	code = "";
 };
 class CfgExileMusic
 {
@@ -3829,7 +3837,7 @@ class CfgExileRussianRoulette
 		Minimum amount to join a session of 
 		russian roulette
 	*/
-	buyInAmount = 2500;
+	buyInAmount = 100;
 };
 class CfgFlags 
 {
@@ -3855,8 +3863,6 @@ class ExileAbstractAction
  */
 class CfgInteractionMenus
 {
-	#include "EBM\menus.hpp"
-	
 	class Car 
 	{
 		targetType = 2;
@@ -3901,13 +3907,6 @@ class CfgInteractionMenus
 				title = "Hotwire";
 				condition = "((locked ExileClientInteractionObject) isEqualTo 2) && ((locked ExileClientInteractionObject) != 1)";
 				action = "['HotwireVehicle', _this select 0] call ExileClient_action_execute";
-			};
-			
-			class ClaimVehicle: ExileAbstractAction
-			{
-				title = "Claim Ownership";
-				condition = "true";
-				action = "call ExileClient_ClaimVehicles_network_claimRequestSend";
 			};
 
 			// Flips a vehicle so the player doesnt have to call an admin
@@ -3974,14 +3973,6 @@ class CfgInteractionMenus
 				condition = "((locked ExileClientInteractionObject) isEqualTo 2) && ((locked ExileClientInteractionObject) != 1)";
 				action = "['HotwireVehicle', _this select 0] call ExileClient_action_execute";
 			};
-			
-			class ClaimVehicle: ExileAbstractAction
-			{
-				title = "Claim Ownership";
-				condition = "true";
-				action = "call ExileClient_ClaimVehicles_network_claimRequestSend";
-			};
-
 
 			// Repairs a vehicle to 100%. Requires Duckttape
 			class Repair: ExileAbstractAction
@@ -4077,50 +4068,6 @@ class CfgInteractionMenus
 		};
 	};
 
-	  class Tank
-{
-targetType=2;
-target="Tank";
-class Actions
-{
-class Lock: ExileAbstractAction
-{
-title="Lock";
-condition="((locked ExileClientInteractionObject) isEqualTo 0) && ((locked ExileClientInteractionObject) != 1)";
-action="true spawn ExileClient_object_lock_toggle";
-};
-class Unlock: ExileAbstractAction
-{
-title="Unlock";
-condition="((locked ExileClientInteractionObject) isEqualTo 2) && ((locked ExileClientInteractionObject) != 1)";
-action="false spawn ExileClient_object_lock_toggle";
-};
-class Repair: ExileAbstractAction
-{
-title="Repair";
-condition="call ExileClient_object_vehicle_interaction_show";
-action="_this call ExileClient_object_vehicle_Repair";
-};
-class Flip: ExileAbstractAction
-{
-title="Flip";
-condition="call ExileClient_object_vehicle_interaction_show";
-action="_this call Exileclient_object_vehicle_flip";
-};
-class Refuel: ExileAbstractAction
-{
-title="Refuel";
-condition="call ExileClient_object_vehicle_interaction_show";
-action="_this call ExileClient_object_vehicle_refuel";
-};
-class DrainFuel: ExileAbstractAction
-{
-title="Drain Fuel";
-condition="call ExileClient_object_vehicle_interaction_show";
-action="_this call ExileClient_object_vehicle_drain";
-};
-};
-};
 	class Laptop
 	{
 		targetType = 2;
@@ -4408,15 +4355,6 @@ action="_this call ExileClient_object_vehicle_drain";
 				action = "_this call ExileClient_object_player_identifyBody";
 			};
 			
-			//////////////Added by [_ZEN_]happydayz/////////////////
-
-        class Revive: ExileAbstractAction
-        {
-            title = "Perform CPR";
-            condition = "(!(alive ExileClientInteractionObject) && (ExileClientInteractionObject getVariable ['EnigmaRevivePermitted', true]) && (magazines player find 'Exile_Item_Defibrillator' >= 0))";
-            action = "_this spawn Enigma_RevivePlyr";
-        };   
-			
 			class HideCorpse: ExileAbstractAction
 			{
 				title = "Hide Body";
@@ -4442,7 +4380,6 @@ class CfgInteractionModels
 			"barrelwater_grey_f",
 			"waterbarrel_f",
 			"watertank_f",
-			"Land_Sink_F",// added new
 			"stallwater_f",
 			"waterpump_01_f",
 			"water_source_f",
@@ -4587,7 +4524,6 @@ class CfgInteractionModels
 			"fs_feed_f.p3d",
 			//Tanoa
 			"fuelstation_01_pump_f.p3d",
-			"Tank_rust_F.p3d", // added new
 			"fuelstation_02_pump_f.p3d"
 		};	
 	};
@@ -4629,8 +4565,8 @@ class CfgPlayer
 };
 class CfgSlothMachine
 {
-	spinCost = 1000;
-	Jackpot = 500000;
+	spinCost = 100;
+	Jackpot = 10100;
 	
 	chances[] = 
 	{
@@ -4648,31 +4584,31 @@ class CfgSlothMachine
 		class Level1
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_ToiletPaper.paa";
-			prize = 1250;
+			prize = 101;
 		};
 
 		class Level2
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_CockONut.paa";
-			prize = 2000;
+			prize = 110;
 		};
 
 		class Level3
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Beer.paa";
-			prize = 10000;
+			prize = 125;
 		};
 
 		class Level4
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Knife.paa";
-			prize = 25000;
+			prize = 150;
 		};
 
 		class Level5
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Safe.paa";
-			prize = 50000;
+			prize = 200;
 		};
 		
 		class Jackpot
@@ -4726,7 +4662,7 @@ class CfgTerritories
 };
 class CfgTraderCategories 
 {
-	class RHSUniforms
+	class Community
 	{
 		name = "Community Items";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4736,7 +4672,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class RHSVests
+	class Community2
 	{
 		name = "Community Items 2";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4746,7 +4682,7 @@ class CfgTraderCategories
 		};
 	};
 
-	class RHSHeadgar
+	class Community3
 	{
 		name = "Community Items 3";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
@@ -4943,6 +4879,7 @@ class CfgTraderCategories
 			"U_B_CTRG_Soldier_urb_1_F",
 			"U_B_CTRG_Soldier_urb_2_F",
 			"U_B_CTRG_Soldier_urb_3_F",
+			//RHS
 			"rhs_uniform_cu_ocp",
 			"rhs_uniform_cu_ucp",
 			"rhs_uniform_cu_ocp_101st",
@@ -5041,74 +4978,75 @@ class CfgTraderCategories
 			"V_TacVest_gen_F",
 			"V_PlateCarrier1_rgr_noflag_F",
 			"V_PlateCarrier2_rgr_noflag_F",
+			//RHS
 			"rhs_6sh92",
-	 "rhs_6sh92_radio",
-	 "rhs_6sh92_vog",
-	 "rhs_6sh92_vog_headset",
-	 "rhs_6sh92_headset",
-	 "rhs_6sh92_digi",
-	 "rhs_6sh92_digi_radio",
-	 "rhs_6sh92_digi_vog",
-	 "rhs_6sh92_digi_vog_headset",
-	 "rhs_6sh92_digi_headset",
-	 "rhs_6b23",
-	 "rhs_6b23_crew",
-	 "rhs_6b23_crewofficer",
-	 "rhs_6b23_engineer",
-	 "rhs_6b23_medic",
-	 "rhs_6b23_rifleman",
-	 "rhs_6b23_sniper",
-	 "rhs_6b23_6sh92",
-	 "rhs_6b23_6sh92_radio",
-	 "rhs_6b23_6sh92_vog",
-	 "rhs_6b23_6sh92_vog_headset",
-	 "rhs_6b23_6sh92_headset",
-	 "rhs_6b23_6sh92_headset_mapcase",
-	 "rhs_6b23_digi",
-	 "rhs_6b23_digi_crew",
-	 "rhs_6b23_digi_crewofficer",
-	 "rhs_6b23_digi_engineer",
-	 "rhs_6b23_digi_medic",
-	 "rhs_6b23_digi_rifleman",
-	 "rhs_6b23_digi_sniper",
-	 "rhs_6b23_digi_6sh92",
-	 "rhs_6b23_digi_6sh92_radio",
-	 "rhs_6b23_digi_6sh92_vog",
-	 "rhs_6b23_digi_6sh92_vog_headset",
-	 "rhs_6b23_digi_6sh92_headset",
-	 "rhs_6b23_digi_6sh92_headset_mapcase",
-	 "rhs_6b23_ML",
-	 "rhs_6b23_ML_crew",
-	 "rhs_6b23_ML_crewofficer",
-	 "rhs_6b23_ML_engineer",
-	 "rhs_6b23_ML_medic",
-	 "rhs_6b23_ML_rifleman",
-	 "rhs_6b23_ML_sniper",
-	 "rhs_6b23_ML_6sh92",
-	 "rhs_6b23_ML_6sh92_radio",
-	 "rhs_6b23_ML_6sh92_vog",
-	 "rhs_6b23_ML_6sh92_vog_headset",
-	 "rhs_6b23_ML_6sh92_headset",
-	 "rhs_6b23_ML_6sh92_headset_mapcase",
-	 "rhs_vest_commander",
-	 "rhs_vydra_3m",
-	 "rhsusf_iotv_ucp",
-	 "rhsusf_iotv_ucp_grenadier",
-	 "rhsusf_iotv_ucp_medic",
-	 "rhsusf_iotv_ucp_repair",
-	 "rhsusf_iotv_ucp_rifleman",
-	 "rhsusf_iotv_ucp_SAW",
-	 "rhsusf_iotv_ucp_squadleader",
-	 "rhsusf_iotv_ucp_teamleader",
-	 "rhsusf_iotv_ocp",
-	 "rhsusf_iotv_ocp_grenadier",
-	 "rhsusf_iotv_ocp_medic",
-	 "rhsusf_iotv_ocp_repair",
-	 "rhsusf_iotv_ocp_rifleman",
-	 "rhsusf_iotv_ocp_SAW",
-	 "rhsusf_iotv_ocp_squadleader",
-	 "rhsusf_iotv_ocp_teamleader",
-	 "rhsusf_spc"
+			"rhs_6sh92_radio",
+			"rhs_6sh92_vog",
+			"rhs_6sh92_vog_headset",
+			"rhs_6sh92_headset",
+			"rhs_6sh92_digi",
+			"rhs_6sh92_digi_radio",
+			"rhs_6sh92_digi_vog",
+			"rhs_6sh92_digi_vog_headset",
+			"rhs_6sh92_digi_headset",
+			"rhs_6b23",
+			"rhs_6b23_crew",
+			"rhs_6b23_crewofficer",
+			"rhs_6b23_engineer",
+			"rhs_6b23_medic",
+			"rhs_6b23_rifleman",
+			"rhs_6b23_sniper",
+			"rhs_6b23_6sh92",
+			"rhs_6b23_6sh92_radio",
+			"rhs_6b23_6sh92_vog",
+			"rhs_6b23_6sh92_vog_headset",
+			"rhs_6b23_6sh92_headset",
+			"rhs_6b23_6sh92_headset_mapcase",
+			"rhs_6b23_digi",
+			"rhs_6b23_digi_crew",
+			"rhs_6b23_digi_crewofficer",
+			"rhs_6b23_digi_engineer",
+			"rhs_6b23_digi_medic",
+			"rhs_6b23_digi_rifleman",
+			"rhs_6b23_digi_sniper",
+			"rhs_6b23_digi_6sh92",
+			"rhs_6b23_digi_6sh92_radio",
+			"rhs_6b23_digi_6sh92_vog",
+			"rhs_6b23_digi_6sh92_vog_headset",
+			"rhs_6b23_digi_6sh92_headset",
+			"rhs_6b23_digi_6sh92_headset_mapcase",
+			"rhs_6b23_ML",
+			"rhs_6b23_ML_crew",
+			"rhs_6b23_ML_crewofficer",
+			"rhs_6b23_ML_engineer",
+			"rhs_6b23_ML_medic",
+			"rhs_6b23_ML_rifleman",
+			"rhs_6b23_ML_sniper",
+			"rhs_6b23_ML_6sh92",
+			"rhs_6b23_ML_6sh92_radio",
+			"rhs_6b23_ML_6sh92_vog",
+			"rhs_6b23_ML_6sh92_vog_headset",
+			"rhs_6b23_ML_6sh92_headset",
+			"rhs_6b23_ML_6sh92_headset_mapcase",
+			"rhs_vest_commander",
+			"rhs_vydra_3m",
+			"rhsusf_iotv_ucp",
+			"rhsusf_iotv_ucp_grenadier",
+			"rhsusf_iotv_ucp_medic",
+			"rhsusf_iotv_ucp_repair",
+			"rhsusf_iotv_ucp_rifleman",
+			"rhsusf_iotv_ucp_SAW",
+			"rhsusf_iotv_ucp_squadleader",
+			"rhsusf_iotv_ucp_teamleader",
+			"rhsusf_iotv_ocp",
+			"rhsusf_iotv_ocp_grenadier",
+			"rhsusf_iotv_ocp_medic",
+			"rhsusf_iotv_ocp_repair",
+			"rhsusf_iotv_ocp_rifleman",
+			"rhsusf_iotv_ocp_SAW",
+			"rhsusf_iotv_ocp_squadleader",
+			"rhsusf_iotv_ocp_teamleader",
+			"rhsusf_spc"
 		};
 	};
 
@@ -5243,6 +5181,7 @@ class CfgTraderCategories
 			"H_Cap_tan_Syndikat_F",
 			"H_Cap_blk_Syndikat_F",
 			"H_Cap_grn_Syndikat_F",
+			//RHS
 			"rhs_6b27m_digi",
 	        "rhs_6b27m_digi_ess",
 	        "rhs_6b27m_digi_bala",
@@ -5438,6 +5377,7 @@ class Glasses
 		{
 			"acc_flashlight",
 			"acc_pointer_IR",
+			//RHS
 			"rhsusf_acc_anpeq15side",
 			"rhsusf_acc_anpeq15",
 			"rhsusf_acc_anpeq15A",
@@ -5461,6 +5401,7 @@ class Glasses
 			"bipod_03_F_oli",
 			//Apex
 			"bipod_01_F_khk",
+			//RHS
 			"rhsusf_acc_harris_bipod",
 			"rhs_bipod"
 		};
@@ -5498,6 +5439,7 @@ class Glasses
 			"muzzle_snds_65_TI_ghex_F",
 			"muzzle_snds_H_MG_blk_F",
 			"muzzle_snds_H_MG_khk_F",
+			//RHS
 			"rhsusf_acc_rotex5_grey",
 			"rhsusf_acc_rotex5_tan",
 			"rhsusf_acc_nt4_black",
@@ -5587,6 +5529,7 @@ class Glasses
 			"optic_Holosight_blk_F",
 			"optic_Holosight_khk_F",
 			"optic_Holosight_smg_blk_F",
+			//RHS
 			"rhsusf_acc_eotech_552",
 			"rhsusf_acc_LEUPOLDMK4",
 			"rhsusf_acc_ELCAN",
@@ -5627,8 +5570,10 @@ class Glasses
 			"Exile_Item_MetalPole",
 			"Exile_Item_SafeKit",
 			"Exile_Item_CamoTentKit",
-			"Exile_Item_CodeLock",
-			"Exile_Item_Rope",
+			"Exile_Item_CodeLock"
+			
+			/*
+			--Not for Sale--
 			"Exile_Item_MetalScrews",
 			"Exile_Item_MetalWire",
 			"Exile_Item_Laptop",
@@ -5637,13 +5582,17 @@ class Glasses
 			"Exile_Item_Cement",
 			"Exile_Item_Sand",
 			"Exile_Item_MobilePhone",
+			--Unused--
 			"Exile_Item_CordlessScrewdriver",
 			"Exile_Item_FireExtinguisher",
 			"Exile_Item_OilCanister",
 			"Exile_Item_Hammer",
 			"Exile_Item_Carwheel",
 			"Exile_Item_SleepingMat",
-			"Exile_Item_Wrench"
+			"Exile_Item_Defibrillator",
+			"Exile_Item_Wrench",
+			"Exile_Item_Rope"
+		*/
 		};
 	};
 
@@ -5702,6 +5651,8 @@ class Glasses
 			"Exile_Item_Pliers",
 			"Exile_Item_Grinder",
 			"Exile_Item_Foolbox",
+
+			/*
 			"Exile_Item_CordlessScrewdriver",
 			"Exile_Item_FireExtinguisher",
 			"Exile_Item_Hammer",
@@ -5712,6 +5663,7 @@ class Glasses
 			"Exile_Item_SleepingMat",	
 			"Exile_Item_ToiletPaper",			
 			"Exile_Item_ZipTie",
+			*/
 
 			"Binocular",
 			"Rangefinder",
@@ -5924,6 +5876,7 @@ class Glasses
 			"200Rnd_556x45_Box_Tracer_F",
 			"200Rnd_556x45_Box_Tracer_Red_F",
 			"10Rnd_9x21_Mag",
+			//RHS
 			"rhsusf_mag_7x45acp_MHP",
 			"rhs_mag_9x18_12_57N181S",
 			"rhs_mag_9x19_17",
@@ -6043,6 +5996,7 @@ class Glasses
 			"IEDUrbanSmall_Remote_Mag",
 			"SatchelCharge_Remote_Mag",
 			"SLAMDirectionalMine_Wire_Mag",
+			//RHS
 			"rhs_mine_pmn2_mag",
 			"rhs_mine_tm62m_mag",
 			"rhsusf_m112_mag",
@@ -6051,7 +6005,7 @@ class Glasses
 		};
 	};
 	
-	class Launchers
+	class Launchers //RHS
 	{
 		name = "Launchers";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargothrow_ca.paa";
@@ -6091,7 +6045,7 @@ class Glasses
 			//Apex
 			"hgun_Pistol_01_F",
 			"hgun_P07_khk_F",
-			"rhs_weap_pya",
+			//RHS
 			"rhs_weap_makarov_pmm",
 			"rhsusf_weap_m1911a1"
 		};
@@ -6124,6 +6078,14 @@ class Glasses
 			"Exile_Weapon_RPK",
 			"Exile_Weapon_PK",
 			"Exile_Weapon_PKP",
+			/*
+			"MMG_01_hex_F",
+			"MMG_01_tan_F",
+			"MMG_02_black_F",
+			"MMG_02_camo_F",
+			"MMG_02_sand_F"
+			*/
+			//RHS
 			"rhs_weap_m249_pip_L",
 			"rhs_weap_m249_pip_L_para",
 			"rhs_weap_m249_pip_L_vfg",
@@ -6134,14 +6096,6 @@ class Glasses
 			"rhs_weap_m240B_CAP",
 			"rhs_weap_m240G",
 			"rhs_weap_pkm"
-
-			/*
-			"MMG_01_hex_F",
-			"MMG_01_tan_F",
-			"MMG_02_black_F",
-			"MMG_02_camo_F",
-			"MMG_02_sand_F"
-			*/
 		};
 	};
 
@@ -6208,6 +6162,7 @@ class Glasses
 			"arifle_MX_GL_khk_F",
 			"arifle_MXC_khk_F",
 			"arifle_MXM_khk_F",
+			//RHS
 			"rhs_weap_m16a4",
 			"rhs_weap_m16a4_carryhandle",
 			"rhs_weap_m16a4_carryhandle_grip",
@@ -6248,7 +6203,6 @@ class Glasses
 			"rhs_weap_akm_gp25",
 			"rhs_weap_akms",
 			"rhs_weap_akms_gp25"
-			
 		};
 	};
 	
@@ -6303,6 +6257,7 @@ class Glasses
 			"srifle_DMR_07_blk_F",
 			"srifle_DMR_07_hex_F",
 			"srifle_DMR_07_ghex_F",
+			//RHS
 			"rhs_weap_sr25",
 			"rhs_weap_sr25_ec",
 			"rhs_weap_m14ebrri",
@@ -6428,7 +6383,7 @@ class Glasses
 			"RHS_Ural_Open_Flat_VMF_01",
 			"RHS_Ural_Open_Flat_VV_01",
 			*/
-			"RHS_Ural_Fuel_MSV_01",
+			"RHS_Ural_Fuel_MSV_01"
 			/*
 			"RHS_Ural_Fuel_VDV_01",
 			"RHS_Ural_Fuel_VMF_01",
@@ -6454,6 +6409,7 @@ class Glasses
 			"Exile_Chopper_Mohawk_FIA",
 			"Exile_Chopper_Huron_Black",
 			"Exile_Chopper_Hellcat_Green",
+			//RHS
 			/*
 			"RHS_CH_47F",
 			"RHS_CH_47F_10",
@@ -6548,7 +6504,7 @@ class Glasses
 			"rhs_UH1Y_unarmed",
 			"RHS_UH1Y_UNARMED_d",
 			*/
-			"RHS_UH1Y_d",
+			"RHS_UH1Y_d"
 			/*
 			"RHS_UH1Y_FFAR",
 			"RHS_UH1Y_FFAR_d",			
@@ -6591,7 +6547,7 @@ class Glasses
 			"Exile_Plane_BlackfishInfantry",
 			"Exile_Plane_BlackfishVehicle",
 			//"RHS_A10",
-			"RHS_Su25SM_vvs",
+			"RHS_Su25SM_vvs"
 			/*
 			"RHS_T50_vvs_051",
 			"rhsusf_f22",
@@ -6640,8 +6596,7 @@ class CfgTraders
 			"SubMachineGuns",
 			"LightMachineGuns",
 			"AssaultRifles",
-			"SniperRifles",
-			"Launchers"
+			"SniperRifles"
 		};
 	};
 
