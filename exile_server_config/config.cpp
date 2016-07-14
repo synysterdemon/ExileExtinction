@@ -4912,7 +4912,9 @@ class CfgSettings
 			"ItemMap", // Because why not
 			"Exile_Item_XM8",
 			"ItemRadio",
-			"Exile_Item_PlasticBottleFreshWater"
+			"Exile_Item_PlasticBottleFreshWater",
+			"Exile_Melee_Axe",
+			"Exile_Magazine_Swing"
 		};
 
 		/**
@@ -5047,7 +5049,7 @@ class CfgSettings
 		 * 0 = off
 		 * 1 = on
 		 */
-		nightVision = 1;
+		nightVision = 0;
 
 		/**
 		 * Enables or disables thermal optics on ALL vehicles
@@ -5080,7 +5082,7 @@ class CfgSettings
 			weather type of be more dominant compared to others, add it multiple times
 		*/
 		//keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
-		keyframes[] = {"Sunny"}; 
+		keyframes[] = {"Sunny", "Cloudy", "Thunderstorm"}; 
 
 		/*
 			This is a keyframe. Look up the BIKI to get more details about the parameters
@@ -5151,7 +5153,7 @@ class CfgSettings
 		// time in ARMA FORMAT << CONFIG
 		// https://community.bistudio.com/wiki/setDate
 
-		staticTime[] = {2039,10,24,15,30};
+		staticTime[] = {2044,10,24,15,30};
 	};
 
 
@@ -5162,7 +5164,7 @@ class CfgSettings
 		*/
 
 		// This needs to match config.cfg serverCommandPassword
-		serverPassword = "";
+		serverPassword = "muffins";
 
 		// Autolocks server until its ready to accept players
 		useAutoLock = 0;
@@ -5187,14 +5189,14 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useAutoKick = 0;
+		useAutoKick = 1;
 
 		/*
 			Number of minutes before the server kicks players that did
 			not disconnect before the restart. Should at least be two
 			minutes!
 		*/
-		kickTime = 2;
+		kickTime = 1;
 
 		/*
 			Self-explanatory
@@ -5202,21 +5204,21 @@ class CfgSettings
 			0 = off
 			1 = on
 		*/
-		useRestartMessages = 0;
+		useRestartMessages = 1;
 
 		/*
 			Number of minutes before the restart to inform your players.
 
 			Only use full minutes here. Value like 5.5 have not been tested.
 		*/
-		restartWarningTime[] = {15, 10, 5, 3}; 
+		restartWarningTime[] = {30, 15, 10, 5, 3}; 
 
 		/* 
 			If set to 1 server will execute '#shutdown',
 			to try to shutdown the server
 		*/
 
-		useShutdown = 0;
+		useShutdown = 1;
 	};
 
 	class ServerSettings
@@ -5246,7 +5248,7 @@ class CfgSettings
 		/*
 			A list of events that are active
 		*/
-		enabledEvents[] = {"SupplyBox", "AbandonedSafe", "AmbientFlyOver"}; 
+		enabledEvents[] = {"SupplyBox", "AbandonedSafe"}; 
 
 		class SupplyBox 
 		{
