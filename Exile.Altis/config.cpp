@@ -17,7 +17,7 @@ class CfgClans
 
 		Default: 20,000
 	*/
-	registrationFee = 20000;
+	registrationFee = 500000;
 
 	/*
 		A list of all characters allowed in a clan *name*
@@ -2710,8 +2710,6 @@ class CfgExileArsenal
 	class Exile_Item_FlagStolen8						{ quality = 1; price = 40000; sellPrice = 40000; };
 	class Exile_Item_FlagStolen9						{ quality = 1; price = 45000; sellPrice = 45000; };
 	class Exile_Item_FlagStolen10						{ quality = 1; price = 50000; sellPrice = 50000; };
-<<<<<<< HEAD
-=======
 	
 	///////////////////////////////////////////////////////////////////////////////
 	// Uniforms
@@ -3511,7 +3509,6 @@ class CfgExileArsenal
 	class RHS_Su25SM_vvs							{ quality = 6; price = 550000; };
 	//class RHS_T50_vvs_051							{ quality = 6; price = 550000; };
 	//class rhsusf_f22								{ quality = 6; price = 550000; };
->>>>>>> origin/master
 };
 
 
@@ -4535,14 +4532,14 @@ class CfgLocker
 {
 	numbersOnly = "0123456789";
 	
-	maxDeposit = 10000;
+	maxDeposit = 5000000;
 };
 
 class CfgPlayer 
 {
 	// In minutes ammount of time it takes to go from 100 - 0 if stationary
-	hungerDecay = 90;
-	thirstDecay = 60;
+	hungerDecay = 180;
+	thirstDecay = 120;
 
 	// Damage taken from 0 (health||thirst)/sec
 	healthDecay = 5.0;
@@ -4568,8 +4565,8 @@ class CfgPlayer
 };
 class CfgSlothMachine
 {
-	spinCost = 100;
-	Jackpot = 10100;
+	spinCost = 1000;
+	Jackpot = 500000;
 	
 	chances[] = 
 	{
@@ -4587,31 +4584,31 @@ class CfgSlothMachine
 		class Level1
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_ToiletPaper.paa";
-			prize = 101;
+			prize = 2000;
 		};
 
 		class Level2
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_CockONut.paa";
-			prize = 110;
+			prize = 5000;
 		};
 
 		class Level3
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Beer.paa";
-			prize = 125;
+			prize = 10000;
 		};
 
 		class Level4
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Knife.paa";
-			prize = 150;
+			prize = 25000;
 		};
 
 		class Level5
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Safe.paa";
-			prize = 200;
+			prize = 50000;
 		};
 		
 		class Jackpot
@@ -4665,206 +4662,6 @@ class CfgTerritories
 };
 class CfgTraderCategories 
 {
-<<<<<<< HEAD
-	class Community
-=======
-	class ApexAir
->>>>>>> origin/master
-	{
-		name = "Community Items";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			// Add your items here <3
-		};
-	};
-
-<<<<<<< HEAD
-	class Community2
-=======
-	class ApexGround
->>>>>>> origin/master
-	{
-		name = "Community Items 2";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			"Exile_Car_ProwlerLight",
-			"Exile_Car_ProwlerUnarmed",
-			"Exile_Car_QilinUnarmed",
-			"Exile_Car_MB4WD",
-			"Exile_Car_MB4WDOpen"
-		};
-	};
-
-<<<<<<< HEAD
-	class Community3
-=======
-	class ApexUniforms
->>>>>>> origin/master
-	{
-		name = "Community Items 3";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			"U_B_T_Soldier_F",
-			"U_B_T_Soldier_AR_F",
-			"U_B_T_Soldier_SL_F",
-			//"U_B_T_Sniper_F",
-			//"U_B_T_FullGhillie_tna_F",
-			"U_B_CTRG_Soldier_F",
-			"U_B_CTRG_Soldier_2_F",
-			"U_B_CTRG_Soldier_3_F",
-			"U_B_GEN_Soldier_F",
-			"U_B_GEN_Commander_F",
-			"U_O_T_Soldier_F",
-			"U_O_T_Officer_F",
-			//"U_O_T_Sniper_F",
-			//"U_O_T_FullGhillie_tna_F",
-			"U_O_V_Soldier_Viper_F",
-			"U_O_V_Soldier_Viper_hex_F",
-			"U_I_C_Soldier_Para_1_F",
-			"U_I_C_Soldier_Para_2_F",
-			"U_I_C_Soldier_Para_3_F",
-			"U_I_C_Soldier_Para_4_F",
-			"U_I_C_Soldier_Para_5_F",
-			"U_I_C_Soldier_Bandit_1_F",
-			"U_I_C_Soldier_Bandit_2_F",
-			"U_I_C_Soldier_Bandit_3_F",
-			"U_I_C_Soldier_Bandit_4_F",
-			"U_I_C_Soldier_Bandit_5_F",
-			"U_I_C_Soldier_Camo_F",
-			"U_C_man_sport_1_F",
-			"U_C_man_sport_2_F",
-			"U_C_man_sport_3_F",
-			"U_C_Man_casual_1_F",
-			"U_C_Man_casual_2_F",
-			"U_C_Man_casual_3_F",
-			"U_C_Man_casual_4_F",
-			"U_C_Man_casual_5_F",
-			"U_C_Man_casual_6_F",
-			"U_B_CTRG_Soldier_urb_1_F",
-			"U_B_CTRG_Soldier_urb_2_F",
-			"U_B_CTRG_Soldier_urb_3_F"
-		};
-	};
-
-	class ApexVests
-	{
-		name = "Community Items 4";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			"V_TacChestrig_grn_F",
-			"V_TacChestrig_oli_F",
-			"V_TacChestrig_cbr_F",
-			"V_PlateCarrier1_tna_F",
-			"V_PlateCarrier2_tna_F",
-			"V_PlateCarrierSpec_tna_F",
-			"V_PlateCarrierGL_tna_F",
-			"V_HarnessO_ghex_F",
-			"V_HarnessOGL_ghex_F",
-			"V_BandollierB_ghex_F",
-			"V_TacVest_gen_F",
-			"V_PlateCarrier1_rgr_noflag_F",
-			"V_PlateCarrier2_rgr_noflag_F"
-		};
-	};
-
-	class ApexHeadgear
-	{
-		name = "Community Items 5";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			"H_Helmet_Skate",
-			"H_HelmetB_TI_tna_F",
-			//"H_HelmetO_ViperSP_hex_F",
-			//"H_HelmetO_ViperSP_ghex_F",
-			"H_HelmetB_tna_F",
-			"H_HelmetB_Enh_tna_F",
-			"H_HelmetB_Light_tna_F",
-			"H_HelmetSpecO_ghex_F",
-			"H_HelmetLeaderO_ghex_F",
-			"H_HelmetO_ghex_F",
-			"H_HelmetCrew_O_ghex_F",
-			"H_MilCap_tna_F",
-			"H_MilCap_ghex_F",
-			"H_Booniehat_tna_F",
-			"H_Beret_gen_F",
-			"H_MilCap_gen_F",
-			"H_Cap_oli_Syndikat_F",
-			"H_Cap_tan_Syndikat_F",
-			"H_Cap_blk_Syndikat_F",
-			"H_Cap_grn_Syndikat_F"
-		};
-	};
-
-	class ApexBackpacks
-	{
-		name = "Community Items 6";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			"B_Bergen_mcamo_F",
-			"B_Bergen_dgtl_F",
-			"B_Bergen_hex_F",
-			"B_Bergen_tna_F",
-			"B_AssaultPack_tna_F",
-			"B_Carryall_ghex_F",
-			"B_FieldPack_ghex_F",
-			"B_ViperHarness_blk_F",
-			"B_ViperHarness_ghex_F",
-			"B_ViperHarness_hex_F",
-			"B_ViperHarness_khk_F",
-			"B_ViperHarness_oli_F",
-			"B_ViperLightHarness_blk_F",
-			"B_ViperLightHarness_ghex_F",
-			"B_ViperLightHarness_hex_F",
-			"B_ViperLightHarness_khk_F",
-			"B_ViperLightHarness_oli_F"
-		};
-	};
-
-	class Community7
-	{
-		name = "Community Items 7";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			// Add your items here <3
-		};
-	};
-
-	class Community8
-	{
-		name = "Community Items 8";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			// Add your items here <3
-		};
-	};
-
-	class Community9
-	{
-		name = "Community Items 9";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			// Add your items here <3
-		};
-	};
-
-	class Community10
-	{
-		name = "Community Items 10";
-		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
-		items[] = 
-		{
-			// Add your items here <3
-		};
-	};
 
 	class Uniforms
 	{
@@ -4943,7 +4740,7 @@ class CfgTraderCategories
 			"U_B_PilotCoveralls",
 			"U_I_pilotCoveralls",
 			"U_O_PilotCoveralls",
-<<<<<<< HEAD
+
 			//Apex
 			"U_B_T_Soldier_F",
 			"U_B_T_Soldier_AR_F",
@@ -4983,8 +4780,7 @@ class CfgTraderCategories
 			"U_C_Man_casual_6_F",
 			"U_B_CTRG_Soldier_urb_1_F",
 			"U_B_CTRG_Soldier_urb_2_F",
-			"U_B_CTRG_Soldier_urb_3_F"
-=======
+			"U_B_CTRG_Soldier_urb_3_F",
 			//RHS
 			"rhs_uniform_cu_ocp",
 			"rhs_uniform_cu_ucp",
@@ -5019,7 +4815,6 @@ class CfgTraderCategories
 			"rhs_uniform_cu_ucp_10th",
 			"rhs_uniform_cu_ucp_1stcav",
 			"rhs_uniform_cu_ucp_82nd"
->>>>>>> origin/master
 		};
 	};
 
@@ -5071,7 +4866,6 @@ class CfgTraderCategories
 			"V_PlateCarrierSpec_blk",
 			"V_PlateCarrierSpec_mtp",
 			"V_PlateCarrierSpec_rgr",
-<<<<<<< HEAD
 			//Apex
 			"V_TacChestrig_grn_F",
 			"V_TacChestrig_oli_F",
@@ -5085,8 +4879,7 @@ class CfgTraderCategories
 			"V_BandollierB_ghex_F",
 			"V_TacVest_gen_F",
 			"V_PlateCarrier1_rgr_noflag_F",
-			"V_PlateCarrier2_rgr_noflag_F"
-=======
+			"V_PlateCarrier2_rgr_noflag_F",
 			//RHS
 			"rhs_6sh92",
 			"rhs_6sh92_radio",
@@ -5156,7 +4949,6 @@ class CfgTraderCategories
 			"rhsusf_iotv_ocp_squadleader",
 			"rhsusf_iotv_ocp_teamleader",
 			"rhsusf_spc"
->>>>>>> origin/master
 		};
 	};
 
@@ -5270,7 +5062,6 @@ class CfgTraderCategories
 			"H_PilotHelmetHeli_B",
 			"H_PilotHelmetHeli_I",
 			"H_PilotHelmetHeli_O",
-<<<<<<< HEAD
 			//Apex
 			"H_Helmet_Skate",
 			"H_HelmetB_TI_tna_F",
@@ -5291,8 +5082,7 @@ class CfgTraderCategories
 			"H_Cap_oli_Syndikat_F",
 			"H_Cap_tan_Syndikat_F",
 			"H_Cap_blk_Syndikat_F",
-			"H_Cap_grn_Syndikat_F"
-=======
+			"H_Cap_grn_Syndikat_F",
 			//RHS
 			"rhs_6b27m_digi",
 	        "rhs_6b27m_digi_ess",
@@ -5424,7 +5214,6 @@ class CfgTraderCategories
 			"rhsusf_mich_helmet_marpatwd_norotos_arc",
 			"rhsusf_mich_helmet_marpatwd_norotos_arc_headset",
 			"rhsusf_mich_helmet_marpatwd_norotos_headset"
->>>>>>> origin/master
 		};
 	};
 
@@ -5489,16 +5278,12 @@ class Glasses
 		items[] = 
 		{
 			"acc_flashlight",
-<<<<<<< HEAD
-			"acc_pointer_IR"
-=======
 			"acc_pointer_IR",
 			//RHS
 			"rhsusf_acc_anpeq15side",
 			"rhsusf_acc_anpeq15",
 			"rhsusf_acc_anpeq15A",
 			"rhsusf_acc_anpeq15_light"
->>>>>>> origin/master
 		};
 	};
 
@@ -5517,14 +5302,10 @@ class Glasses
 			"bipod_03_F_blk",
 			"bipod_03_F_oli",
 			//Apex
-<<<<<<< HEAD
-			"bipod_01_F_khk"
-=======
 			"bipod_01_F_khk",
 			//RHS
 			"rhsusf_acc_harris_bipod",
 			"rhs_bipod"
->>>>>>> origin/master
 		};
 	};
 
@@ -5559,9 +5340,6 @@ class Glasses
 			"muzzle_snds_65_TI_hex_F",
 			"muzzle_snds_65_TI_ghex_F",
 			"muzzle_snds_H_MG_blk_F",
-<<<<<<< HEAD
-			"muzzle_snds_H_MG_khk_F"
-=======
 			"muzzle_snds_H_MG_khk_F",
 			//RHS
 			"rhsusf_acc_rotex5_grey",
@@ -5582,7 +5360,6 @@ class Glasses
 			"rhs_acc_dtk",
 			"rhs_acc_dtk1l",
 			"rhs_acc_ak5"
->>>>>>> origin/master
 		};
 	};
 
@@ -5653,9 +5430,6 @@ class Glasses
 			"optic_LRPS_ghex_F",
 			"optic_Holosight_blk_F",
 			"optic_Holosight_khk_F",
-<<<<<<< HEAD
-			"optic_Holosight_smg_blk_F"
-=======
 			"optic_Holosight_smg_blk_F",
 			//RHS
 			"rhsusf_acc_eotech_552",
@@ -5679,7 +5453,6 @@ class Glasses
 			"rhs_acc_pso1m2",
 			"rhs_acc_pgo7v",
 			"rhs_acc_1pn93_1"
->>>>>>> origin/master
 		};
 	};
 
@@ -5699,10 +5472,7 @@ class Glasses
 			"Exile_Item_MetalPole",
 			"Exile_Item_SafeKit",
 			"Exile_Item_CamoTentKit",
-			"Exile_Item_CodeLock"
-			
-			/*
-			--Not for Sale--
+			"Exile_Item_CodeLock",
 			"Exile_Item_MetalScrews",
 			"Exile_Item_MetalWire",
 			"Exile_Item_Laptop",
@@ -5711,7 +5481,6 @@ class Glasses
 			"Exile_Item_Cement",
 			"Exile_Item_Sand",
 			"Exile_Item_MobilePhone",
-			--Unused--
 			"Exile_Item_CordlessScrewdriver",
 			"Exile_Item_FireExtinguisher",
 			"Exile_Item_OilCanister",
@@ -5721,7 +5490,6 @@ class Glasses
 			"Exile_Item_Defibrillator",
 			"Exile_Item_Wrench",
 			"Exile_Item_Rope"
-		*/
 		};
 	};
 
@@ -5828,10 +5596,8 @@ class Glasses
 			"Exile_Item_InstaDoc",
 			"Exile_Item_Bandage",
 			"Exile_Item_Vishpirin",
-			"Exile_Item_Heatpack"
-
-			// Not available in 0.9.4!
-			//"Exile_Item_Defibrillator"
+			"Exile_Item_Heatpack",
+			"Exile_Item_Defibrillator"
 		};
 	};
 
@@ -5988,9 +5754,6 @@ class Glasses
 			"200Rnd_556x45_Box_Red_F",
 			"200Rnd_556x45_Box_Tracer_F",
 			"200Rnd_556x45_Box_Tracer_Red_F",
-<<<<<<< HEAD
-			"10Rnd_9x21_Mag"
-=======
 			"10Rnd_9x21_Mag",
 			//RHS
 			"rhsusf_mag_7x45acp_MHP",
@@ -6031,7 +5794,6 @@ class Glasses
 			"rhs_100Rnd_762x54mmR",
 			"rhs_100Rnd_762x54mmR_green",
 			"rhs_10Rnd_762x54mmR_7N1"
->>>>>>> origin/master
 		};
 	};
 
@@ -6112,11 +5874,6 @@ class Glasses
 			"IEDUrbanBig_Remote_Mag",
 			"IEDUrbanSmall_Remote_Mag",
 			"SatchelCharge_Remote_Mag",
-<<<<<<< HEAD
-			"SLAMDirectionalMine_Wire_Mag"
-		};
-	};
-=======
 			"SLAMDirectionalMine_Wire_Mag",
 			//RHS
 			"rhs_mine_pmn2_mag",
@@ -6147,7 +5904,6 @@ class Glasses
 			"rhs_mag_9k38_rocket"
 		};
 	};	
->>>>>>> origin/master
 
 	class Pistols 
 	{
@@ -6167,14 +5923,10 @@ class Glasses
 			"Exile_Weapon_TaurusGold",
 			//Apex
 			"hgun_Pistol_01_F",
-<<<<<<< HEAD
-			"hgun_P07_khk_F"
-=======
 			"hgun_P07_khk_F",
 			//RHS
 			"rhs_weap_makarov_pmm",
 			"rhsusf_weap_m1911a1"
->>>>>>> origin/master
 		};
 	};
 
@@ -6204,12 +5956,7 @@ class Glasses
 			"LMG_03_F",
 			"Exile_Weapon_RPK",
 			"Exile_Weapon_PK",
-<<<<<<< HEAD
-			"Exile_Weapon_PKP"
-
-=======
 			"Exile_Weapon_PKP",
->>>>>>> origin/master
 			/*
 			"MMG_01_hex_F",
 			"MMG_01_tan_F",
@@ -6217,8 +5964,6 @@ class Glasses
 			"MMG_02_camo_F",
 			"MMG_02_sand_F"
 			*/
-<<<<<<< HEAD
-=======
 			//RHS
 			"rhs_weap_m249_pip_L",
 			"rhs_weap_m249_pip_L_para",
@@ -6230,7 +5975,6 @@ class Glasses
 			"rhs_weap_m240B_CAP",
 			"rhs_weap_m240G",
 			"rhs_weap_pkm"
->>>>>>> origin/master
 		};
 	};
 
@@ -6296,10 +6040,6 @@ class Glasses
 			"arifle_MX_khk_F",
 			"arifle_MX_GL_khk_F",
 			"arifle_MXC_khk_F",
-<<<<<<< HEAD
-			"arifle_MXM_khk_F"
-=======
-			"arifle_MXM_khk_F",
 			//RHS
 			"rhs_weap_m16a4",
 			"rhs_weap_m16a4_carryhandle",
@@ -6341,7 +6081,6 @@ class Glasses
 			"rhs_weap_akm_gp25",
 			"rhs_weap_akms",
 			"rhs_weap_akms_gp25"
->>>>>>> origin/master
 		};
 	};
 	
@@ -6395,9 +6134,6 @@ class Glasses
 			"srifle_GM6_ghex_F",
 			"srifle_DMR_07_blk_F",
 			"srifle_DMR_07_hex_F",
-<<<<<<< HEAD
-			"srifle_DMR_07_ghex_F"
-=======
 			"srifle_DMR_07_ghex_F",
 			//RHS
 			"rhs_weap_sr25",
@@ -6413,7 +6149,6 @@ class Glasses
 			"rhs_weap_svdp_npz",
 			"rhs_weap_svds",
 			"rhs_weap_svds_npz"
->>>>>>> origin/master
 		};
 	};
 
@@ -6468,16 +6203,12 @@ class Glasses
 			"Exile_Car_HMMWV_UNA_Green",
 			"Exile_Car_Strider",
 			"Exile_Car_Hunter",
-<<<<<<< HEAD
 			"Exile_Car_Ifrit",
 			"Exile_Car_ProwlerLight",
 			"Exile_Car_ProwlerUnarmed",
 			"Exile_Car_QilinUnarmed",
 			"Exile_Car_MB4WD",
 			"Exile_Car_MB4WDOpen"
-=======
-			"Exile_Car_Ifrit"
->>>>>>> origin/master
 		};
 	};
 
@@ -6496,9 +6227,6 @@ class Glasses
 			"Exile_Car_Zamak",
 			"Exile_Car_Tempest",
 			"Exile_Car_HEMMT",
-<<<<<<< HEAD
-			"Exile_Car_Ikarus_Blue"
-=======
 			"Exile_Car_Ikarus_Blue",
 			//RHS
 			"RHS_Ural_Open_Civ_01",
@@ -6536,7 +6264,6 @@ class Glasses
 			"RHS_Ural_Fuel_VMF_01",
 			"RHS_Ural_Fuel_VV_01"
 			*/
->>>>>>> origin/master
 		};
 	};
 
@@ -6556,9 +6283,6 @@ class Glasses
 			"Exile_Chopper_Orca_BlackCustom",
 			"Exile_Chopper_Mohawk_FIA",
 			"Exile_Chopper_Huron_Black",
-<<<<<<< HEAD
-			"Exile_Chopper_Hellcat_Green"
-=======
 			"Exile_Chopper_Hellcat_Green",
 			//RHS
 			/*
@@ -6661,7 +6385,6 @@ class Glasses
 			"RHS_UH1Y_FFAR_d",			
 			"RHS_UH1Y"
 			*/
->>>>>>> origin/master
 		};
 	};
 
@@ -6697,9 +6420,6 @@ class Glasses
 			"Exile_Plane_AN2_Green",
 			"Exile_Plane_Ceasar",
 			"Exile_Plane_BlackfishInfantry",
-<<<<<<< HEAD
-			"Exile_Plane_BlackfishVehicle"
-=======
 			"Exile_Plane_BlackfishVehicle",
 			//"RHS_A10",
 			"RHS_Su25SM_vvs"
@@ -6708,7 +6428,6 @@ class Glasses
 			"rhsusf_f22",
 			"RHS_C130J"
 			*/
->>>>>>> origin/master
 		};
 	};
 
@@ -6752,7 +6471,8 @@ class CfgTraders
 			"SubMachineGuns",
 			"LightMachineGuns",
 			"AssaultRifles",
-			"SniperRifles"
+			"SniperRifles",
+			"Launchers"
 		};
 	};
 
