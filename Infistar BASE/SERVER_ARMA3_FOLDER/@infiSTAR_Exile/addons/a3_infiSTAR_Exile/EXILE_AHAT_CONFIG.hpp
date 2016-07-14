@@ -25,14 +25,14 @@ class Cfg_infiSTAR_settings {
 	It will try to get this password from "@ExileServer\addons\exile_server_config" first. If you did not set a password there (config.cpp),
 	then it will take what you put here.
 */
-serverCommandPassword = "changeme";
+serverCommandPassword = "muffins";
 
 /*
 	"passwordAdmin" is passwordAdmin - in your servers config.cfg, needed for servercommands from client
 	
 	This is used to be able to use the "login" function ingame. Will log you in as Arma "Admin".
 */
-passwordAdmin = "changeme";
+passwordAdmin = "reconsider";
 /* serverCommandPassword and passwordAdmin should always be different passwords or it could cause problems! */
 
 
@@ -48,7 +48,7 @@ use_html_load_on_adminmenu = true;		/* default and recommended is TRUE. infiSTAR
 	"infiSTAR_Logs/" would be a folder called "infiSTAR_Logs" within your Arma3Server directory.
 	You need to create the defined folder if it doesn't exist. If you don't create it - the DLL won't be able to write any Log files ! ! !
 */
-LOG_PATH = "_____LOGS/";
+LOG_PATH = "infiSTAR_Logs/";
 
 
 
@@ -72,9 +72,10 @@ AdminNameTag = "[Admin]";
 */
 chatCommands[] =
 {
-	{"!ts","ts.mycommunity.com"},
-	{"!website","www.mycommunity.com"},
-	{"!admin","please visit ts.mycommunity.com"}
+	{"!ts","ts3.blackdoorgames.co.uk"},
+	{"!website","Website coming soon!"},
+	{"!admin","If you're looking for an admin, visit ts3.blackdoorgames.co.uk"},
+	{"!help","Looking for assistance? Head to the Help rooms in Teamspeak and poke an admin!"}
 };
 
 /*
@@ -83,7 +84,8 @@ chatCommands[] =
 */
 chatCommandsP[] =
 {
-	{"no loot","You cannot loot from non arma buildings in this map, you must move around - check the shipping yards for best loot"}
+	{"no loot","You cannot loot from non arma buildings in this map, you must move around."},
+	{"what is ts","Our teamspeak is located at ts3.blackdoorgames.co.uk"}
 };
 
 
@@ -99,10 +101,11 @@ chatCommandsP[] =
 ENABLE_NOTIFICATION_MESSAGES = true;
 NOTIFY_MSG_ARRAY[] =
 {
-	{-1, -1, 6, 0.6, 0, 0, "#ff0000", "Welcome to our server"},
-	{-1, -1, 4, 0.6, 0, 0, "#1900FF", "Enjoy!"},
-	{-1, -1, 5, 0.6, 0, 0, "#39E600", "Protected and administrated by<br/>infiSTAR.de AdminTools, AntiHack and more!"},
-	{15, 15, 8, 0.6, 0, 0, "#E600E6", "15 minutes have passed, drink some water!<br/>(IN REAL LIFE NOT INGAME)"}
+	{-1, -1, 6, 0.6, 0, 0, "#ff0000", "Welcome to Exile: EXTINCTION"},
+	{-1, -1, 4, 0.6, 0, 0, "#1900FF", "Please Enjoy your stay."},
+	{-1, -1, 5, 0.6, 0, 0, "#39E600", "This server is still under construction. Please be patient."},
+	{-1, -1, 5, 0.4, 0, 0, "#ffffff", "Admins: 'Syn' and 'Rhodekyll'."},
+	{-1, -1, 5, 0.4, 0, 0, "#ffffff", "Moderators: 'Jak Ma' and 'Samuel Beckett'"},
 };
 
 
@@ -140,7 +143,7 @@ hiddenSuperAdmin[] =
 adminUIDandAccess[] =
 {
 	{
-		{"76561198031739652","UID2","UID3","..."},	/* Admins with UIDs in this Array have their Access defined in the array below. */
+		{"76561198031739652","76561198044489484"},	/* Admins with UIDs in this Array have their Access defined in the array below. */
 		{
 			"Teleport On Map Click","Teleport - Target To Me","Teleport - Me To Target",
 			"Teleport In Facing Direction (10m steps)","Drag and drop units on the map",
@@ -179,7 +182,7 @@ adminUIDandAccess[] =
 		}
 	},
 	{
-		{"UID1","UID2","UID3","..."},	/* Admins with UIDs in this Array have their Access defined in the array below. */
+		{"76561198031739652"},	/* Admins with UIDs in this Array have their Access defined in the array below. */
 		{
 			"Teleport On Map Click","Teleport - Target To Me","Teleport - Me To Target",
 			"Teleport In Facing Direction (10m steps)","Drag and drop units on the map",
@@ -218,7 +221,7 @@ adminUIDandAccess[] =
 		}
 	},
 	{
-		{"UID1","UID2","UID3","..."},	/* Admins with UIDs in this Array have their Access defined in the array below. */
+		{"76561198074255212", "76561198136969157"},	/* Admins with UIDs in this Array have their Access defined in the array below. */
 		{
 			"Teleport On Map Click","Teleport - Target To Me","Teleport - Me To Target",
 			"Teleport In Facing Direction (10m steps)","Drag and drop units on the map",
@@ -283,18 +286,18 @@ ExileDevFriendlyMode = true;	/* adds Exile Devs to your AdminList - makes it eas
 
 
 /* What ESCAPE Menu shows */
-ESCMNUTOP = "AntiHack & AdminTools";
-ESCMNUBOT = "by infiSTAR.de";
+ESCMNUTOP = "Exile: EXTINCTION";
+ESCMNUBOT = "ts.blackdoorgames.co.uk";
 BRIEFING_MSG = false;	/* use mission briefing message: if   "BRIEFING_MSG = false;"   then the message will be replaced by infiSTAR */
 HTML_LOAD_URL = "";		/* HTML_LOAD_URL = ""; == disabled and if you set a url it will be shown in ESCAPE menu. HTML in Arma/this is limited. Try it :) example: "http://goo.gl/gb0o7b" */
 ENABLE_PRIVATE_CHAT_MENU = true;		/* players can open it by typing !chat in chat or by  custom controls -> "Use Action 3" */
-PRIVATE_CHAT_MENU_8GNETWORK = false;	/* if this is true - players will only be able to use private chat if they enable 8GNetwork in their xm8 */
+PRIVATE_CHAT_MENU_8GNETWORK = true;		/* if this is true - players will only be able to use private chat if they enable 8GNetwork in their xm8 */
 
 /* shows RESTART IN X MINS */
-USE_RESTART_TIMER = false;			/* show time left to next restart */
+USE_RESTART_TIMER = true;			/* show time left to next restart */
 RESTART_TIME_IN_M = 180;			/* restart time in minutes (default: 180min == 3 hours) */
 SHOW_TIMER_IN_MIN[] = {1,2,3,5,10};	/* minutes before restart, when message is shown */
-USE_RESTART_TIMER_SHUTDOWN = false;	/* #shutdown the server after RESTART_TIME_IN_M minutes */
+USE_RESTART_TIMER_SHUTDOWN = true;	/* #shutdown the server after RESTART_TIME_IN_M minutes */
 
 
 /* Allow Player to vote Day/Night by typing vote day / vote night in Chat*/
@@ -321,7 +324,7 @@ VCT = 300;	/* if "DayNightVote = true;" - Time (in seconds) to wait until nex vo
 	the game is still broken and sometimes you can see people naked when they are not.
 	I did not add the old check back in, I made a new one making use of new functions :)
 */
-fix_uniform_and_vest = false;
+fix_uniform_and_vest = true;
 
 /*
 	So far only checking for duped backpacks and not taking any actions besides logging. Need to test more before It will start to remove duped items.
@@ -467,6 +470,27 @@ allowedIDDs[] =
 	0720,	// Virtual Garage
 	5501,5502,5503,5504,5505,5506,5507,	// BRAma Cookbook
 	-1339,-1340,	// custom infiSTAR dialogs (some editor & a private chat menu)
+	21000, //Marxet
+	//Task Force Radio
+
+    30040,
+    1333,
+    67676,
+    6000,
+    7777,
+    1666,
+    1998,
+    7666,
+    6900,
+    8423,
+    20135,
+    3174,
+    3198,
+    4425,
+    3083,
+    8666,
+	101,
+	24033,
 
 	/* main idd - never delete it */
 	46
